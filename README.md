@@ -8,7 +8,7 @@ This set of tutorials is intented for complete beginners to coding. If you have 
 | :-----------: |:------------------------------------:| :-----------:|
 | TBA   | [Bash Command line](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/bash)                       | Elizabeth Beard & Haroon Popal |
 | TBA    | [Python](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/python)                             | Katie Jobson |
-| TBA    | [R](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/intro-to-coding-2021//tree/main/R)      | Billy Mitchell |
+| TBA    | [R](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/R)      | Billy Mitchell |
 | TBA    | [Data Blitz](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/data-blitz) | TBA |                          
 
 
