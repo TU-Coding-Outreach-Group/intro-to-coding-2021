@@ -1,0 +1,89 @@
+---
+title: "Bash Command Line Tutorial"
+author: "Elizabeth Beard & Haroon Popal"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float: 
+      collapsed: false
+    df_print: paged
+    css: !expr here::here("./misc/style_bootcamp.css")
+knit: (function(inputFile, encoding) { 
+      out_dir <- './';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'index.html')) })
+---
+
+# Introduction
+
+## Learning Objectives
+- Practice coding syntax
+- Learn how to troubleshoot
+- Learn basic coding operations (if-statements, for loops, etc.)
+
+
+# Basic Bash Commands
+
+## Terminal
+
+## Listing
+
+
+# Directories
+
+## Navigating Directories
+
+### Know where you are going
+
+### Going to where you need to go
+
+### Getting from A to B
+Referring to non-cwd paths
+
+## Managing Directories
+
+### Creating new directories
+
+### Creative subdirectories
+
+### Moving directories
+
+### copying directories
+
+### Removing directories
+
+
+# If-statements
+
+
+# For Loops
+
+
+# Preparing for the rest of the bootcamp
+
+## Installing other software
+
+### Python - Anaconda
+
+### R - RStudio
+
+
+# Extra
+
+## Symbolic links
+
+## Saving outputs to files
+
+## Grep
+
+## Searching for files/filepaths
+
+
+# Additional Resources
+
+
+
+
+
