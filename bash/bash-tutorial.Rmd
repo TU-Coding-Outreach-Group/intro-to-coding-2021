@@ -29,20 +29,26 @@ knit: (function(inputFile, encoding) {
 ## Terminal
 The terminal is a way of interacting within your computer that does not require a graphic user interface (GUI). In the olden times, computers did not have a mouse, desktop, folders, and program icons. If you wanted to do something on a computer, you had to give the computer very specific instructions. If the terminal is the "old" way of doing things, why do people still use the terminal today? One reason, and a point we will stress throughout the bootcamp, is for automation. When you interact with a computer via traditional ways, you will have to repeat very redundant motions. Let's say you want to rename 100 files. You will have to right click on each one, hit "rename", and then type out the new name of the file, all while making small but infuriating mistakes at each of these steps. Sometimes you might also make small mistakes that can be harder to catch later, such as if you were to add an extra "a" somewhere. With the terminal, and coding in general, we can create a set of commands, test it on a couple of files, and then run them on all of the other files. Then, if we ever have to do something similar in the future, we will have that code ready, and not have to do redundant things again. 
 
+![](images/terminal.PNG)
+
 But before we get into what is possible with the termial, we will have to introduce you to some concepts and basic commands to get you using the terminal. 
 
 
 ## Listing
 When you open a folder, you can immediate see the files that are inside. In the terminal you will have to give it a command to see what is inside (ignore this con, the pros are coming soon). The command to "list" the contents of the **current directory** is:
 
-```{bash}
+```{eval=FALSE}
 ls
 ```
+![](images/ls.PNG)
+
 But what is a "current directory", or even a regular "directory". You can think of a directory as a folder, and the current directory would be the current folder. Okay, so now we can see what is in our current directory, but where are we anyways?! Well, if we were using our computer the traditional way, we might have a bar at the top of our finder window that lists the entire address of where we are. In the terminal, we will also have to provide the command to Print the Current Directory.
 
-```{bash}
+```{eval=FALSE}
 pwd
 ```
+![](images/pwd.PNG)
+
 
 
 # Directories
