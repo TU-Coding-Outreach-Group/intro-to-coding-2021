@@ -11,7 +11,7 @@
 
 <meta name="author" content="Elizabeth Beard &amp; Haroon Popal" />
 
-<meta name="date" content="2021-11-15" />
+<meta name="date" content="2021-11-22" />
 
 <title>Bash Command Line Tutorial</title>
 
@@ -276,7 +276,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Bash Command Line Tutorial</h1>
 <h4 class="author">Elizabeth Beard &amp; Haroon Popal</h4>
-<h4 class="date">November 15, 2021</h4>
+<h4 class="date">November 22, 2021</h4>
 
 </div>
 
@@ -312,35 +312,77 @@ div.tocify {
 </div>
 <div id="directories" class="section level1">
 <h1>Directories</h1>
+<p>Another word you might see used is “subdirectories”, which is just a directory within a directory. Directories are relative and so any given directory can be a subdirectory, depending on your point of reference. One import directory to know is the <strong>home directory</strong>. Computers have a default directory where you generally start once you open the terminal.If you ever find yourself somewhere and want to go to the home directory, just used the “change directory” command:</p>
+<pre eval="FALSE"><code>cd</code></pre>
+<div id="exercise-1" class="section level4">
+<h4>Exercise 1</h4>
+<p>Use one of the commands we have used to find the path (location) of the home directory.</p>
+</div>
 <div id="navigating-directories" class="section level2">
 <h2>Navigating Directories</h2>
 <div id="know-where-you-are-going" class="section level3">
 <h3>Know where you are going</h3>
+<p>To navigate through directories, we can used the “cd” command and input a subdirectory to go to there. For example, use the following command to go to the “Desktop” from the home directory:</p>
+<pre eval="FALSE"><code>cd Desktop</code></pre>
+<p>Now when we hit “ls” we can see everything on our desktop: ~<a href="images/desktop.PNG"></a></p>
 </div>
 <div id="going-to-where-you-need-to-go" class="section level3">
 <h3>Going to where you need to go</h3>
+<p>Now that you know the <strong>ls</strong>, <strong>cd</strong>, and <strong>pwd</strong> commands, you can navigate through your computer just like you would with the finder (on a mac) or the file explorer (on a PC).</p>
+<div id="exercise-2.a" class="section level4">
+<h4>Exercise 2.a</h4>
+<p>Navigate to the directory that your COG bootcamp materials are in.</p>
+</div>
 </div>
 <div id="getting-from-a-to-b" class="section level3">
 <h3>Getting from A to B</h3>
-<p>Referring to non-cwd paths</p>
+<p>In the previous exercise, did you find yourself repetitively using the <strong>cd</strong> command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the <strong>cd</strong> command a path instead of a single directory to navigate to.</p>
+<div id="exercise-2.b" class="section level4">
+<h4>Exercise 2.b</h4>
+<p>Start at your home directory and navigate to the “bash” subdirectory within the COG bootcamp directory.</p>
+</div>
 </div>
 </div>
 <div id="managing-directories" class="section level2">
 <h2>Managing Directories</h2>
 <div id="creating-new-directories" class="section level3">
 <h3>Creating new directories</h3>
+<p>To create a new directory, use the “make directory” command while providing a name to the new directory:</p>
+<pre eval="FALSE"><code>mkdir test_directory</code></pre>
+<p>Here, we used an underscore to space out the words “test” and “directory”. This is because navigating through directories that have a space or other weird characters in the name can be tricky. So to keep things simple, coders often use underscores instead of spaces.</p>
 </div>
-<div id="creative-subdirectories" class="section level3">
-<h3>Creative subdirectories</h3>
+<div id="creating-subdirectories" class="section level3">
+<h3>Creating subdirectories</h3>
+<p>We can also create subdirectories by giving a path and then the new subdirectory. The syntax for this is:</p>
+<pre eval="FALSE"><code>mkdir path/to/new/filename</code></pre>
+<div id="exercise-2.c" class="section level4">
+<h4>Exercise 2.c</h4>
+<p>Create a subdirectory within the new “test_directory” and name it “test_subdirectory”.</p>
 </div>
-<div id="moving-directories" class="section level3">
-<h3>Moving directories</h3>
 </div>
-<div id="copying-directories" class="section level3">
-<h3>copying directories</h3>
+<div id="moving-things" class="section level3">
+<h3>Moving things</h3>
+<p>We can use the “move” command to move directories and other files. Here is the syntax for that:</p>
+<pre eval="FALSE"><code>mv path/to/file path/to/new/location</code></pre>
+<div id="exercise-2.d" class="section level4">
+<h4>Exercise 2.d</h4>
+<p>Move the “test_subdirectory” directory back one level, so that it is in the “bash” directory.</p>
 </div>
-<div id="removing-directories" class="section level3">
-<h3>Removing directories</h3>
+</div>
+<div id="renaming-things" class="section level3">
+<h3>Renaming things</h3>
+<p>The move command can also be used to rename things. Normally, we would use the move command to move something to somewhere else by providing a path to the new location. To rename something, we won’t provide a new path, but just the new name, like so:</p>
+<pre eval="FALSE"><code>mv old_filename new_filename</code></pre>
+<div id="exercise-2.e" class="section level4">
+<h4>Exercise 2.e</h4>
+<p>Rename “test_subdirectory” as “subject_data”</p>
+</div>
+</div>
+<div id="copying-things" class="section level3">
+<h3>Copying things</h3>
+</div>
+<div id="removing-things" class="section level3">
+<h3>Removing things</h3>
 </div>
 </div>
 </div>

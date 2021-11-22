@@ -52,27 +52,82 @@ pwd
 
 
 # Directories
+Another word you might see used is "subdirectories", which is just a directory within a directory. Directories are relative and so any given directory can be a subdirectory, depending on your point of reference. One import directory to know is the **home directory**. Computers have a default directory where you generally start once you open the terminal.If you ever find yourself somewhere and want to go to the home directory, just used the "change directory" command:
+
+```{eval=FALSE}
+cd
+```
+
+#### Exercise 1
+Use one of the commands we have used to find the path (location) of the home directory.
+
 
 ## Navigating Directories
 
 ### Know where you are going
+To navigate through directories, we can used the "cd" command and input a subdirectory to go to there. For example, use the following command to go to the "Desktop" from the home directory:
+
+```{eval=FALSE}
+cd Desktop
+```
+
+Now when we hit "ls" we can see everything on our desktop:
+~[](images/desktop.PNG)
 
 ### Going to where you need to go
+Now that you know the **ls**, **cd**, and **pwd** commands, you can navigate through your computer just like you would with the finder (on a mac) or the file explorer (on a PC).
+
+#### Exercise 2.a
+Navigate to the directory that your COG bootcamp materials are in.
 
 ### Getting from A to B
-Referring to non-cwd paths
+In the previous exercise, did you find yourself repetitively using the **cd** command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **cd** command a path instead of a single directory to navigate to. 
+
+#### Exercise 2.b
+Start at your home directory and navigate to the "bash" subdirectory within the COG bootcamp directory.
+
 
 ## Managing Directories
 
 ### Creating new directories
+To create a new directory, use the "make directory" command while providing a name to the new directory:
+```{eval=FALSE}
+mkdir test_directory
+```
+Here, we used an underscore to space out the words "test" and "directory". This is because navigating through directories that have a space or other weird characters in the name can be tricky. So to keep things simple, coders often use underscores instead of spaces.
 
-### Creative subdirectories
 
-### Moving directories
+### Creating subdirectories
+We can also create subdirectories by giving a path and then the new subdirectory. The syntax for this is:
+```{eval=FALSE}
+mkdir path/to/new/filename
+```
 
-### copying directories
+#### Exercise 2.c
+Create a subdirectory within the new "test_directory" and name it "test_subdirectory".
 
-### Removing directories
+### Moving things
+We can use the "move" command to move directories and other files. Here is the syntax for that:
+```{eval=FALSE}
+mv path/to/file path/to/new/location
+```
+
+#### Exercise 2.d
+Move the "test_subdirectory" directory back one level, so that it is in the "bash" directory.
+
+### Renaming things
+The move command can also be used to rename things. Normally, we would use the move command to move something to somewhere else by providing a path to the new location. To rename something, we won't provide a new path, but just the new name, like so:
+```{eval=FALSE}
+mv old_filename new_filename
+```
+
+#### Exercise 2.e
+Rename "test_subdirectory" as "subject_data"
+
+
+### Copying things
+
+### Removing things
 
 
 # If-statements
