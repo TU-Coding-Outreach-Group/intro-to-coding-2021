@@ -11,7 +11,7 @@
 
 <meta name="author" content="Elizabeth Beard &amp; Haroon Popal" />
 
-<meta name="date" content="2021-11-22" />
+<meta name="date" content="2021-11-29" />
 
 <title>Bash Command Line Tutorial</title>
 
@@ -276,7 +276,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Bash Command Line Tutorial</h1>
 <h4 class="author">Elizabeth Beard &amp; Haroon Popal</h4>
-<h4 class="date">November 22, 2021</h4>
+<h4 class="date">November 29, 2021</h4>
 
 </div>
 
@@ -380,17 +380,56 @@ div.tocify {
 </div>
 <div id="copying-things" class="section level3">
 <h3>Copying things</h3>
+<p>The copy command can be used to copy files from one location to another location with the following syntax:</p>
+<pre eval="FALSE"><code>cp path/to/original path/to/new/location</code></pre>
+<div id="exercise-2.f" class="section level4">
+<h4>Exercise 2.f</h4>
+<p>Copy over the subject data from the main workshop directory into the “subject_data” subdirectory in the “bash” directory.</p>
+<p><strong>Note:</strong> In order to copy directories, you must use the “-r” flag like so:</p>
+<pre eval="FALSE"><code>cp -r path/to/original path/to/new/location</code></pre>
+</div>
 </div>
 <div id="removing-things" class="section level3">
 <h3>Removing things</h3>
+<p>Removing files can be done by providing the path the file you wish to remove. Again, if you wish to remove a directory, you used use the “-r” flag.</p>
+<pre eval="FALSE"><code>rm path/to/file</code></pre>
 </div>
 </div>
 </div>
 <div id="if-statements" class="section level1">
 <h1>If-statements</h1>
+<p>Now that we know some basic commands, we can get to more complicated things. If-statements allow us to do something if certain a certain condition is met. The syntax for this is:</p>
+<pre eval="FALSE"><code>if logical_argument; then
+  do something
+fi</code></pre>
+<p>The logical arguments used here can be a variety of things. One thing you can use it for in data management is to see whether certain files exist. The following command will check to see whether a csv exists for a particular subject.</p>
+<pre eval="FALSE"><code>if (-e subject_data/subj_ID.csv); then
+  echo &quot;The data exists!&quot;
+fi</code></pre>
+<div id="elif" class="section level2">
+<h2>Elif</h2>
+<p>We can also add additional conditions. These kinds of situations involve something along the lines of “if this do this, or if that do that, else do this.” For example, maybe we forgot how we named our files. Let’s try a couple of different file names, and if those don’t work, we’ll have it printed out that we’re failures.</p>
+<pre eval="FALSE"><code>if (-e subject_data/subj_ID.csv); then
+  echo &quot;The first one was right!&quot;
+elif (-e subject_data/ID_subj.csv); then
+  echo &quot;The second one was right!&quot;
+else
+  echo &quot;The file does not exist.&quot;
+fi</code></pre>
+</div>
 </div>
 <div id="for-loops" class="section level1">
 <h1>For Loops</h1>
+<p>For loops allow us to repeat a set of commands. This is very useful when you want to do the same thing for a bunch of subjects. The syntax is:</p>
+<pre eval="FALSE"><code>for {thing} in {list_of_things}; do
+  do this
+  and this
+  and that
+done</code></pre>
+<div id="exercise-3" class="section level4">
+<h4>Exercise 3</h4>
+<p>Use an if-statement in combination with a for loop to check whether each subject has the appropriate behavioral data file.</p>
+</div>
 </div>
 <div id="preparing-for-the-rest-of-the-bootcamp" class="section level1">
 <h1>Preparing for the rest of the bootcamp</h1>
@@ -398,9 +437,11 @@ div.tocify {
 <h2>Installing other software</h2>
 <div id="python---anaconda" class="section level3">
 <h3>Python - Anaconda</h3>
+<p><a href="https://docs.anaconda.com/anaconda/install/index.html">Installation instructions</a></p>
 </div>
 <div id="r---rstudio" class="section level3">
 <h3>R - RStudio</h3>
+<p><a href="https://cran.rstudio.com/">Install R</a> <a href="https://www.rstudio.com/products/rstudio/download/#download">Install RStudio</a></p>
 </div>
 </div>
 </div>

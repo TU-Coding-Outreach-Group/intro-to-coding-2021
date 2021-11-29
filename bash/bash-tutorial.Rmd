@@ -126,14 +126,69 @@ Rename "test_subdirectory" as "subject_data"
 
 
 ### Copying things
+The copy command can be used to copy files from one location to another location with the following syntax:
+```{eval=FALSE}
+cp path/to/original path/to/new/location
+```
+
+#### Exercise 2.f
+Copy over the subject data from the main workshop directory into the "subject_data" subdirectory in the "bash" directory.
+
+**Note:** In order to copy directories, you must use the "-r" flag like so:
+
+```{eval=FALSE}
+cp -r path/to/original path/to/new/location
+```
+
 
 ### Removing things
+Removing files can be done by providing the path the file you wish to remove. Again, if you wish to remove a directory, you used use the "-r" flag. 
+```{eval=FALSE}
+rm path/to/file
+```
 
 
 # If-statements
+Now that we know some basic commands, we can get to more complicated things. If-statements allow us to do something if certain a certain condition is met. The syntax for this is:
+```{eval=FALSE}
+if logical_argument; then
+  do something
+fi
+```
+
+The logical arguments used here can be a variety of things. One thing you can use it for in data management is to see whether certain files exist. The following command will check to see whether a csv exists for a particular subject.
+```{eval=FALSE}
+if (-e subject_data/subj_ID.csv); then
+  echo "The data exists!"
+fi
+```
+
+## Elif
+We can also add additional conditions. These kinds of situations involve something along the lines of "if this do this, or if that do that, else do this."
+For example, maybe we forgot how we named our files. Let's try a couple of different file names, and if those don't work, we'll have it printed out that we're failures.
+```{eval=FALSE}
+if (-e subject_data/subj_ID.csv); then
+  echo "The first one was right!"
+elif (-e subject_data/ID_subj.csv); then
+  echo "The second one was right!"
+else
+  echo "The file does not exist."
+fi
+```
 
 
 # For Loops
+For loops allow us to repeat a set of commands. This is very useful when you want to do the same thing for a bunch of subjects. The syntax is:
+```{eval=FALSE}
+for {thing} in {list_of_things}; do
+  do this
+  and this
+  and that
+done
+```
+
+#### Exercise 3
+Use an if-statement in combination with a for loop to check whether each subject has the appropriate behavioral data file.
 
 
 # Preparing for the rest of the bootcamp
@@ -141,8 +196,12 @@ Rename "test_subdirectory" as "subject_data"
 ## Installing other software
 
 ### Python - Anaconda
+[Installation instructions](https://docs.anaconda.com/anaconda/install/index.html)
+
 
 ### R - RStudio
+[Install R](https://cran.rstudio.com/)
+[Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 
 
 # Extra
