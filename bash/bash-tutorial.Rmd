@@ -24,6 +24,32 @@ knit: (function(inputFile, encoding) {
 - Learn basic coding operations (if-statements, for loops, etc.)
 
 
+## What is bash?
+Bash is a programming language that is used in a command line. There are many different types of programming languages. Bash is commonly used on Macs, Linuxs, and now even PCs. It is similar to C-shell languages like csh, tcsh, and Apple's zsch. 
+
+
+## Preparing for the tutorial
+### Mac users
+The terminal (aka command line) is how you will be interacting with bash. Newer Macs use zsch. In my experience, zsch is very similar to bash and you probably do not need to switch to bash for this tutorial. If you wanted to, you would have to:
+
+1. open the terminal (press command + space and then search for "terminal")
+2. type "bash"
+3. hit enter
+
+### PC users
+I liked to use the [gitforwindows](https://gitforwindows.org/) bash implementation. Download this programming and install like you would any other program on windows. Then search for the "Git Bash" program. 
+
+
+## Using a text editor
+There are different ways to write code. One way is to use a notebook style integrated development environment (IDE), such as this tutorial which was written in RStudio, or Jupyter which was used to create the python tutorial. A more similar way is to use a text editor. This can just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
+
+~[](images/vcs.PNG)
+
+I would recommend [Visual Code Studio](https://code.visualstudio.com/). For this tutorial, it would be a good idea to type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code, you have a copy of it for future use. Probably the most useful part of coding is reusability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a "#" at the beginning of a line. Everything on the line after that will not be executable as code. Try using comments to describe commands you use throughout the tutorial.
+
+At the end of the tutorial we will also use a text editor to create a script.
+
+
 # Basic Bash Commands
 
 ## Terminal
@@ -31,7 +57,7 @@ The terminal is a way of interacting within your computer that does not require 
 
 ![](images/terminal.PNG)
 
-But before we get into what is possible with the termial, we will have to introduce you to some concepts and basic commands to get you using the terminal. 
+But before we get into what is possible with the terminal, we will have to introduce you to some concepts and basic commands to get you using the terminal. 
 
 
 ## Listing
@@ -191,6 +217,34 @@ done
 Use an if-statement in combination with a for loop to check whether each subject has the appropriate behavioral data file.
 
 
+# Writing Scripts
+Scripts are just bits of code that do things in one executable document. In this tutorial we prepped some data that we will play around with for the rest of the bootcamp. But I forgot that there is a whole second batch of participants whose data we need to prep. 
+
+#### Exercise 4
+Create a script that will complete each of the steps we have gone through, for the last batch of subjects.
+**Hint**: Try creating comments for each step. Think through what needs to be done. Once you know your steps, then write the code. At the very top of the script, add the following code so that you and the computer knows this is a bash file 
+```{eval=FALSE}
+#!/bin/bash
+```
+
+
+## Making an executable script
+To run a script, we can save the file and then use bash to run all the commands in one command, rather than use copying and pasting each command into the terminal. The make a script executable, we need to change some permission settings with the file, and then run it in the terminal. Use the steps below to make and run the script you created in Exercise 4.
+
+1. Save the script as a ".sh" file. You can name it whatever you want, but try not to put any spaces or special characters into the title.
+2. Navigate to where the script is in the terminal.
+3. Check the permissions of the file, this can be done by using the "ll" or "ls -l" command:
+![](images/ll_pre.PNG)
+4. Change the permission to make the file executable by using the code below.
+```{eval=FALSE}
+chmod u+x exercise_4.sh
+```
+5. Run the script using the "bash" command.
+```{eval=FALSE}
+bash exercise_4.sh
+```
+
+
 # Preparing for the rest of the bootcamp
 
 ## Installing other software
@@ -204,6 +258,9 @@ Use an if-statement in combination with a for loop to check whether each subject
 
 [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 
+
+# Conclusion
+![](images/meme.jpg)
 
 # Extra
 
