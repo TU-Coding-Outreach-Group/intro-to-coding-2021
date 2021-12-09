@@ -5,6 +5,7 @@ date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
     toc: true
+    toc_depth: 2
     toc_float: 
       collapsed: false
     df_print: paged
@@ -43,7 +44,7 @@ I liked to use the [gitforwindows](https://gitforwindows.org/) bash implementati
 ## Using a text editor
 There are different ways to write code. One way is to use a notebook style integrated development environment (IDE), such as this tutorial which was written in RStudio, or Jupyter which was used to create the python tutorial. A more similar way is to use a text editor. This can just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
 
-~[](images/vcs.PNG)
+![](images/vcs.PNG)
 
 I would recommend [Visual Code Studio](https://code.visualstudio.com/). For this tutorial, it would be a good idea to type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code, you have a copy of it for future use. Probably the most useful part of coding is reusability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a "#" at the beginning of a line. Everything on the line after that will not be executable as code. Try using comments to describe commands you use throughout the tutorial.
 

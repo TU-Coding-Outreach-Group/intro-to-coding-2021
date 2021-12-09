@@ -27,7 +27,7 @@ body{
   
   
   h1 {
-    font-size: 18pt;
+    font-size: 22pt;
     color: 	 white;
     background-color: #000000;
     padding-left: .5em;
@@ -37,15 +37,24 @@ body{
   
   
   h2 { 
-    font-size: 16pt;
+    font-size: 18pt;
     color:  #000000;  
+    background-color: lightgray;
       padding-top:.5em;
       opacity: 1.0; 
   }
   
   h3 { 
+    font-size: 16pt;
+     color: #000000;
+      padding-top:.5em;
+      font-style: italic;
+  }
+
+  h4 { 
     font-size: 14pt;
      color: #000000;
+      padding-top:.5em;
   }
   
   
