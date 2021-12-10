@@ -21,8 +21,8 @@ knit: (function(inputFile, encoding) {
 
 ## Learning Objectives
 - Practice coding syntax
-- Learn how to troubleshoot
 - Learn basic coding operations (if-statements, for loops, etc.)
+- Learn how to troubleshoot
 
 
 ## What is bash?
@@ -58,7 +58,9 @@ The terminal is a way of interacting within your computer that does not require 
 
 ![](images/terminal.PNG)
 
-But before we get into what is possible with the terminal, we will have to introduce you to some concepts and basic commands to get you using the terminal. 
+
+#### Exercise 0
+Try creating your first bash text file now. Open Visual Code Studio, create a new file, name it "bash_exercises.sh". The ".sh" extension tells the computer this is a bash script. You should also specify that this is a bash script by adding "#!/bin/bash" to the first line of the document. This is a good habit to have when writing scripts so you know what language the script was written in.
 
 
 ## Listing
@@ -86,7 +88,7 @@ cd
 ```
 
 #### Exercise 1
-Use one of the commands we have used to find the path (location) of the home directory.
+Use the commands we have learned to find the path (location) of the home directory.
 
 
 ## Navigating Directories
@@ -107,11 +109,14 @@ Now that you know the **ls**, **cd**, and **pwd** commands, you can navigate thr
 #### Exercise 2.a
 Navigate to the directory that your COG bootcamp materials are in.
 
+**Note:** Now is a good time to start using the text editor. The exercises you do today may be relevant to the rest of the bootcamp, so it is a good idea to keep a record of all the commands and actions you took to play around with the data. Add a comment to the script to note that the following code is for Exercise 2.a. Then write the solution for this exercise below the comment.
+
+
 ### Getting from A to B
 In the previous exercise, did you find yourself repetitively using the **cd** command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **cd** command a path instead of a single directory to navigate to. 
 
 #### Exercise 2.b
-Start at your home directory and navigate to the "bash" subdirectory within the COG bootcamp directory.
+Start at your home directory and navigate to the "bash" subdirectory within the COG bootcamp directory. Don't forget to add this code to your text file. 
 
 
 ## Managing Directories
@@ -159,7 +164,7 @@ cp path/to/original path/to/new/location
 ```
 
 #### Exercise 2.f
-Copy over the subject data from the main workshop directory into the "subject_data" subdirectory in the "bash" directory.
+Copy over the subject data, in the "log", from the "misc" workshop directory into the "subject_data" subdirectory in the "bash" directory.
 
 **Note:** In order to copy directories, you must use the "-r" flag like so:
 
@@ -167,12 +172,20 @@ Copy over the subject data from the main workshop directory into the "subject_da
 cp -r path/to/original path/to/new/location
 ```
 
+**Hint:** There are multiple ways to solve this exercise. First, you should note the correct paths. It might seem complicated, but just keep in mind that only two inputs are needed for this command. Second, you can either copy all of the individual subject data using an "*" wildcard which tells bash "pull all these things". Or you can copy over the higher level directory and then rename it.
+
+#### Think!
+When do you end a path with the "/" symbol and when do you not? What would happen if you used the "mv" command to move something into the current directory where there is already a file of that name? How would this change if you use or do not use slashes? Discuss with other students and your TA.
+
 
 ### Removing things
 Removing files can be done by providing the path the file you wish to remove. Again, if you wish to remove a directory, you used use the "-r" flag. 
 ```{eval=FALSE}
 rm path/to/file
 ```
+
+#### Exercise 2.g
+Remove the old test_directory folder.
 
 
 # If-statements
@@ -194,39 +207,39 @@ fi
 We can also add additional conditions. These kinds of situations involve something along the lines of "if this do this, or if that do that, else do this."
 For example, maybe we forgot how we named our files. Let's try a couple of different file names, and if those don't work, we'll have it printed out that we're failures.
 ```{eval=FALSE}
-if (-e subject_data/subj_ID.csv); then
+if (-e subject_data/DE249/DE249_dbdm_run_01.csv); then
   echo "The first one was right!"
-elif (-e subject_data/ID_subj.csv); then
+elif (-e subject_data/DE249/DE249_dbdm_run_1.csv); then
   echo "The second one was right!"
 else
   echo "The file does not exist."
 fi
 ```
 
+The "-e" is a flag, which tells the command to do something specific. In this case "-e" says "does this exist".
+
 
 # For Loops
 For loops allow us to repeat a set of commands. This is very useful when you want to do the same thing for a bunch of subjects. The syntax is:
 ```{eval=FALSE}
 for {thing} in {list_of_things}; do
-  do this
-  and this
-  and that
+  do this_to ${thing}
+  and this_to ${thing}
+  and that_to ${thing}
 done
 ```
 
+"thing" here becomes a variable. In order to reference a variable, you need to use the correct syntax, which is to have a "$" in the beginning. It is also a good idea to have the whole variable name in curly brackets {}. If you did not use this syntax and just used "thing" instead (without the quotes), bash would think this is a folder called "thing in the current directory.
+
+
 #### Exercise 3
-Use an if-statement in combination with a for loop to check whether each subject has the appropriate behavioral data file.
+Use an if-statement in combination with a for loop to check whether subjects DE201-DE210 have the appropriate behavioral data.
+
+** Hint:** To complete this exercise, you will have to use the most important skill you will learn today. Google! Try to articulate the problem in a sentence and then google it. See if there are solutions already on line that you can just copy and modify.
 
 
 # Writing Scripts
 Scripts are just bits of code that do things in one executable document. In this tutorial we prepped some data that we will play around with for the rest of the bootcamp. But I forgot that there is a whole second batch of participants whose data we need to prep. 
-
-#### Exercise 4
-Create a script that will complete each of the steps we have gone through, for the last batch of subjects.
-**Hint**: Try creating comments for each step. Think through what needs to be done. Once you know your steps, then write the code. At the very top of the script, add the following code so that you and the computer knows this is a bash file 
-```{eval=FALSE}
-#!/bin/bash
-```
 
 
 ## Making an executable script
@@ -238,12 +251,16 @@ To run a script, we can save the file and then use bash to run all the commands 
 ![](images/ll_pre.PNG)
 4. Change the permission to make the file executable by using the code below.
 ```{eval=FALSE}
-chmod u+x exercise_4.sh
+chmod u+x bash_exercises.sh
 ```
 5. Run the script using the "bash" command.
 ```{eval=FALSE}
-bash exercise_4.sh
+bash bash_exercises.sh
 ```
+
+
+#### Exercise 4: Advanced!
+Modify the for loop if-statement to check whether the csv data exists for all subjects. We only checked for the first 10 subjects before. Make sure all of your paths are correct. If you do not want to run certain commands (like the mkdir commands in the beginning), comment them out (add a "#" at the beginning of the command).
 
 
 # Preparing for the rest of the bootcamp

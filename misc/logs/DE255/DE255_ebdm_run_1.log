@@ -1,0 +1,1566 @@
+6.8838 	INFO 	Loaded monitor calibration from ['2018_12_04 12:41']
+6.8858 	WARNING 	User requested fullscreen with size [800 600], but screen is actually [1920, 1080]. Using actual size
+7.6571 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color='black', colorSpace='named', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1D8FB0F0>, multiSample=False, name='window1', numSamples=2, pos=[0, 0], screen=0, size=array([1920, 1080]), stereo=False, units='deg', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.7054 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='+', units='deg', win=Window(...), wrapWidth=15.0)
+7.7452 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=1.5, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text=newstr(...), units='deg', win=Window(...), wrapWidth=15.0)
+7.7624 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=1.5, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='Waiting for scanner...', units='deg', win=Window(...), wrapWidth=15.0)
+7.7825 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=1, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text='Press SPACE to continue.', units='deg', win=Window(...), wrapWidth=15.0)
+7.7935 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='THINK', units='norm', win=Window(...), wrapWidth=1)
+7.8006 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text='DECIDE', units='norm', win=Window(...), wrapWidth=1)
+7.8062 	EXP 	<method-wrapper '__getattribute__' of attributeSetter object at 0x05611270>: vertices = array([[-0.275     ,  0.48888889],
+       [ 0.275     ,  0.48888889],
+       [ 0.275     , -0.48888889],
+       [-0.275     , -0.48888889]])
+7.8069 	EXP 	Created unnamed Rect = Rect(autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor='white', lineColorSpace='named', lineRGB=array([ 255.,  255.,  255.]), lineWidth=3.5, name='unnamed Rect', opacity=1.0, ori=array(0.0), pos=array([-0.5125    , -0.09444444]), size=array([ 1.,  1.]), units='norm', vertices=ndarray(...), win=Window(...))
+7.8071 	EXP 	<method-wrapper '__getattribute__' of attributeSetter object at 0x05611270>: vertices = array([[-0.275     ,  0.48888889],
+       [ 0.275     ,  0.48888889],
+       [ 0.275     , -0.48888889],
+       [-0.275     , -0.48888889]])
+7.8077 	EXP 	Created unnamed Rect = Rect(autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor='white', lineColorSpace='named', lineRGB=array([ 255.,  255.,  255.]), lineWidth=3.5, name='unnamed Rect', opacity=1.0, ori=array(0.0), pos=array([ 0.4875    , -0.09444444]), size=array([ 1.,  1.]), units='norm', vertices=ndarray(...), win=Window(...))
+7.8287 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.5125    , -0.09444444]), rgb=array([ 1.,  1.,  1.]), text='Hello World', units='norm', win=Window(...), wrapWidth=1)
+7.8370 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.2, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.4875    , -0.09444444]), rgb=array([ 1.,  1.,  1.]), text='Hello World', units='norm', win=Window(...), wrapWidth=1)
+7.8535 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.5125    , -0.82777778]), rgb=array([ 1.,  1.,  1.]), text='Press 1', units='norm', win=Window(...), wrapWidth=1)
+7.8608 	EXP 	Created unnamed TextStim = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.1, italic=False, name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.4875    , -0.82777778]), rgb=array([ 1.,  1.,  1.]), text='Press 2', units='norm', win=Window(...), wrapWidth=1)
+7.8937 	EXP 	Created unnamed ImageStim = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 1.35416667,  1.3537037 ]), texRes=128, units='norm', win=Window(...))
+7.9251 	EXP 	Created unnamed ImageStim = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 1.35416667,  1.3537037 ]), texRes=128, units='norm', win=Window(...))
+7.9517 	EXP 	Created unnamed ImageStim = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 1.35416667,  1.3537037 ]), texRes=128, units='norm', win=Window(...))
+7.9793 	EXP 	Created unnamed ImageStim = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 1.35416667,  1.3537037 ]), texRes=128, units='norm', win=Window(...))
+7.9800 	EXP 	Created sequence: sequential, trialTypes=18, nReps=1, seed=None
+8.1090 	DEBUG 	Using C:\Users\tug55950\Documents\DEGAP_Liz\SamplingMachine_bPilotv2.py as origin file
+8.1095 	EXP 	Created sequence: sequential, trialTypes=18, nReps=1, seed=None
+8.1099 	DEBUG 	Using C:\Users\tug55950\Documents\DEGAP_Liz\SamplingMachine_bPilotv2.py as origin file
+0.0057 	DATA 	** START RUN 1 **
+1.8464 	DATA 	Keypress: space
+2.3264 	DATA 	Keypress: space
+2.8944 	DATA 	Keypress: space
+3.6464 	DATA 	Keypress: space
+3.6467 	EXP 	New trial (rep=0, index=0): {'P1_1': '0.8', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '0', 'ProbNumber': 'SD9', 'O1_2': '13', 'O1_1': '16', 'EV2': '13', 'EV1': '12.8', 'ProbType': 'SD', 'P2_1': '0.2'}
+3.6468 	DATA 	Trial Onset - ProblemType: SD, ProblemNumber: SD9, leftRight: 1, samplingDur: 18, assignedITI: 5.4629
+3.6468 	DATA 	Sampling Onset
+5.8294 	DATA 	Keypress: 1
+5.8458 	EXP 	unnamed TextStim: text = '+13'
+6.3458 	DATA 	Sampled Response: 2, Outcome Shown: +16
+6.4127 	DATA 	Keypress: 2
+6.4289 	EXP 	unnamed TextStim: text = '+16'
+6.9394 	DATA 	Sampled Response: 1, Outcome Shown: +13
+6.9397 	DATA 	Keypress: 1
+7.6460 	DATA 	Keypress: 1
+7.6623 	EXP 	unnamed TextStim: text = '+13'
+8.1734 	DATA 	Sampled Response: 2, Outcome Shown: 0
+8.1737 	DATA 	Keypress: 2
+8.7457 	DATA 	Keypress: 2
+8.7621 	EXP 	unnamed TextStim: text = '+16'
+9.2672 	DATA 	Sampled Response: 1, Outcome Shown: +13
+9.3119 	DATA 	Keypress: 1
+9.3287 	EXP 	unnamed TextStim: text = '+13'
+9.8296 	DATA 	Sampled Response: 2, Outcome Shown: 0
+9.8299 	DATA 	Keypress: 2
+10.3622 	DATA 	Keypress: 2
+10.3786 	EXP 	unnamed TextStim: text = '+16'
+10.8762 	DATA 	Sampled Response: 1, Outcome Shown: +13
+10.9123 	DATA 	Keypress: 1
+10.9285 	EXP 	unnamed TextStim: text = '+13'
+11.4386 	DATA 	Sampled Response: 2, Outcome Shown: +16
+11.6789 	DATA 	Keypress: 2
+11.6952 	EXP 	unnamed TextStim: text = '+16'
+12.2041 	DATA 	Sampled Response: 1, Outcome Shown: +13
+12.4120 	DATA 	Keypress: 1
+12.4284 	EXP 	unnamed TextStim: text = '+13'
+12.9383 	DATA 	Sampled Response: 2, Outcome Shown: +16
+12.9620 	DATA 	Keypress: 2
+12.9783 	EXP 	unnamed TextStim: text = '0'
+13.4850 	DATA 	Sampled Response: 1, Outcome Shown: +13
+14.0118 	DATA 	Keypress: 1
+14.0282 	EXP 	unnamed TextStim: text = '+13'
+14.5316 	DATA 	Sampled Response: 2, Outcome Shown: 0
+14.6951 	DATA 	Keypress: 2
+14.7114 	EXP 	unnamed TextStim: text = '+16'
+15.2190 	DATA 	Sampled Response: 1, Outcome Shown: +13
+15.4283 	DATA 	Keypress: 1
+15.4447 	EXP 	unnamed TextStim: text = '+13'
+15.9532 	DATA 	Sampled Response: 2, Outcome Shown: +16
+16.2116 	DATA 	Keypress: 2
+16.2279 	EXP 	unnamed TextStim: text = '+16'
+16.7342 	DATA 	Sampled Response: 1, Outcome Shown: +13
+16.9782 	DATA 	Keypress: 1
+16.9945 	EXP 	unnamed TextStim: text = '+13'
+17.4997 	DATA 	Sampled Response: 2, Outcome Shown: +16
+17.5446 	DATA 	Keypress: 2
+17.5608 	EXP 	unnamed TextStim: text = '+16'
+18.0619 	DATA 	Sampled Response: 1, Outcome Shown: +13
+18.0622 	DATA 	Keypress: 1
+18.8945 	DATA 	Keypress: 1
+18.9110 	EXP 	unnamed TextStim: text = '+13'
+19.4211 	DATA 	Sampled Response: 2, Outcome Shown: +16
+19.4214 	DATA 	Keypress: 2
+19.9440 	DATA 	Keypress: 2
+19.9603 	EXP 	unnamed TextStim: text = '0'
+20.4675 	DATA 	Sampled Response: 1, Outcome Shown: +13
+21.0610 	DATA 	Keypress: 1
+21.0774 	EXP 	unnamed TextStim: text = '+13'
+21.5769 	DATA 	Sampled Response: 2, Outcome Shown: 0
+21.5771 	DATA 	** broke sampling loop (<.5s left in trial) **
+21.5780 	DATA 	samplingCount: 19
+21.5780 	DATA 	Think Onset
+21.5818 	EXP 	unnamed Rect: lineColor = 'white (named)'
+21.5818 	EXP 	unnamed Rect: lineColor = 'white (named)'
+24.6105 	DATA 	Decide Onset
+24.9425 	DATA 	Keypress: 1
+24.9426 	DATA 	Decision Button Press: ['1']
+24.9426 	DATA 	Decision Response: 2
+24.9461 	EXP 	unnamed Rect: lineColor = 'red (named)'
+25.4573 	DATA 	ITI Onset
+25.4610 	EXP 	unnamed Rect: lineColor = 'white (named)'
+25.4610 	EXP 	unnamed Rect: lineColor = 'white (named)'
+25.4610 	EXP 	unnamed TextStim: text = '+13'
+25.4610 	EXP 	unnamed TextStim: text = '0'
+32.3602 	DATA 	Trial End Time - totalITI: 6.90039798466
+32.3604 	EXP 	New trial (rep=0, index=1): {'P1_1': '0.6', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '-22', 'ProbNumber': 'MD1', 'O1_2': '-6', 'O1_1': '4', 'EV2': '-6', 'EV1': '-6.4', 'ProbType': 'MD', 'P2_1': '0.4'}
+32.3605 	DATA 	Trial Onset - ProblemType: MD, ProblemNumber: MD1, leftRight: 0, samplingDur: 15, assignedITI: 1.048
+32.3606 	DATA 	Sampling Onset
+33.1436 	DATA 	Keypress: 1
+33.1755 	EXP 	unnamed TextStim: text = '+4'
+33.6834 	DATA 	Sampled Response: 1, Outcome Shown: +4
+33.7930 	DATA 	Keypress: 2
+33.8093 	EXP 	unnamed TextStim: text = '-6'
+34.3083 	DATA 	Sampled Response: 2, Outcome Shown: -6
+34.4094 	DATA 	Keypress: 1
+34.4258 	EXP 	unnamed TextStim: text = '+4'
+34.9331 	DATA 	Sampled Response: 1, Outcome Shown: +4
+35.0427 	DATA 	Keypress: 2
+35.0591 	EXP 	unnamed TextStim: text = '-6'
+35.5580 	DATA 	Sampled Response: 2, Outcome Shown: -6
+35.6261 	DATA 	Keypress: 1
+35.6424 	EXP 	unnamed TextStim: text = '-22'
+36.1516 	DATA 	Sampled Response: 1, Outcome Shown: -22
+36.2426 	DATA 	Keypress: 2
+36.2590 	EXP 	unnamed TextStim: text = '-6'
+36.7608 	DATA 	Sampled Response: 2, Outcome Shown: -6
+36.8259 	DATA 	Keypress: 1
+36.8423 	EXP 	unnamed TextStim: text = '+4'
+37.3544 	DATA 	Sampled Response: 1, Outcome Shown: +4
+37.3927 	DATA 	Keypress: 2
+37.4087 	EXP 	unnamed TextStim: text = '-6'
+37.9168 	DATA 	Sampled Response: 2, Outcome Shown: -6
+37.9171 	DATA 	Keypress: 1
+38.4756 	DATA 	Keypress: 1
+38.4921 	EXP 	unnamed TextStim: text = '-22'
+38.9947 	DATA 	Sampled Response: 1, Outcome Shown: -22
+38.9950 	DATA 	Keypress: 2
+39.7590 	DATA 	Keypress: 2
+39.7753 	EXP 	unnamed TextStim: text = '-6'
+40.2757 	DATA 	Sampled Response: 2, Outcome Shown: -6
+40.3589 	DATA 	Keypress: 1
+40.3752 	EXP 	unnamed TextStim: text = '+4'
+40.8849 	DATA 	Sampled Response: 1, Outcome Shown: +4
+40.9921 	DATA 	Keypress: 2
+41.0084 	EXP 	unnamed TextStim: text = '-6'
+41.5097 	DATA 	Sampled Response: 2, Outcome Shown: -6
+41.5921 	DATA 	Keypress: 1
+41.6085 	EXP 	unnamed TextStim: text = '+4'
+42.1190 	DATA 	Sampled Response: 1, Outcome Shown: +4
+42.4253 	DATA 	Keypress: 2
+42.4416 	EXP 	unnamed TextStim: text = '-6'
+42.9469 	DATA 	Sampled Response: 2, Outcome Shown: -6
+43.0420 	DATA 	Keypress: 1
+43.0582 	EXP 	unnamed TextStim: text = '+4'
+43.5561 	DATA 	Sampled Response: 1, Outcome Shown: +4
+43.6416 	DATA 	Keypress: 2
+43.6581 	EXP 	unnamed TextStim: text = '-6'
+44.1654 	DATA 	Sampled Response: 2, Outcome Shown: -6
+44.3083 	DATA 	Keypress: 1
+44.3249 	EXP 	unnamed TextStim: text = '-22'
+44.8371 	DATA 	Sampled Response: 1, Outcome Shown: -22
+45.0082 	DATA 	Keypress: 2
+45.0247 	EXP 	unnamed TextStim: text = '-6'
+45.5244 	DATA 	Sampled Response: 2, Outcome Shown: -6
+45.8748 	DATA 	Keypress: 1
+45.8911 	EXP 	unnamed TextStim: text = '+4'
+46.3995 	DATA 	Sampled Response: 1, Outcome Shown: +4
+46.5080 	DATA 	Keypress: 2
+46.5245 	EXP 	unnamed TextStim: text = '-6'
+47.0244 	DATA 	Sampled Response: 2, Outcome Shown: -6
+47.0246 	DATA 	** broke sampling loop (<.5s left in trial) **
+47.0253 	DATA 	samplingCount: 20
+47.0253 	DATA 	Think Onset
+47.0286 	EXP 	unnamed Rect: lineColor = 'white (named)'
+47.0286 	EXP 	unnamed Rect: lineColor = 'white (named)'
+47.1086 	DATA 	Keypress: 1
+50.0576 	DATA 	Decide Onset
+50.7185 	DATA 	Keypress: 2
+50.7186 	DATA 	Decision Button Press: ['2']
+50.7186 	DATA 	Decision Response: 2
+50.7221 	EXP 	unnamed Rect: lineColor = 'red (named)'
+51.2329 	DATA 	ITI Onset
+51.2361 	EXP 	unnamed Rect: lineColor = 'white (named)'
+51.2361 	EXP 	unnamed Rect: lineColor = 'white (named)'
+51.2361 	EXP 	unnamed TextStim: text = '+4'
+51.2361 	EXP 	unnamed TextStim: text = '-6'
+53.6575 	DATA 	Trial End Time - totalITI: 2.42280619672
+53.6577 	EXP 	New trial (rep=0, index=2): {'P1_1': '0.7', 'P1_2': '0.1', 'SafeOption': '1', 'P2_2': '0.9', 'O2_2': '30', 'O2_1': '38', 'ProbNumber': 'RR11', 'O1_2': '-10', 'O1_1': '22', 'EV2': '26', 'EV1': '26.8', 'ProbType': 'RR', 'P2_1': '0.3'}
+53.6578 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR11, leftRight: 1, samplingDur: 15, assignedITI: 5.4629
+53.6578 	DATA 	Sampling Onset
+55.1747 	DATA 	Keypress: 1
+55.2069 	EXP 	unnamed TextStim: text = '+30'
+55.7098 	DATA 	Sampled Response: 2, Outcome Shown: +38
+55.9904 	DATA 	Keypress: 2
+56.0068 	EXP 	unnamed TextStim: text = '+22'
+56.5065 	DATA 	Sampled Response: 1, Outcome Shown: +30
+56.6903 	DATA 	Keypress: 1
+56.7067 	EXP 	unnamed TextStim: text = '+30'
+57.2095 	DATA 	Sampled Response: 2, Outcome Shown: +22
+57.2737 	DATA 	Keypress: 2
+57.2900 	EXP 	unnamed TextStim: text = '+22'
+57.7874 	DATA 	Sampled Response: 1, Outcome Shown: +30
+57.8902 	DATA 	Keypress: 1
+57.9065 	EXP 	unnamed TextStim: text = '+30'
+58.4123 	DATA 	Sampled Response: 2, Outcome Shown: +22
+58.4126 	DATA 	Keypress: 2
+59.2401 	DATA 	Keypress: 2
+59.2564 	EXP 	unnamed TextStim: text = '+38'
+59.7557 	DATA 	Sampled Response: 1, Outcome Shown: +30
+60.2899 	DATA 	Keypress: 1
+60.3064 	EXP 	unnamed TextStim: text = '+30'
+60.8180 	DATA 	Sampled Response: 2, Outcome Shown: +22
+60.9564 	DATA 	Keypress: 2
+60.9729 	EXP 	unnamed TextStim: text = '+22'
+61.4741 	DATA 	Sampled Response: 1, Outcome Shown: +30
+61.9230 	DATA 	Keypress: 1
+61.9394 	EXP 	unnamed TextStim: text = '+30'
+62.4426 	DATA 	Sampled Response: 2, Outcome Shown: +22
+62.6062 	DATA 	Keypress: 2
+62.6225 	EXP 	unnamed TextStim: text = '+22'
+63.1300 	DATA 	Sampled Response: 1, Outcome Shown: +30
+63.3062 	DATA 	Keypress: 1
+63.3227 	EXP 	unnamed TextStim: text = '-10'
+63.8329 	DATA 	Sampled Response: 2, Outcome Shown: +22
+64.0061 	DATA 	Keypress: 2
+64.0224 	EXP 	unnamed TextStim: text = '+22'
+64.5202 	DATA 	Sampled Response: 1, Outcome Shown: +30
+64.9893 	DATA 	Keypress: 1
+65.0056 	EXP 	unnamed TextStim: text = '+30'
+65.5045 	DATA 	Sampled Response: 2, Outcome Shown: +22
+66.0727 	DATA 	Keypress: 2
+66.0889 	EXP 	unnamed TextStim: text = '+38'
+66.5980 	DATA 	Sampled Response: 1, Outcome Shown: +30
+66.9059 	DATA 	Keypress: 1
+66.9222 	EXP 	unnamed TextStim: text = '+30'
+67.4260 	DATA 	Sampled Response: 2, Outcome Shown: +22
+67.4886 	DATA 	Keypress: 2
+67.5053 	EXP 	unnamed TextStim: text = '+22'
+68.0039 	DATA 	Sampled Response: 1, Outcome Shown: -10
+68.1222 	DATA 	Keypress: 1
+68.1387 	EXP 	unnamed TextStim: text = '+30'
+68.6444 	DATA 	Sampled Response: 2, Outcome Shown: +22
+68.6447 	DATA 	Keypress: 2
+68.6448 	DATA 	** broke sampling loop (<.5s left in trial) **
+68.6455 	DATA 	samplingCount: 17
+68.6455 	DATA 	Think Onset
+68.6488 	EXP 	unnamed Rect: lineColor = 'white (named)'
+68.6488 	EXP 	unnamed Rect: lineColor = 'white (named)'
+71.6717 	DATA 	Decide Onset
+72.1106 	DATA 	Keypress: 2
+72.1107 	DATA 	Decision Button Press: ['2']
+72.1107 	DATA 	Decision Response: 1
+72.1141 	EXP 	unnamed Rect: lineColor = 'red (named)'
+72.6195 	DATA 	ITI Onset
+72.6227 	EXP 	unnamed Rect: lineColor = 'white (named)'
+72.6227 	EXP 	unnamed Rect: lineColor = 'white (named)'
+72.6227 	EXP 	unnamed TextStim: text = '+30'
+72.6227 	EXP 	unnamed TextStim: text = '+22'
+79.3713 	DATA 	Trial End Time - totalITI: 6.73687147672
+79.3715 	EXP 	New trial (rep=0, index=3): {'P1_1': '0.1', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '0', 'ProbNumber': 'SD1', 'O1_2': '-3', 'O1_1': '-32', 'EV2': '-3', 'EV1': '-3.2', 'ProbType': 'SD', 'P2_1': '0.9'}
+79.3716 	DATA 	Trial Onset - ProblemType: SD, ProblemNumber: SD1, leftRight: 0, samplingDur: 18, assignedITI: 1.3248
+79.3716 	DATA 	Sampling Onset
+80.0875 	DATA 	Keypress: 1
+80.1041 	EXP 	unnamed TextStim: text = '0'
+80.6104 	DATA 	Sampled Response: 1, Outcome Shown: 0
+80.9208 	DATA 	Keypress: 2
+80.9372 	EXP 	unnamed TextStim: text = '-3'
+81.4383 	DATA 	Sampled Response: 2, Outcome Shown: -3
+81.5706 	DATA 	Keypress: 1
+81.5871 	EXP 	unnamed TextStim: text = '0'
+82.0945 	DATA 	Sampled Response: 1, Outcome Shown: 0
+82.1541 	DATA 	Keypress: 2
+82.1705 	EXP 	unnamed TextStim: text = '-3'
+82.6724 	DATA 	Sampled Response: 2, Outcome Shown: -3
+82.8372 	DATA 	Keypress: 1
+82.8537 	EXP 	unnamed TextStim: text = '-32'
+83.3598 	DATA 	Sampled Response: 1, Outcome Shown: -32
+83.5870 	DATA 	Keypress: 2
+83.6036 	EXP 	unnamed TextStim: text = '-3'
+84.1096 	DATA 	Sampled Response: 2, Outcome Shown: -3
+84.4538 	DATA 	Keypress: 1
+84.4702 	EXP 	unnamed TextStim: text = '0'
+84.9687 	DATA 	Sampled Response: 1, Outcome Shown: 0
+85.0698 	DATA 	Keypress: 2
+85.0863 	EXP 	unnamed TextStim: text = '-3'
+85.5936 	DATA 	Sampled Response: 2, Outcome Shown: -3
+85.7202 	DATA 	Keypress: 1
+85.7367 	EXP 	unnamed TextStim: text = '0'
+86.2340 	DATA 	Sampled Response: 1, Outcome Shown: 0
+86.4202 	DATA 	Keypress: 2
+86.4366 	EXP 	unnamed TextStim: text = '-3'
+86.9371 	DATA 	Sampled Response: 2, Outcome Shown: -3
+87.1868 	DATA 	Keypress: 1
+87.2032 	EXP 	unnamed TextStim: text = '0'
+87.7025 	DATA 	Sampled Response: 1, Outcome Shown: 0
+87.8534 	DATA 	Keypress: 2
+87.8697 	EXP 	unnamed TextStim: text = '-3'
+88.3742 	DATA 	Sampled Response: 2, Outcome Shown: -3
+88.6700 	DATA 	Keypress: 1
+88.6864 	EXP 	unnamed TextStim: text = '0'
+89.1865 	DATA 	Sampled Response: 1, Outcome Shown: 0
+89.2533 	DATA 	Keypress: 2
+89.2698 	EXP 	unnamed TextStim: text = '-3'
+89.7801 	DATA 	Sampled Response: 2, Outcome Shown: -3
+90.0030 	DATA 	Keypress: 1
+90.0197 	EXP 	unnamed TextStim: text = '0'
+90.5300 	DATA 	Sampled Response: 1, Outcome Shown: 0
+90.5528 	DATA 	Keypress: 2
+90.5694 	EXP 	unnamed TextStim: text = '-3'
+91.0767 	DATA 	Sampled Response: 2, Outcome Shown: -3
+91.1364 	DATA 	Keypress: 1
+91.1527 	EXP 	unnamed TextStim: text = '0'
+91.6547 	DATA 	Sampled Response: 1, Outcome Shown: 0
+91.7196 	DATA 	Keypress: 2
+91.7361 	EXP 	unnamed TextStim: text = '-3'
+92.2483 	DATA 	Sampled Response: 2, Outcome Shown: -3
+92.2864 	DATA 	Keypress: 1
+92.3025 	EXP 	unnamed TextStim: text = '0'
+92.8107 	DATA 	Sampled Response: 1, Outcome Shown: 0
+92.8340 	DATA 	Keypress: 2
+92.8525 	EXP 	unnamed TextStim: text = '-3'
+93.3574 	DATA 	Sampled Response: 2, Outcome Shown: -3
+93.3860 	DATA 	Keypress: 1
+93.4024 	EXP 	unnamed TextStim: text = '0'
+93.9042 	DATA 	Sampled Response: 1, Outcome Shown: 0
+93.9528 	DATA 	Keypress: 2
+93.9691 	EXP 	unnamed TextStim: text = '-3'
+94.4665 	DATA 	Sampled Response: 2, Outcome Shown: -3
+94.4859 	DATA 	Keypress: 1
+94.5025 	EXP 	unnamed TextStim: text = '-32'
+95.0133 	DATA 	Sampled Response: 1, Outcome Shown: -32
+95.7359 	DATA 	Keypress: 2
+95.7523 	EXP 	unnamed TextStim: text = '-3'
+96.2630 	DATA 	Sampled Response: 2, Outcome Shown: -3
+96.3524 	DATA 	Keypress: 1
+96.3688 	EXP 	unnamed TextStim: text = '0'
+96.8722 	DATA 	Sampled Response: 1, Outcome Shown: 0
+96.8725 	DATA 	** broke sampling loop (<.5s left in trial) **
+96.8732 	DATA 	samplingCount: 25
+96.8732 	DATA 	Think Onset
+96.8765 	EXP 	unnamed Rect: lineColor = 'white (named)'
+96.8765 	EXP 	unnamed Rect: lineColor = 'white (named)'
+96.9029 	DATA 	Keypress: 2
+99.9019 	DATA 	Decide Onset
+100.3346 	DATA 	Keypress: 2
+100.3347 	DATA 	Decision Button Press: ['2']
+100.3348 	DATA 	Decision Response: 2
+100.3383 	EXP 	unnamed Rect: lineColor = 'red (named)'
+100.8458 	DATA 	ITI Onset
+100.8491 	EXP 	unnamed Rect: lineColor = 'white (named)'
+100.8491 	EXP 	unnamed Rect: lineColor = 'white (named)'
+100.8491 	EXP 	unnamed TextStim: text = '0'
+100.8491 	EXP 	unnamed TextStim: text = '-3'
+103.9519 	DATA 	Trial End Time - totalITI: 3.09092362858
+103.9521 	EXP 	New trial (rep=0, index=4): {'P1_1': '0.1', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '-5', 'ProbNumber': 'MD5', 'O1_2': '-4', 'O1_1': '25', 'EV2': '-4', 'EV1': '-2', 'ProbType': 'MD', 'P2_1': '0.9'}
+103.9522 	DATA 	Trial Onset - ProblemType: MD, ProblemNumber: MD5, leftRight: 1, samplingDur: 16, assignedITI: 1.7267
+103.9522 	DATA 	Sampling Onset
+105.2019 	DATA 	Keypress: 1
+105.2179 	EXP 	unnamed TextStim: text = '-4'
+105.7295 	DATA 	Sampled Response: 2, Outcome Shown: -5
+105.7298 	DATA 	Keypress: 2
+106.1848 	DATA 	Keypress: 2
+106.2009 	EXP 	unnamed TextStim: text = '-5'
+106.7137 	DATA 	Sampled Response: 1, Outcome Shown: -4
+106.7677 	DATA 	Keypress: 1
+106.7842 	EXP 	unnamed TextStim: text = '-4'
+107.2917 	DATA 	Sampled Response: 2, Outcome Shown: +25
+107.2959 	DATA 	Keypress: 2
+107.3154 	EXP 	unnamed TextStim: text = '-5'
+107.8228 	DATA 	Sampled Response: 1, Outcome Shown: -4
+107.8231 	DATA 	Keypress: 1
+108.5175 	DATA 	Keypress: 1
+108.5341 	EXP 	unnamed TextStim: text = '-4'
+109.0413 	DATA 	Sampled Response: 2, Outcome Shown: -5
+109.0416 	DATA 	Keypress: 2
+109.5009 	DATA 	Keypress: 2
+109.5172 	EXP 	unnamed TextStim: text = '-5'
+110.0254 	DATA 	Sampled Response: 1, Outcome Shown: -4
+110.0674 	DATA 	Keypress: 1
+110.0839 	EXP 	unnamed TextStim: text = '-4'
+110.5878 	DATA 	Sampled Response: 2, Outcome Shown: -5
+110.6341 	DATA 	Keypress: 2
+110.6506 	EXP 	unnamed TextStim: text = '-5'
+111.1502 	DATA 	Sampled Response: 1, Outcome Shown: -4
+111.1674 	DATA 	Keypress: 1
+111.1837 	EXP 	unnamed TextStim: text = '-4'
+111.6812 	DATA 	Sampled Response: 2, Outcome Shown: -5
+111.7173 	DATA 	Keypress: 2
+111.7337 	EXP 	unnamed TextStim: text = '-5'
+112.2437 	DATA 	Sampled Response: 1, Outcome Shown: -4
+112.2440 	DATA 	Keypress: 1
+112.8004 	DATA 	Keypress: 1
+112.8170 	EXP 	unnamed TextStim: text = '-4'
+113.3215 	DATA 	Sampled Response: 2, Outcome Shown: -5
+113.3218 	DATA 	Keypress: 2
+113.7173 	DATA 	Keypress: 2
+113.7336 	EXP 	unnamed TextStim: text = '-5'
+114.2432 	DATA 	Sampled Response: 1, Outcome Shown: -4
+114.2435 	DATA 	Keypress: 1
+114.7504 	DATA 	Keypress: 1
+114.7667 	EXP 	unnamed TextStim: text = '-4'
+115.2742 	DATA 	Sampled Response: 2, Outcome Shown: -5
+115.2745 	DATA 	Keypress: 2
+115.8171 	DATA 	Keypress: 2
+115.8333 	EXP 	unnamed TextStim: text = '-5'
+116.3365 	DATA 	Sampled Response: 1, Outcome Shown: -4
+116.3667 	DATA 	Keypress: 1
+116.3831 	EXP 	unnamed TextStim: text = '-4'
+116.8831 	DATA 	Sampled Response: 2, Outcome Shown: -5
+117.0834 	DATA 	Keypress: 2
+117.0998 	EXP 	unnamed TextStim: text = '-5'
+117.6018 	DATA 	Sampled Response: 1, Outcome Shown: -4
+117.6501 	DATA 	Keypress: 1
+117.6663 	EXP 	unnamed TextStim: text = '-4'
+118.1641 	DATA 	Sampled Response: 2, Outcome Shown: -5
+118.1644 	DATA 	Keypress: 2
+118.7665 	DATA 	Keypress: 2
+118.7829 	EXP 	unnamed TextStim: text = '-5'
+119.2889 	DATA 	Sampled Response: 1, Outcome Shown: -4
+119.2892 	DATA 	Keypress: 1
+119.4664 	DATA 	** broke sampling loop (<.5s left in trial) **
+119.4673 	DATA 	samplingCount: 18
+119.4673 	DATA 	Think Onset
+119.4829 	EXP 	unnamed Rect: lineColor = 'white (named)'
+119.4829 	EXP 	unnamed Rect: lineColor = 'white (named)'
+122.4994 	DATA 	Decide Onset
+122.8707 	DATA 	Keypress: 1
+122.8708 	DATA 	Decision Button Press: ['1']
+122.8708 	DATA 	Decision Response: 2
+122.8742 	EXP 	unnamed Rect: lineColor = 'red (named)'
+123.3891 	DATA 	ITI Onset
+123.3923 	EXP 	unnamed Rect: lineColor = 'white (named)'
+123.3923 	EXP 	unnamed Rect: lineColor = 'white (named)'
+123.3923 	EXP 	unnamed TextStim: text = '-4'
+123.3923 	EXP 	unnamed TextStim: text = '-5'
+126.9326 	DATA 	Trial End Time - totalITI: 3.54074743862
+126.9329 	EXP 	New trial (rep=0, index=5): {'P1_1': '0.5', 'P1_2': '0.3', 'SafeOption': '1', 'P2_2': '0.7', 'O2_2': '35', 'O2_1': '30', 'ProbNumber': 'RR5', 'O1_2': '-10', 'O1_1': '10', 'EV2': '21.5', 'EV1': '20', 'ProbType': 'RR', 'P2_1': '0.5'}
+126.9329 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR5, leftRight: 0, samplingDur: 15, assignedITI: 2.2012
+126.9330 	DATA 	Sampling Onset
+127.5656 	DATA 	Keypress: 1
+127.5821 	EXP 	unnamed TextStim: text = '+30'
+128.0843 	DATA 	Sampled Response: 1, Outcome Shown: +30
+128.0846 	DATA 	Keypress: 2
+128.5821 	DATA 	Keypress: 2
+128.5985 	EXP 	unnamed TextStim: text = '-10'
+129.0997 	DATA 	Sampled Response: 2, Outcome Shown: -10
+129.1988 	DATA 	Keypress: 1
+129.2151 	EXP 	unnamed TextStim: text = '+10'
+129.7246 	DATA 	Sampled Response: 1, Outcome Shown: +10
+129.9320 	DATA 	Keypress: 2
+129.9485 	EXP 	unnamed TextStim: text = '+35'
+130.4588 	DATA 	Sampled Response: 2, Outcome Shown: +35
+130.8152 	DATA 	Keypress: 1
+130.8316 	EXP 	unnamed TextStim: text = '+10'
+131.3336 	DATA 	Sampled Response: 1, Outcome Shown: +10
+131.4320 	DATA 	Keypress: 2
+131.4483 	EXP 	unnamed TextStim: text = '-10'
+131.9584 	DATA 	Sampled Response: 2, Outcome Shown: -10
+132.1993 	DATA 	Keypress: 1
+132.2312 	EXP 	unnamed TextStim: text = '+10'
+132.7395 	DATA 	Sampled Response: 1, Outcome Shown: +10
+132.8483 	DATA 	Keypress: 2
+132.8646 	EXP 	unnamed TextStim: text = '+35'
+133.3643 	DATA 	Sampled Response: 2, Outcome Shown: +35
+133.5482 	DATA 	Keypress: 1
+133.5646 	EXP 	unnamed TextStim: text = '+30'
+134.0673 	DATA 	Sampled Response: 1, Outcome Shown: +30
+134.2149 	DATA 	Keypress: 2
+134.2311 	EXP 	unnamed TextStim: text = '+35'
+134.7390 	DATA 	Sampled Response: 2, Outcome Shown: +35
+134.8480 	DATA 	Keypress: 1
+134.8644 	EXP 	unnamed TextStim: text = '+10'
+135.3639 	DATA 	Sampled Response: 1, Outcome Shown: +10
+135.3979 	DATA 	Keypress: 2
+135.4144 	EXP 	unnamed TextStim: text = '+35'
+135.9262 	DATA 	Sampled Response: 2, Outcome Shown: +35
+135.9478 	DATA 	Keypress: 1
+135.9643 	EXP 	unnamed TextStim: text = '+30'
+136.4730 	DATA 	Sampled Response: 1, Outcome Shown: +30
+136.4733 	DATA 	Keypress: 2
+136.9811 	DATA 	Keypress: 2
+136.9976 	EXP 	unnamed TextStim: text = '+35'
+137.5040 	DATA 	Sampled Response: 2, Outcome Shown: +35
+137.5043 	DATA 	Keypress: 1
+138.0150 	DATA 	Keypress: 1
+138.0470 	EXP 	unnamed TextStim: text = '+10'
+138.5505 	DATA 	Sampled Response: 1, Outcome Shown: +10
+138.5508 	DATA 	Keypress: 2
+139.2811 	DATA 	Keypress: 2
+139.2973 	EXP 	unnamed TextStim: text = '+35'
+139.8003 	DATA 	Sampled Response: 2, Outcome Shown: +35
+139.8642 	DATA 	Keypress: 1
+139.8806 	EXP 	unnamed TextStim: text = '+30'
+140.3783 	DATA 	Sampled Response: 1, Outcome Shown: +30
+140.4808 	DATA 	Keypress: 2
+140.4972 	EXP 	unnamed TextStim: text = '+35'
+141.0032 	DATA 	Sampled Response: 2, Outcome Shown: +35
+141.0640 	DATA 	Keypress: 1
+141.0805 	EXP 	unnamed TextStim: text = '+10'
+141.5812 	DATA 	Sampled Response: 1, Outcome Shown: +10
+141.5814 	DATA 	** broke sampling loop (<.5s left in trial) **
+141.5821 	DATA 	samplingCount: 19
+141.5821 	DATA 	Think Onset
+141.5855 	EXP 	unnamed Rect: lineColor = 'white (named)'
+141.5855 	EXP 	unnamed Rect: lineColor = 'white (named)'
+141.6478 	DATA 	Keypress: 2
+144.6134 	DATA 	Decide Onset
+144.9908 	DATA 	Keypress: 2
+144.9908 	DATA 	Decision Button Press: ['2']
+144.9909 	DATA 	Decision Response: 2
+144.9944 	EXP 	unnamed Rect: lineColor = 'red (named)'
+145.5100 	DATA 	ITI Onset
+145.5132 	EXP 	unnamed Rect: lineColor = 'white (named)'
+145.5132 	EXP 	unnamed Rect: lineColor = 'white (named)'
+145.5132 	EXP 	unnamed TextStim: text = '+10'
+145.5132 	EXP 	unnamed TextStim: text = '+35'
+149.3967 	DATA 	Trial End Time - totalITI: 3.87519556643
+149.3969 	EXP 	New trial (rep=0, index=6): {'P1_1': '0.8', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '-9', 'ProbNumber': 'MD9', 'O1_2': '5', 'O1_1': '8', 'EV2': '5', 'EV1': '4.6', 'ProbType': 'MD', 'P2_1': '0.2'}
+149.3970 	DATA 	Trial Onset - ProblemType: MD, ProblemNumber: MD9, leftRight: 0, samplingDur: 19, assignedITI: 2.274
+149.3970 	DATA 	Sampling Onset
+150.5129 	DATA 	Keypress: 1
+150.5292 	EXP 	unnamed TextStim: text = '+8'
+151.0323 	DATA 	Sampled Response: 1, Outcome Shown: +8
+151.0795 	DATA 	Keypress: 2
+151.0960 	EXP 	unnamed TextStim: text = '+5'
+151.5946 	DATA 	Sampled Response: 2, Outcome Shown: +5
+151.5989 	DATA 	Keypress: 1
+151.6124 	EXP 	unnamed TextStim: text = '-9'
+152.1101 	DATA 	Sampled Response: 1, Outcome Shown: -9
+152.1293 	DATA 	Keypress: 2
+152.1458 	EXP 	unnamed TextStim: text = '+5'
+152.6566 	DATA 	Sampled Response: 2, Outcome Shown: +5
+152.6569 	DATA 	Keypress: 1
+153.3794 	DATA 	Keypress: 1
+153.3956 	EXP 	unnamed TextStim: text = '-9'
+153.9069 	DATA 	Sampled Response: 1, Outcome Shown: -9
+153.9072 	DATA 	Keypress: 2
+154.3626 	DATA 	Keypress: 2
+154.3789 	EXP 	unnamed TextStim: text = '+5'
+154.8910 	DATA 	Sampled Response: 2, Outcome Shown: +5
+154.9124 	DATA 	Keypress: 1
+154.9288 	EXP 	unnamed TextStim: text = '+8'
+155.4378 	DATA 	Sampled Response: 1, Outcome Shown: +8
+155.6291 	DATA 	Keypress: 2
+155.6454 	EXP 	unnamed TextStim: text = '+5'
+156.1564 	DATA 	Sampled Response: 2, Outcome Shown: +5
+156.2122 	DATA 	Keypress: 1
+156.2287 	EXP 	unnamed TextStim: text = '-9'
+156.7344 	DATA 	Sampled Response: 1, Outcome Shown: -9
+156.7956 	DATA 	Keypress: 2
+156.8120 	EXP 	unnamed TextStim: text = '+5'
+157.3123 	DATA 	Sampled Response: 2, Outcome Shown: +5
+157.3126 	DATA 	Keypress: 1
+157.8623 	DATA 	Keypress: 1
+157.8786 	EXP 	unnamed TextStim: text = '+8'
+158.3902 	DATA 	Sampled Response: 1, Outcome Shown: +8
+158.3905 	DATA 	Keypress: 2
+159.1121 	DATA 	Keypress: 2
+159.1284 	EXP 	unnamed TextStim: text = '+5'
+159.6399 	DATA 	Sampled Response: 2, Outcome Shown: +5
+159.6785 	DATA 	Keypress: 1
+159.6949 	EXP 	unnamed TextStim: text = '+8'
+160.2023 	DATA 	Sampled Response: 1, Outcome Shown: +8
+160.6951 	DATA 	Keypress: 2
+160.7115 	EXP 	unnamed TextStim: text = '+5'
+161.2177 	DATA 	Sampled Response: 2, Outcome Shown: +5
+161.7618 	DATA 	Keypress: 1
+161.7781 	EXP 	unnamed TextStim: text = '-9'
+162.2799 	DATA 	Sampled Response: 1, Outcome Shown: -9
+162.5277 	DATA 	Keypress: 2
+162.5442 	EXP 	unnamed TextStim: text = '+5'
+163.0452 	DATA 	Sampled Response: 2, Outcome Shown: +5
+163.2949 	DATA 	Keypress: 1
+163.3112 	EXP 	unnamed TextStim: text = '+8'
+163.8108 	DATA 	Sampled Response: 1, Outcome Shown: +8
+163.9448 	DATA 	Keypress: 2
+163.9612 	EXP 	unnamed TextStim: text = '+5'
+164.4670 	DATA 	Sampled Response: 2, Outcome Shown: +5
+164.6115 	DATA 	Keypress: 1
+164.6278 	EXP 	unnamed TextStim: text = '+8'
+165.1387 	DATA 	Sampled Response: 1, Outcome Shown: +8
+165.2113 	DATA 	Keypress: 2
+165.2277 	EXP 	unnamed TextStim: text = '+5'
+165.7323 	DATA 	Sampled Response: 2, Outcome Shown: +5
+165.7612 	DATA 	Keypress: 1
+165.7775 	EXP 	unnamed TextStim: text = '+8'
+166.2790 	DATA 	Sampled Response: 1, Outcome Shown: +8
+166.2953 	DATA 	Keypress: 2
+166.3274 	EXP 	unnamed TextStim: text = '+5'
+166.8257 	DATA 	Sampled Response: 2, Outcome Shown: +5
+166.8612 	DATA 	Keypress: 1
+166.8775 	EXP 	unnamed TextStim: text = '+8'
+167.3881 	DATA 	Sampled Response: 1, Outcome Shown: +8
+167.3884 	DATA 	Keypress: 2
+167.9108 	DATA 	** broke sampling loop (<.5s left in trial) **
+167.9115 	DATA 	samplingCount: 23
+167.9115 	DATA 	Think Onset
+167.9273 	EXP 	unnamed Rect: lineColor = 'white (named)'
+167.9273 	EXP 	unnamed Rect: lineColor = 'white (named)'
+167.9614 	DATA 	Keypress: 2
+170.9438 	DATA 	Decide Onset
+171.3107 	DATA 	Keypress: 2
+171.3108 	DATA 	Decision Button Press: ['2']
+171.3108 	DATA 	Decision Response: 2
+171.3143 	EXP 	unnamed Rect: lineColor = 'red (named)'
+171.8329 	DATA 	ITI Onset
+171.8362 	EXP 	unnamed Rect: lineColor = 'white (named)'
+171.8362 	EXP 	unnamed Rect: lineColor = 'white (named)'
+171.8362 	EXP 	unnamed TextStim: text = '+8'
+171.8362 	EXP 	unnamed TextStim: text = '+5'
+175.9270 	DATA 	Trial End Time - totalITI: 4.09308475691
+175.9272 	EXP 	New trial (rep=0, index=7): {'P1_1': '0.25', 'P1_2': '0.25', 'SafeOption': '1', 'P2_2': '0.75', 'O2_2': '10', 'O2_1': '6', 'ProbNumber': 'RR1', 'O1_2': '-8', 'O1_1': '2', 'EV2': '5.5', 'EV1': '5', 'ProbType': 'RR', 'P2_1': '0.75'}
+175.9273 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR1, leftRight: 1, samplingDur: 17, assignedITI: 1.0587
+175.9273 	DATA 	Sampling Onset
+176.5266 	DATA 	Keypress: 1
+176.5430 	EXP 	unnamed TextStim: text = '+10'
+177.0424 	DATA 	Sampled Response: 2, Outcome Shown: +6
+177.0767 	DATA 	Keypress: 2
+177.0929 	EXP 	unnamed TextStim: text = '+6'
+177.6047 	DATA 	Sampled Response: 1, Outcome Shown: -8
+177.6765 	DATA 	Keypress: 1
+177.6929 	EXP 	unnamed TextStim: text = '+10'
+178.1984 	DATA 	Sampled Response: 2, Outcome Shown: +6
+178.2597 	DATA 	Keypress: 2
+178.2762 	EXP 	unnamed TextStim: text = '+6'
+178.7764 	DATA 	Sampled Response: 1, Outcome Shown: +10
+178.8262 	DATA 	Keypress: 1
+178.8427 	EXP 	unnamed TextStim: text = '+10'
+179.3543 	DATA 	Sampled Response: 2, Outcome Shown: +6
+179.4263 	DATA 	Keypress: 2
+179.4427 	EXP 	unnamed TextStim: text = '+6'
+179.9479 	DATA 	Sampled Response: 1, Outcome Shown: +10
+179.9596 	DATA 	Keypress: 1
+179.9759 	EXP 	unnamed TextStim: text = '-8'
+180.4791 	DATA 	Sampled Response: 2, Outcome Shown: +6
+180.6427 	DATA 	Keypress: 2
+180.6592 	EXP 	unnamed TextStim: text = '+6'
+181.1664 	DATA 	Sampled Response: 1, Outcome Shown: +10
+181.3273 	DATA 	Keypress: 1
+181.3592 	EXP 	unnamed TextStim: text = '-8'
+181.8693 	DATA 	Sampled Response: 2, Outcome Shown: +6
+181.9259 	DATA 	Keypress: 2
+181.9424 	EXP 	unnamed TextStim: text = '+2'
+182.4474 	DATA 	Sampled Response: 1, Outcome Shown: +10
+182.6259 	DATA 	Keypress: 1
+182.6422 	EXP 	unnamed TextStim: text = '-8'
+183.1503 	DATA 	Sampled Response: 2, Outcome Shown: +6
+183.2426 	DATA 	Keypress: 2
+183.2589 	EXP 	unnamed TextStim: text = '+6'
+183.7596 	DATA 	Sampled Response: 1, Outcome Shown: +10
+183.8591 	DATA 	Keypress: 1
+183.8756 	EXP 	unnamed TextStim: text = '+10'
+184.3844 	DATA 	Sampled Response: 2, Outcome Shown: +2
+184.4257 	DATA 	Keypress: 2
+184.4420 	EXP 	unnamed TextStim: text = '+2'
+184.9468 	DATA 	Sampled Response: 1, Outcome Shown: -8
+185.0757 	DATA 	Keypress: 1
+185.0922 	EXP 	unnamed TextStim: text = '+10'
+185.6029 	DATA 	Sampled Response: 2, Outcome Shown: +6
+185.7089 	DATA 	Keypress: 2
+185.7253 	EXP 	unnamed TextStim: text = '+6'
+186.2278 	DATA 	Sampled Response: 1, Outcome Shown: +10
+186.3255 	DATA 	Keypress: 1
+186.3419 	EXP 	unnamed TextStim: text = '+10'
+186.8526 	DATA 	Sampled Response: 2, Outcome Shown: +6
+186.9590 	DATA 	Keypress: 2
+186.9752 	EXP 	unnamed TextStim: text = '+6'
+187.4775 	DATA 	Sampled Response: 1, Outcome Shown: +10
+187.5755 	DATA 	Keypress: 1
+187.5919 	EXP 	unnamed TextStim: text = '+10'
+188.1023 	DATA 	Sampled Response: 2, Outcome Shown: +6
+188.1919 	DATA 	Keypress: 2
+188.2084 	EXP 	unnamed TextStim: text = '+6'
+188.7115 	DATA 	Sampled Response: 1, Outcome Shown: -8
+188.7919 	DATA 	Keypress: 1
+188.8084 	EXP 	unnamed TextStim: text = '+10'
+189.3208 	DATA 	Sampled Response: 2, Outcome Shown: +6
+189.4086 	DATA 	Keypress: 2
+189.4250 	EXP 	unnamed TextStim: text = '+6'
+189.9300 	DATA 	Sampled Response: 1, Outcome Shown: +10
+190.0252 	DATA 	Keypress: 1
+190.0414 	EXP 	unnamed TextStim: text = '-8'
+190.5392 	DATA 	Sampled Response: 2, Outcome Shown: +2
+190.8418 	DATA 	Keypress: 2
+190.8581 	EXP 	unnamed TextStim: text = '+2'
+191.3672 	DATA 	Sampled Response: 1, Outcome Shown: +10
+191.4082 	DATA 	Keypress: 1
+191.4245 	EXP 	unnamed TextStim: text = '-8'
+191.9296 	DATA 	Sampled Response: 2, Outcome Shown: +2
+192.3248 	DATA 	Keypress: 2
+192.3411 	EXP 	unnamed TextStim: text = '+6'
+192.8513 	DATA 	Sampled Response: 1, Outcome Shown: +10
+192.8516 	DATA 	** broke sampling loop (<.5s left in trial) **
+192.8523 	DATA 	samplingCount: 26
+192.8523 	DATA 	Think Onset
+192.8557 	EXP 	unnamed Rect: lineColor = 'white (named)'
+192.8557 	EXP 	unnamed Rect: lineColor = 'white (named)'
+195.8742 	DATA 	Decide Onset
+196.2627 	DATA 	Keypress: 1
+196.2628 	DATA 	Decision Button Press: ['1']
+196.2629 	DATA 	Decision Response: 2
+196.2663 	EXP 	unnamed Rect: lineColor = 'red (named)'
+196.7797 	DATA 	ITI Onset
+196.7829 	EXP 	unnamed Rect: lineColor = 'white (named)'
+196.7829 	EXP 	unnamed Rect: lineColor = 'white (named)'
+196.7829 	EXP 	unnamed TextStim: text = '-8'
+196.7829 	EXP 	unnamed TextStim: text = '+6'
+199.2410 	DATA 	Trial End Time - totalITI: 2.44561486626
+199.2412 	EXP 	New trial (rep=0, index=8): {'P1_1': '0.2', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '-7', 'ProbNumber': 'MD6', 'O1_2': '-2', 'O1_1': '24', 'EV2': '-2', 'EV1': '-0.8', 'ProbType': 'MD', 'P2_1': '0.8'}
+199.2413 	DATA 	Trial Onset - ProblemType: MD, ProblemNumber: MD6, leftRight: 0, samplingDur: 16, assignedITI: 2.4102
+199.2413 	DATA 	Sampling Onset
+200.2740 	DATA 	Keypress: 1
+200.2903 	EXP 	unnamed TextStim: text = '-7'
+200.8030 	DATA 	Sampled Response: 1, Outcome Shown: -7
+200.8033 	DATA 	Keypress: 2
+201.2574 	DATA 	Keypress: 2
+201.2736 	EXP 	unnamed TextStim: text = '-2'
+201.7716 	DATA 	Sampled Response: 2, Outcome Shown: -2
+201.7718 	DATA 	Keypress: 1
+202.3237 	DATA 	Keypress: 1
+202.3401 	EXP 	unnamed TextStim: text = '-7'
+202.8495 	DATA 	Sampled Response: 1, Outcome Shown: -7
+202.8498 	DATA 	Keypress: 2
+203.3237 	DATA 	Keypress: 2
+203.3399 	EXP 	unnamed TextStim: text = '-2'
+203.8492 	DATA 	Sampled Response: 2, Outcome Shown: -2
+203.8495 	DATA 	Keypress: 1
+204.4735 	DATA 	Keypress: 1
+204.4899 	EXP 	unnamed TextStim: text = '-7'
+204.9896 	DATA 	Sampled Response: 1, Outcome Shown: -7
+205.0895 	DATA 	Keypress: 2
+205.1060 	EXP 	unnamed TextStim: text = '-2'
+205.6145 	DATA 	Sampled Response: 2, Outcome Shown: -2
+205.7734 	DATA 	Keypress: 1
+205.7898 	EXP 	unnamed TextStim: text = '-7'
+206.3018 	DATA 	Sampled Response: 1, Outcome Shown: -7
+206.4734 	DATA 	Keypress: 2
+206.4896 	EXP 	unnamed TextStim: text = '-2'
+206.9891 	DATA 	Sampled Response: 2, Outcome Shown: -2
+207.1064 	DATA 	Keypress: 1
+207.1229 	EXP 	unnamed TextStim: text = '-7'
+207.6296 	DATA 	Sampled Response: 1, Outcome Shown: -7
+207.6897 	DATA 	Keypress: 2
+207.7060 	EXP 	unnamed TextStim: text = '-2'
+208.2076 	DATA 	Sampled Response: 2, Outcome Shown: -2
+208.3563 	DATA 	Keypress: 1
+208.3729 	EXP 	unnamed TextStim: text = '-7'
+208.8793 	DATA 	Sampled Response: 1, Outcome Shown: -7
+208.9230 	DATA 	Keypress: 2
+208.9394 	EXP 	unnamed TextStim: text = '-2'
+209.4417 	DATA 	Sampled Response: 2, Outcome Shown: -2
+209.4897 	DATA 	Keypress: 1
+209.5060 	EXP 	unnamed TextStim: text = '-7'
+210.0040 	DATA 	Sampled Response: 1, Outcome Shown: -7
+210.1230 	DATA 	Keypress: 2
+210.1392 	EXP 	unnamed TextStim: text = '-2'
+210.6445 	DATA 	Sampled Response: 2, Outcome Shown: -2
+210.6895 	DATA 	Keypress: 1
+210.7057 	EXP 	unnamed TextStim: text = '+24'
+211.2069 	DATA 	Sampled Response: 1, Outcome Shown: +24
+211.7893 	DATA 	Keypress: 2
+211.8058 	EXP 	unnamed TextStim: text = '-2'
+212.3160 	DATA 	Sampled Response: 2, Outcome Shown: -2
+212.7559 	DATA 	Keypress: 1
+212.7723 	EXP 	unnamed TextStim: text = '-7'
+213.2845 	DATA 	Sampled Response: 1, Outcome Shown: -7
+213.3224 	DATA 	Keypress: 2
+213.3388 	EXP 	unnamed TextStim: text = '-2'
+213.8469 	DATA 	Sampled Response: 2, Outcome Shown: -2
+213.8711 	DATA 	Keypress: 1
+213.9054 	EXP 	unnamed TextStim: text = '-7'
+214.4093 	DATA 	Sampled Response: 1, Outcome Shown: -7
+214.5224 	DATA 	Keypress: 2
+214.5387 	EXP 	unnamed TextStim: text = '-2'
+215.0497 	DATA 	Sampled Response: 2, Outcome Shown: -2
+215.0500 	DATA 	** broke sampling loop (<.5s left in trial) **
+215.0507 	DATA 	samplingCount: 20
+215.0507 	DATA 	Think Onset
+215.0541 	EXP 	unnamed Rect: lineColor = 'white (named)'
+215.0541 	EXP 	unnamed Rect: lineColor = 'white (named)'
+218.0718 	DATA 	Decide Onset
+218.4468 	DATA 	Keypress: 2
+218.4469 	DATA 	Decision Button Press: ['2']
+218.4469 	DATA 	Decision Response: 2
+218.4503 	EXP 	unnamed Rect: lineColor = 'red (named)'
+218.9624 	DATA 	ITI Onset
+218.9656 	EXP 	unnamed Rect: lineColor = 'white (named)'
+218.9656 	EXP 	unnamed Rect: lineColor = 'white (named)'
+218.9656 	EXP 	unnamed TextStim: text = '-7'
+218.9656 	EXP 	unnamed TextStim: text = '-2'
+222.9050 	DATA 	Trial End Time - totalITI: 3.92622517413
+222.9052 	EXP 	New trial (rep=0, index=9): {'P1_1': '0.8', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '0', 'ProbNumber': 'SD6', 'O1_2': '12', 'O1_1': '14', 'EV2': '12', 'EV1': '11.2', 'ProbType': 'SD', 'P2_1': '0.2'}
+222.9053 	DATA 	Trial Onset - ProblemType: SD, ProblemNumber: SD6, leftRight: 0, samplingDur: 15, assignedITI: 1.2377
+222.9053 	DATA 	Sampling Onset
+224.1046 	DATA 	Keypress: 1
+224.1210 	EXP 	unnamed TextStim: text = '+14'
+224.6259 	DATA 	Sampled Response: 1, Outcome Shown: +14
+224.8378 	DATA 	Keypress: 2
+224.8542 	EXP 	unnamed TextStim: text = '+12'
+225.3602 	DATA 	Sampled Response: 2, Outcome Shown: +12
+225.4543 	DATA 	Keypress: 1
+225.4707 	EXP 	unnamed TextStim: text = '+14'
+225.9693 	DATA 	Sampled Response: 1, Outcome Shown: +14
+226.1212 	DATA 	Keypress: 2
+226.1374 	EXP 	unnamed TextStim: text = '+12'
+226.6411 	DATA 	Sampled Response: 2, Outcome Shown: +12
+226.7043 	DATA 	Keypress: 1
+226.7207 	EXP 	unnamed TextStim: text = '+14'
+227.2191 	DATA 	Sampled Response: 1, Outcome Shown: +14
+227.3041 	DATA 	Keypress: 2
+227.3202 	EXP 	unnamed TextStim: text = '+12'
+227.8281 	DATA 	Sampled Response: 2, Outcome Shown: +12
+227.9543 	DATA 	Keypress: 1
+227.9705 	EXP 	unnamed TextStim: text = '+14'
+228.4688 	DATA 	Sampled Response: 1, Outcome Shown: +14
+228.5542 	DATA 	Keypress: 2
+228.5704 	EXP 	unnamed TextStim: text = '+12'
+229.0780 	DATA 	Sampled Response: 2, Outcome Shown: +12
+229.2374 	DATA 	Keypress: 1
+229.2538 	EXP 	unnamed TextStim: text = '+14'
+229.7653 	DATA 	Sampled Response: 1, Outcome Shown: +14
+229.9039 	DATA 	Keypress: 2
+229.9203 	EXP 	unnamed TextStim: text = '+12'
+230.4214 	DATA 	Sampled Response: 2, Outcome Shown: +12
+230.5870 	DATA 	Keypress: 1
+230.6036 	EXP 	unnamed TextStim: text = '+14'
+231.1088 	DATA 	Sampled Response: 1, Outcome Shown: +14
+231.1370 	DATA 	Keypress: 2
+231.1534 	EXP 	unnamed TextStim: text = '+12'
+231.6555 	DATA 	Sampled Response: 2, Outcome Shown: +12
+231.7871 	DATA 	Keypress: 1
+231.8033 	EXP 	unnamed TextStim: text = '0'
+232.3116 	DATA 	Sampled Response: 1, Outcome Shown: 0
+232.6203 	DATA 	Keypress: 2
+232.6369 	EXP 	unnamed TextStim: text = '+12'
+233.1395 	DATA 	Sampled Response: 2, Outcome Shown: +12
+233.2370 	DATA 	Keypress: 1
+233.2533 	EXP 	unnamed TextStim: text = '+14'
+233.7644 	DATA 	Sampled Response: 1, Outcome Shown: +14
+233.9869 	DATA 	Keypress: 2
+234.0033 	EXP 	unnamed TextStim: text = '+12'
+234.5142 	DATA 	Sampled Response: 2, Outcome Shown: +12
+234.6032 	DATA 	Keypress: 1
+234.6198 	EXP 	unnamed TextStim: text = '+14'
+235.1235 	DATA 	Sampled Response: 1, Outcome Shown: +14
+235.2701 	DATA 	Keypress: 2
+235.2865 	EXP 	unnamed TextStim: text = '+12'
+235.7952 	DATA 	Sampled Response: 2, Outcome Shown: +12
+235.8532 	DATA 	Keypress: 1
+235.8697 	EXP 	unnamed TextStim: text = '0'
+236.3732 	DATA 	Sampled Response: 1, Outcome Shown: 0
+236.4867 	DATA 	Keypress: 2
+236.5030 	EXP 	unnamed TextStim: text = '+12'
+237.0137 	DATA 	Sampled Response: 2, Outcome Shown: +12
+237.1698 	DATA 	Keypress: 1
+237.1862 	EXP 	unnamed TextStim: text = '+14'
+237.6854 	DATA 	Sampled Response: 1, Outcome Shown: +14
+237.6856 	DATA 	** broke sampling loop (<.5s left in trial) **
+237.6863 	DATA 	samplingCount: 21
+237.6863 	DATA 	Think Onset
+237.6897 	EXP 	unnamed Rect: lineColor = 'white (named)'
+237.6897 	EXP 	unnamed Rect: lineColor = 'white (named)'
+237.7370 	DATA 	Keypress: 2
+240.7194 	DATA 	Decide Onset
+241.0068 	DATA 	Keypress: 2
+241.0069 	DATA 	Decision Button Press: ['2']
+241.0069 	DATA 	Decision Response: 2
+241.0104 	EXP 	unnamed Rect: lineColor = 'red (named)'
+241.5198 	DATA 	ITI Onset
+241.5230 	EXP 	unnamed Rect: lineColor = 'white (named)'
+241.5230 	EXP 	unnamed Rect: lineColor = 'white (named)'
+241.5230 	EXP 	unnamed TextStim: text = '+14'
+241.5230 	EXP 	unnamed TextStim: text = '+12'
+244.4027 	DATA 	Trial End Time - totalITI: 2.86972697595
+244.4029 	EXP 	New trial (rep=0, index=10): {'P1_1': '0.2', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '0', 'ProbNumber': 'SD3', 'O1_2': '-7', 'O1_1': '-34', 'EV2': '-7', 'EV1': '-6.8', 'ProbType': 'SD', 'P2_1': '0.8'}
+244.4030 	DATA 	Trial Onset - ProblemType: SD, ProblemNumber: SD3, leftRight: 1, samplingDur: 15, assignedITI: 1.8631
+244.4030 	DATA 	Sampling Onset
+245.4855 	DATA 	Keypress: 1
+245.5019 	EXP 	unnamed TextStim: text = '-7'
+246.0116 	DATA 	Sampled Response: 2, Outcome Shown: 0
+246.0119 	DATA 	Keypress: 2
+246.5355 	DATA 	Keypress: 2
+246.5517 	EXP 	unnamed TextStim: text = '0'
+247.0582 	DATA 	Sampled Response: 1, Outcome Shown: -7
+247.0853 	DATA 	Keypress: 1
+247.1018 	EXP 	unnamed TextStim: text = '-7'
+247.6050 	DATA 	Sampled Response: 2, Outcome Shown: 0
+247.6685 	DATA 	Keypress: 2
+247.6850 	EXP 	unnamed TextStim: text = '0'
+248.1830 	DATA 	Sampled Response: 1, Outcome Shown: -7
+248.2187 	DATA 	Keypress: 1
+248.2351 	EXP 	unnamed TextStim: text = '-7'
+248.7453 	DATA 	Sampled Response: 2, Outcome Shown: 0
+248.7682 	DATA 	Keypress: 2
+248.7848 	EXP 	unnamed TextStim: text = '0'
+249.2921 	DATA 	Sampled Response: 1, Outcome Shown: -7
+249.2924 	DATA 	Keypress: 1
+250.0850 	DATA 	Keypress: 1
+250.1014 	EXP 	unnamed TextStim: text = '-7'
+250.6043 	DATA 	Sampled Response: 2, Outcome Shown: 0
+250.6046 	DATA 	Keypress: 2
+251.5683 	DATA 	Keypress: 2
+251.5846 	EXP 	unnamed TextStim: text = '0'
+252.0883 	DATA 	Sampled Response: 1, Outcome Shown: -7
+252.2016 	DATA 	Keypress: 1
+252.2177 	EXP 	unnamed TextStim: text = '-7'
+252.7288 	DATA 	Sampled Response: 2, Outcome Shown: 0
+252.8014 	DATA 	Keypress: 2
+252.8177 	EXP 	unnamed TextStim: text = '0'
+253.3224 	DATA 	Sampled Response: 1, Outcome Shown: -7
+253.7346 	DATA 	Keypress: 1
+253.7510 	EXP 	unnamed TextStim: text = '-7'
+254.2597 	DATA 	Sampled Response: 2, Outcome Shown: 0
+254.5012 	DATA 	Keypress: 2
+254.5175 	EXP 	unnamed TextStim: text = '0'
+255.0251 	DATA 	Sampled Response: 1, Outcome Shown: -7
+255.1352 	DATA 	Keypress: 1
+255.1675 	EXP 	unnamed TextStim: text = '-7'
+255.6656 	DATA 	Sampled Response: 2, Outcome Shown: -34
+255.7177 	DATA 	Keypress: 2
+255.7341 	EXP 	unnamed TextStim: text = '0'
+256.2436 	DATA 	Sampled Response: 1, Outcome Shown: -7
+256.3351 	DATA 	Keypress: 1
+256.3674 	EXP 	unnamed TextStim: text = '-7'
+256.8685 	DATA 	Sampled Response: 2, Outcome Shown: -34
+257.0008 	DATA 	Keypress: 2
+257.0172 	EXP 	unnamed TextStim: text = '0'
+257.5246 	DATA 	Sampled Response: 1, Outcome Shown: -7
+257.6675 	DATA 	Keypress: 1
+257.6839 	EXP 	unnamed TextStim: text = '-7'
+258.1963 	DATA 	Sampled Response: 2, Outcome Shown: -34
+258.3351 	DATA 	Keypress: 2
+258.3672 	EXP 	unnamed TextStim: text = '0'
+258.8680 	DATA 	Sampled Response: 1, Outcome Shown: -7
+258.9171 	DATA 	** broke sampling loop (<.5s left in trial) **
+258.9178 	DATA 	samplingCount: 18
+258.9178 	DATA 	Think Onset
+258.9338 	EXP 	unnamed Rect: lineColor = 'white (named)'
+258.9338 	EXP 	unnamed Rect: lineColor = 'white (named)'
+258.9512 	DATA 	Keypress: 1
+261.9502 	DATA 	Decide Onset
+262.3188 	DATA 	Keypress: 2
+262.3189 	DATA 	Decision Button Press: ['2']
+262.3190 	DATA 	Decision Response: 1
+262.3224 	EXP 	unnamed Rect: lineColor = 'red (named)'
+262.8270 	DATA 	ITI Onset
+262.8303 	EXP 	unnamed Rect: lineColor = 'white (named)'
+262.8303 	EXP 	unnamed Rect: lineColor = 'white (named)'
+262.8303 	EXP 	unnamed TextStim: text = '-7'
+262.8303 	EXP 	unnamed TextStim: text = '0'
+266.5167 	DATA 	Trial End Time - totalITI: 3.6800525527
+266.5169 	EXP 	New trial (rep=0, index=11): {'P1_1': '0.8', 'P1_2': '0.6', 'SafeOption': '1', 'P2_2': '0.4', 'O2_2': '18', 'O2_1': '10', 'ProbNumber': 'RR9', 'O1_2': '-4', 'O1_1': '2', 'EV2': '4.8', 'EV1': '3.6', 'ProbType': 'RR', 'P2_1': '0.2'}
+266.5170 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR9, leftRight: 0, samplingDur: 15, assignedITI: 1.233
+266.5170 	DATA 	Sampling Onset
+267.5997 	DATA 	Keypress: 1
+267.6160 	EXP 	unnamed TextStim: text = '+2'
+268.1157 	DATA 	Sampled Response: 1, Outcome Shown: +2
+268.3329 	DATA 	Keypress: 2
+268.3493 	EXP 	unnamed TextStim: text = '-4'
+268.8502 	DATA 	Sampled Response: 2, Outcome Shown: -4
+268.9326 	DATA 	Keypress: 1
+268.9494 	EXP 	unnamed TextStim: text = '+2'
+269.4594 	DATA 	Sampled Response: 1, Outcome Shown: +2
+269.4597 	DATA 	Keypress: 2
+269.9825 	DATA 	Keypress: 2
+269.9991 	EXP 	unnamed TextStim: text = '-4'
+270.5061 	DATA 	Sampled Response: 2, Outcome Shown: -4
+270.5658 	DATA 	Keypress: 1
+270.5823 	EXP 	unnamed TextStim: text = '+10'
+271.0840 	DATA 	Sampled Response: 1, Outcome Shown: +10
+271.0991 	DATA 	Keypress: 2
+271.1156 	EXP 	unnamed TextStim: text = '-4'
+271.6152 	DATA 	Sampled Response: 2, Outcome Shown: -4
+271.6826 	DATA 	Keypress: 1
+271.6990 	EXP 	unnamed TextStim: text = '+10'
+272.2088 	DATA 	Sampled Response: 1, Outcome Shown: +10
+272.2492 	DATA 	Keypress: 2
+272.2654 	EXP 	unnamed TextStim: text = '+18'
+272.7711 	DATA 	Sampled Response: 2, Outcome Shown: +18
+272.8657 	DATA 	Keypress: 1
+272.8820 	EXP 	unnamed TextStim: text = '+2'
+273.3803 	DATA 	Sampled Response: 1, Outcome Shown: +2
+273.6158 	DATA 	Keypress: 2
+273.6320 	EXP 	unnamed TextStim: text = '+18'
+274.1302 	DATA 	Sampled Response: 2, Outcome Shown: +18
+274.1996 	DATA 	Keypress: 1
+274.2318 	EXP 	unnamed TextStim: text = '+2'
+274.7394 	DATA 	Sampled Response: 1, Outcome Shown: +2
+274.8153 	DATA 	Keypress: 2
+274.8317 	EXP 	unnamed TextStim: text = '+18'
+275.3330 	DATA 	Sampled Response: 2, Outcome Shown: +18
+275.4322 	DATA 	Keypress: 1
+275.4485 	EXP 	unnamed TextStim: text = '+2'
+275.9579 	DATA 	Sampled Response: 1, Outcome Shown: +2
+276.0152 	DATA 	Keypress: 2
+276.0317 	EXP 	unnamed TextStim: text = '-4'
+276.5359 	DATA 	Sampled Response: 2, Outcome Shown: -4
+276.6986 	DATA 	Keypress: 1
+276.7149 	EXP 	unnamed TextStim: text = '+2'
+277.2232 	DATA 	Sampled Response: 1, Outcome Shown: +2
+277.2819 	DATA 	Keypress: 2
+277.2982 	EXP 	unnamed TextStim: text = '+18'
+277.8012 	DATA 	Sampled Response: 2, Outcome Shown: +18
+277.9151 	DATA 	Keypress: 1
+277.9316 	EXP 	unnamed TextStim: text = '+2'
+278.4417 	DATA 	Sampled Response: 1, Outcome Shown: +2
+278.5151 	DATA 	Keypress: 2
+278.5314 	EXP 	unnamed TextStim: text = '-4'
+279.0353 	DATA 	Sampled Response: 2, Outcome Shown: -4
+279.0815 	DATA 	Keypress: 1
+279.0979 	EXP 	unnamed TextStim: text = '+2'
+279.5976 	DATA 	Sampled Response: 1, Outcome Shown: +2
+279.6480 	DATA 	Keypress: 2
+279.6646 	EXP 	unnamed TextStim: text = '+18'
+280.1757 	DATA 	Sampled Response: 2, Outcome Shown: +18
+280.1760 	DATA 	Keypress: 1
+280.8982 	DATA 	Keypress: 1
+280.9144 	EXP 	unnamed TextStim: text = '+10'
+281.4254 	DATA 	Sampled Response: 1, Outcome Shown: +10
+281.4257 	DATA 	Keypress: 2
+281.4258 	DATA 	** broke sampling loop (<.5s left in trial) **
+281.4264 	DATA 	samplingCount: 21
+281.4264 	DATA 	Think Onset
+281.4299 	EXP 	unnamed Rect: lineColor = 'white (named)'
+281.4299 	EXP 	unnamed Rect: lineColor = 'white (named)'
+284.4475 	DATA 	Decide Onset
+284.8710 	DATA 	Keypress: 2
+284.8710 	DATA 	Decision Button Press: ['2']
+284.8711 	DATA 	Decision Response: 2
+284.8745 	EXP 	unnamed Rect: lineColor = 'red (named)'
+285.3852 	DATA 	ITI Onset
+285.3884 	EXP 	unnamed Rect: lineColor = 'white (named)'
+285.3884 	EXP 	unnamed Rect: lineColor = 'white (named)'
+285.3884 	EXP 	unnamed TextStim: text = '+10'
+285.3884 	EXP 	unnamed TextStim: text = '+18'
+287.9976 	DATA 	Trial End Time - totalITI: 2.60056078028
+287.9978 	EXP 	New trial (rep=0, index=12): {'P1_1': '0.1', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '0', 'ProbNumber': 'SD10', 'O1_2': '3', 'O1_1': '32', 'EV2': '3', 'EV1': '3.2', 'ProbType': 'SD', 'P2_1': '0.9'}
+287.9979 	DATA 	Trial Onset - ProblemType: SD, ProblemNumber: SD10, leftRight: 0, samplingDur: 16, assignedITI: 1.5966
+287.9979 	DATA 	Sampling Onset
+288.9638 	DATA 	Keypress: 1
+288.9802 	EXP 	unnamed TextStim: text = '0'
+289.4863 	DATA 	Sampled Response: 1, Outcome Shown: 0
+289.6138 	DATA 	Keypress: 2
+289.6303 	EXP 	unnamed TextStim: text = '+3'
+290.1424 	DATA 	Sampled Response: 2, Outcome Shown: +3
+290.1804 	DATA 	Keypress: 1
+290.1967 	EXP 	unnamed TextStim: text = '0'
+290.7047 	DATA 	Sampled Response: 1, Outcome Shown: 0
+290.7970 	DATA 	Keypress: 2
+290.8135 	EXP 	unnamed TextStim: text = '+3'
+291.3140 	DATA 	Sampled Response: 2, Outcome Shown: +3
+291.3470 	DATA 	Keypress: 1
+291.3632 	EXP 	unnamed TextStim: text = '+32'
+291.8607 	DATA 	Sampled Response: 1, Outcome Shown: +32
+291.9969 	DATA 	Keypress: 2
+292.0133 	EXP 	unnamed TextStim: text = '+3'
+292.5166 	DATA 	Sampled Response: 2, Outcome Shown: +3
+292.5799 	DATA 	Keypress: 1
+292.5966 	EXP 	unnamed TextStim: text = '0'
+293.0948 	DATA 	Sampled Response: 1, Outcome Shown: 0
+293.2134 	DATA 	Keypress: 2
+293.2298 	EXP 	unnamed TextStim: text = '+3'
+293.7353 	DATA 	Sampled Response: 2, Outcome Shown: +3
+293.7466 	DATA 	Keypress: 1
+293.7630 	EXP 	unnamed TextStim: text = '0'
+294.2664 	DATA 	Sampled Response: 1, Outcome Shown: 0
+294.3633 	DATA 	Keypress: 2
+294.3798 	EXP 	unnamed TextStim: text = '+3'
+294.8913 	DATA 	Sampled Response: 2, Outcome Shown: +3
+294.8916 	DATA 	Keypress: 1
+295.4967 	DATA 	Keypress: 2
+295.5128 	EXP 	unnamed TextStim: text = '+3'
+296.0160 	DATA 	Sampled Response: 2, Outcome Shown: +3
+297.0963 	DATA 	Keypress: 1
+297.1128 	EXP 	unnamed TextStim: text = '0'
+297.6253 	DATA 	Sampled Response: 1, Outcome Shown: 0
+297.6963 	DATA 	Keypress: 2
+297.7126 	EXP 	unnamed TextStim: text = '+3'
+298.2189 	DATA 	Sampled Response: 2, Outcome Shown: +3
+298.2633 	DATA 	Keypress: 1
+298.2957 	EXP 	unnamed TextStim: text = '0'
+298.7968 	DATA 	Sampled Response: 1, Outcome Shown: 0
+298.8635 	DATA 	Keypress: 2
+298.8959 	EXP 	unnamed TextStim: text = '+3'
+299.4061 	DATA 	Sampled Response: 2, Outcome Shown: +3
+299.4962 	DATA 	Keypress: 1
+299.5125 	EXP 	unnamed TextStim: text = '0'
+300.0154 	DATA 	Sampled Response: 1, Outcome Shown: 0
+300.0794 	DATA 	Keypress: 2
+300.0956 	EXP 	unnamed TextStim: text = '+3'
+300.5933 	DATA 	Sampled Response: 2, Outcome Shown: +3
+300.5936 	DATA 	Keypress: 1
+301.1790 	DATA 	Keypress: 1
+301.1955 	EXP 	unnamed TextStim: text = '0'
+301.7024 	DATA 	Sampled Response: 1, Outcome Shown: 0
+301.7027 	DATA 	Keypress: 2
+302.2290 	DATA 	Keypress: 1
+302.2454 	EXP 	unnamed TextStim: text = '0'
+302.7491 	DATA 	Sampled Response: 1, Outcome Shown: 0
+302.7955 	DATA 	Keypress: 2
+302.8120 	EXP 	unnamed TextStim: text = '+3'
+303.3115 	DATA 	Sampled Response: 2, Outcome Shown: +3
+303.3288 	DATA 	Keypress: 1
+303.3452 	EXP 	unnamed TextStim: text = '0'
+303.8425 	DATA 	Sampled Response: 1, Outcome Shown: 0
+303.8427 	DATA 	** broke sampling loop (<.5s left in trial) **
+303.8434 	DATA 	samplingCount: 21
+303.8435 	DATA 	Think Onset
+303.8469 	EXP 	unnamed Rect: lineColor = 'white (named)'
+303.8469 	EXP 	unnamed Rect: lineColor = 'white (named)'
+303.9459 	DATA 	Keypress: 2
+306.8619 	DATA 	Decide Onset
+307.3749 	DATA 	Keypress: 1
+307.3750 	DATA 	Decision Button Press: ['1']
+307.3750 	DATA 	Decision Response: 1
+307.3787 	EXP 	unnamed Rect: lineColor = 'red (named)'
+307.8949 	DATA 	ITI Onset
+307.8981 	EXP 	unnamed Rect: lineColor = 'white (named)'
+307.8981 	EXP 	unnamed Rect: lineColor = 'white (named)'
+307.8981 	EXP 	unnamed TextStim: text = '0'
+307.8981 	EXP 	unnamed TextStim: text = '+3'
+310.8453 	DATA 	Trial End Time - totalITI: 2.93846634134
+310.8455 	EXP 	New trial (rep=0, index=13): {'P1_1': '0.6', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '-12', 'ProbNumber': 'MD12', 'O1_2': '12', 'O1_1': '30', 'EV2': '12', 'EV1': '13.2', 'ProbType': 'MD', 'P2_1': '0.4'}
+310.8456 	DATA 	Trial Onset - ProblemType: MD, ProblemNumber: MD12, leftRight: 0, samplingDur: 19, assignedITI: 4.653
+310.8456 	DATA 	Sampling Onset
+312.3615 	DATA 	Keypress: 1
+312.3777 	EXP 	unnamed TextStim: text = '+30'
+312.8879 	DATA 	Sampled Response: 1, Outcome Shown: +30
+313.3611 	DATA 	Keypress: 2
+313.3776 	EXP 	unnamed TextStim: text = '+12'
+313.8877 	DATA 	Sampled Response: 2, Outcome Shown: +12
+313.8880 	DATA 	Keypress: 1
+314.4109 	DATA 	Keypress: 1
+314.4274 	EXP 	unnamed TextStim: text = '+30'
+314.9343 	DATA 	Sampled Response: 1, Outcome Shown: +30
+314.9445 	DATA 	Keypress: 2
+314.9606 	EXP 	unnamed TextStim: text = '+12'
+315.4654 	DATA 	Sampled Response: 2, Outcome Shown: +12
+315.5777 	DATA 	Keypress: 1
+315.5941 	EXP 	unnamed TextStim: text = '+30'
+316.1061 	DATA 	Sampled Response: 1, Outcome Shown: +30
+316.1111 	DATA 	Keypress: 2
+316.1437 	EXP 	unnamed TextStim: text = '+12'
+316.6529 	DATA 	Sampled Response: 2, Outcome Shown: +12
+316.6954 	DATA 	Keypress: 1
+316.7267 	EXP 	unnamed TextStim: text = '+30'
+317.2309 	DATA 	Sampled Response: 1, Outcome Shown: +30
+317.2439 	DATA 	Keypress: 2
+317.2603 	EXP 	unnamed TextStim: text = '+12'
+317.7617 	DATA 	Sampled Response: 2, Outcome Shown: +12
+317.8441 	DATA 	Keypress: 1
+317.8605 	EXP 	unnamed TextStim: text = '-12'
+318.3712 	DATA 	Sampled Response: 1, Outcome Shown: -12
+318.8267 	DATA 	Keypress: 2
+318.8432 	EXP 	unnamed TextStim: text = '+12'
+319.3554 	DATA 	Sampled Response: 2, Outcome Shown: +12
+319.4271 	DATA 	Keypress: 1
+319.4436 	EXP 	unnamed TextStim: text = '+30'
+319.9490 	DATA 	Sampled Response: 1, Outcome Shown: +30
+319.9936 	DATA 	Keypress: 2
+320.0100 	EXP 	unnamed TextStim: text = '+12'
+320.5114 	DATA 	Sampled Response: 2, Outcome Shown: +12
+320.9436 	DATA 	Keypress: 1
+320.9600 	EXP 	unnamed TextStim: text = '-12'
+321.4643 	DATA 	Sampled Response: 1, Outcome Shown: -12
+321.4934 	DATA 	Keypress: 2
+321.5098 	EXP 	unnamed TextStim: text = '+12'
+322.0110 	DATA 	Sampled Response: 2, Outcome Shown: +12
+322.0600 	DATA 	Keypress: 1
+322.0765 	EXP 	unnamed TextStim: text = '+30'
+322.5890 	DATA 	Sampled Response: 1, Outcome Shown: +30
+322.6432 	DATA 	Keypress: 2
+322.6597 	EXP 	unnamed TextStim: text = '+12'
+323.1670 	DATA 	Sampled Response: 2, Outcome Shown: +12
+323.2100 	DATA 	Keypress: 1
+323.2263 	EXP 	unnamed TextStim: text = '-12'
+323.7294 	DATA 	Sampled Response: 1, Outcome Shown: -12
+323.7934 	DATA 	Keypress: 2
+323.8097 	EXP 	unnamed TextStim: text = '+12'
+324.3073 	DATA 	Sampled Response: 2, Outcome Shown: +12
+324.4266 	DATA 	Keypress: 1
+324.4429 	EXP 	unnamed TextStim: text = '-12'
+324.9479 	DATA 	Sampled Response: 1, Outcome Shown: -12
+325.0099 	DATA 	Keypress: 2
+325.0262 	EXP 	unnamed TextStim: text = '+12'
+325.5258 	DATA 	Sampled Response: 2, Outcome Shown: +12
+325.5598 	DATA 	Keypress: 1
+325.5763 	EXP 	unnamed TextStim: text = '+30'
+326.0879 	DATA 	Sampled Response: 1, Outcome Shown: +30
+326.1932 	DATA 	Keypress: 2
+326.2095 	EXP 	unnamed TextStim: text = '+12'
+326.7131 	DATA 	Sampled Response: 2, Outcome Shown: +12
+326.7595 	DATA 	Keypress: 1
+326.7760 	EXP 	unnamed TextStim: text = '-12'
+327.2754 	DATA 	Sampled Response: 1, Outcome Shown: -12
+327.3262 	DATA 	Keypress: 2
+327.3427 	EXP 	unnamed TextStim: text = '+12'
+327.8534 	DATA 	Sampled Response: 2, Outcome Shown: +12
+327.8759 	DATA 	Keypress: 1
+327.8922 	EXP 	unnamed TextStim: text = '+30'
+328.4002 	DATA 	Sampled Response: 1, Outcome Shown: +30
+328.4592 	DATA 	Keypress: 2
+328.4758 	EXP 	unnamed TextStim: text = '+12'
+328.9781 	DATA 	Sampled Response: 2, Outcome Shown: +12
+329.1426 	DATA 	Keypress: 1
+329.1591 	EXP 	unnamed TextStim: text = '-12'
+329.6655 	DATA 	Sampled Response: 1, Outcome Shown: -12
+329.6657 	DATA 	** broke sampling loop (<.5s left in trial) **
+329.6664 	DATA 	samplingCount: 27
+329.6664 	DATA 	Think Onset
+329.6699 	EXP 	unnamed Rect: lineColor = 'white (named)'
+329.6699 	EXP 	unnamed Rect: lineColor = 'white (named)'
+329.9097 	DATA 	Keypress: 2
+332.6921 	DATA 	Decide Onset
+333.0870 	DATA 	Keypress: 2
+333.0871 	DATA 	Decision Button Press: ['2']
+333.0872 	DATA 	Decision Response: 2
+333.0906 	EXP 	unnamed Rect: lineColor = 'red (named)'
+333.6097 	DATA 	ITI Onset
+333.6129 	EXP 	unnamed Rect: lineColor = 'white (named)'
+333.6129 	EXP 	unnamed Rect: lineColor = 'white (named)'
+333.6129 	EXP 	unnamed TextStim: text = '-12'
+333.6129 	EXP 	unnamed TextStim: text = '+12'
+339.7585 	DATA 	Trial End Time - totalITI: 6.13770741
+339.7587 	EXP 	New trial (rep=0, index=14): {'P1_1': '0.4', 'P1_2': '0.4', 'SafeOption': '1', 'P2_2': '0.6', 'O2_2': '17', 'O2_1': '12', 'ProbNumber': 'RR2', 'O1_2': '-5', 'O1_1': '5', 'EV2': '8.2', 'EV1': '9.2', 'ProbType': 'RR', 'P2_1': '0.6'}
+339.7588 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR2, leftRight: 1, samplingDur: 16, assignedITI: 1.0098
+339.7588 	DATA 	Sampling Onset
+340.8745 	DATA 	Keypress: 1
+340.8913 	EXP 	unnamed TextStim: text = '+17'
+341.3980 	DATA 	Sampled Response: 2, Outcome Shown: +5
+341.7245 	DATA 	Keypress: 2
+341.7410 	EXP 	unnamed TextStim: text = '+5'
+342.2415 	DATA 	Sampled Response: 1, Outcome Shown: -5
+342.3077 	DATA 	Keypress: 1
+342.3241 	EXP 	unnamed TextStim: text = '+17'
+342.8352 	DATA 	Sampled Response: 2, Outcome Shown: +5
+342.8394 	DATA 	Keypress: 2
+342.8574 	EXP 	unnamed TextStim: text = '+12'
+343.3663 	DATA 	Sampled Response: 1, Outcome Shown: -5
+343.3889 	DATA 	Keypress: 1
+343.4073 	EXP 	unnamed TextStim: text = '+17'
+343.9130 	DATA 	Sampled Response: 2, Outcome Shown: +5
+343.9242 	DATA 	Keypress: 2
+343.9407 	EXP 	unnamed TextStim: text = '+12'
+344.4439 	DATA 	Sampled Response: 1, Outcome Shown: +17
+344.5076 	DATA 	Keypress: 1
+344.5240 	EXP 	unnamed TextStim: text = '+17'
+345.0221 	DATA 	Sampled Response: 2, Outcome Shown: +12
+345.0224 	DATA 	Keypress: 2
+345.5408 	DATA 	Keypress: 2
+345.5572 	EXP 	unnamed TextStim: text = '+5'
+346.0688 	DATA 	Sampled Response: 1, Outcome Shown: -5
+346.0691 	DATA 	Keypress: 1
+346.6907 	DATA 	Keypress: 1
+346.7070 	EXP 	unnamed TextStim: text = '+17'
+347.2091 	DATA 	Sampled Response: 2, Outcome Shown: +12
+347.2094 	DATA 	Keypress: 2
+347.8406 	DATA 	Keypress: 2
+347.8567 	EXP 	unnamed TextStim: text = '+5'
+348.3651 	DATA 	Sampled Response: 1, Outcome Shown: -5
+348.3654 	DATA 	Keypress: 1
+348.9071 	DATA 	Keypress: 1
+348.9235 	EXP 	unnamed TextStim: text = '+17'
+349.4274 	DATA 	Sampled Response: 2, Outcome Shown: +12
+349.4904 	DATA 	Keypress: 2
+349.5068 	EXP 	unnamed TextStim: text = '+12'
+350.0053 	DATA 	Sampled Response: 1, Outcome Shown: -5
+350.0236 	DATA 	Keypress: 1
+350.0401 	EXP 	unnamed TextStim: text = '-5'
+350.5521 	DATA 	Sampled Response: 2, Outcome Shown: +12
+350.6236 	DATA 	Keypress: 2
+350.6399 	EXP 	unnamed TextStim: text = '+12'
+351.1457 	DATA 	Sampled Response: 1, Outcome Shown: -5
+351.1460 	DATA 	Keypress: 1
+351.7234 	DATA 	Keypress: 1
+351.7398 	EXP 	unnamed TextStim: text = '-5'
+352.2392 	DATA 	Sampled Response: 2, Outcome Shown: +12
+352.3068 	DATA 	Keypress: 2
+352.3231 	EXP 	unnamed TextStim: text = '+5'
+352.8328 	DATA 	Sampled Response: 1, Outcome Shown: -5
+352.8565 	DATA 	Keypress: 1
+352.8728 	EXP 	unnamed TextStim: text = '-5'
+353.3796 	DATA 	Sampled Response: 2, Outcome Shown: +12
+353.5233 	DATA 	Keypress: 2
+353.5397 	EXP 	unnamed TextStim: text = '+12'
+354.0513 	DATA 	Sampled Response: 1, Outcome Shown: -5
+354.0556 	DATA 	Keypress: 1
+354.0729 	EXP 	unnamed TextStim: text = '-5'
+354.5824 	DATA 	Sampled Response: 2, Outcome Shown: +12
+354.6064 	DATA 	Keypress: 2
+354.6228 	EXP 	unnamed TextStim: text = '+5'
+355.1292 	DATA 	Sampled Response: 1, Outcome Shown: -5
+355.1897 	DATA 	Keypress: 1
+355.2060 	EXP 	unnamed TextStim: text = '-5'
+355.7072 	DATA 	Sampled Response: 2, Outcome Shown: +12
+355.7074 	DATA 	** broke sampling loop (<.5s left in trial) **
+355.7081 	DATA 	samplingCount: 21
+355.7081 	DATA 	Think Onset
+355.7115 	EXP 	unnamed Rect: lineColor = 'white (named)'
+355.7115 	EXP 	unnamed Rect: lineColor = 'white (named)'
+355.7400 	DATA 	Keypress: 2
+358.7392 	DATA 	Decide Onset
+359.0470 	DATA 	Keypress: 1
+359.0471 	DATA 	Decision Button Press: ['1']
+359.0471 	DATA 	Decision Response: 2
+359.0506 	EXP 	unnamed Rect: lineColor = 'red (named)'
+359.5580 	DATA 	ITI Onset
+359.5612 	EXP 	unnamed Rect: lineColor = 'white (named)'
+359.5612 	EXP 	unnamed Rect: lineColor = 'white (named)'
+359.5612 	EXP 	unnamed TextStim: text = '-5'
+359.5612 	EXP 	unnamed TextStim: text = '+5'
+362.0227 	DATA 	Trial End Time - totalITI: 2.45312256093
+362.0229 	EXP 	New trial (rep=0, index=15): {'P1_1': '0.6', 'P1_2': '0.5', 'SafeOption': '1', 'P2_2': '0.5', 'O2_2': '50', 'O2_1': '25', 'ProbNumber': 'RR6', 'O1_2': '-15', 'O1_1': '12', 'EV2': '17.5', 'EV1': '17.2', 'ProbType': 'RR', 'P2_1': '0.4'}
+362.0230 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR6, leftRight: 1, samplingDur: 18, assignedITI: 1.4961
+362.0230 	DATA 	Sampling Onset
+363.1222 	DATA 	Keypress: 1
+363.1386 	EXP 	unnamed TextStim: text = '-15'
+363.6428 	DATA 	Sampled Response: 2, Outcome Shown: +12
+363.9388 	DATA 	Keypress: 2
+363.9551 	EXP 	unnamed TextStim: text = '+25'
+364.4551 	DATA 	Sampled Response: 1, Outcome Shown: -15
+364.7387 	DATA 	Keypress: 1
+364.7551 	EXP 	unnamed TextStim: text = '+50'
+365.2674 	DATA 	Sampled Response: 2, Outcome Shown: +12
+365.2678 	DATA 	Keypress: 2
+365.8052 	DATA 	Keypress: 2
+365.8213 	EXP 	unnamed TextStim: text = '+25'
+366.3297 	DATA 	Sampled Response: 1, Outcome Shown: -15
+366.3299 	DATA 	Keypress: 1
+366.9717 	DATA 	Keypress: 1
+366.9881 	EXP 	unnamed TextStim: text = '+50'
+367.4858 	DATA 	Sampled Response: 2, Outcome Shown: +12
+367.4860 	DATA 	Keypress: 2
+368.3382 	DATA 	Keypress: 2
+368.3546 	EXP 	unnamed TextStim: text = '+25'
+368.8605 	DATA 	Sampled Response: 1, Outcome Shown: +50
+369.4214 	DATA 	Keypress: 1
+369.4378 	EXP 	unnamed TextStim: text = '+50'
+369.9383 	DATA 	Sampled Response: 2, Outcome Shown: +12
+370.1381 	DATA 	Keypress: 2
+370.1544 	EXP 	unnamed TextStim: text = '+25'
+370.6569 	DATA 	Sampled Response: 1, Outcome Shown: +50
+370.9214 	DATA 	Keypress: 1
+370.9377 	EXP 	unnamed TextStim: text = '+50'
+371.4380 	DATA 	Sampled Response: 2, Outcome Shown: +25
+371.7212 	DATA 	Keypress: 2
+371.7375 	EXP 	unnamed TextStim: text = '+12'
+372.2503 	DATA 	Sampled Response: 1, Outcome Shown: +50
+372.6878 	DATA 	Keypress: 1
+372.7041 	EXP 	unnamed TextStim: text = '+50'
+373.2032 	DATA 	Sampled Response: 2, Outcome Shown: +12
+373.5044 	DATA 	Keypress: 2
+373.5208 	EXP 	unnamed TextStim: text = '+12'
+374.0309 	DATA 	Sampled Response: 1, Outcome Shown: -15
+374.4208 	DATA 	Keypress: 1
+374.4372 	EXP 	unnamed TextStim: text = '-15'
+374.9372 	DATA 	Sampled Response: 2, Outcome Shown: +12
+375.2718 	DATA 	Keypress: 2
+375.3036 	EXP 	unnamed TextStim: text = '+25'
+375.8120 	DATA 	Sampled Response: 1, Outcome Shown: +50
+376.1706 	DATA 	Keypress: 1
+376.1870 	EXP 	unnamed TextStim: text = '+50'
+376.6868 	DATA 	Sampled Response: 2, Outcome Shown: +12
+377.2205 	DATA 	Keypress: 2
+377.2370 	EXP 	unnamed TextStim: text = '+12'
+377.7490 	DATA 	Sampled Response: 1, Outcome Shown: +50
+378.0036 	DATA 	Keypress: 1
+378.0203 	EXP 	unnamed TextStim: text = '-15'
+378.5301 	DATA 	Sampled Response: 2, Outcome Shown: +12
+378.7705 	DATA 	Keypress: 2
+378.7868 	EXP 	unnamed TextStim: text = '+12'
+379.2953 	DATA 	Sampled Response: 1, Outcome Shown: -15
+379.5368 	DATA 	** broke sampling loop (<.5s left in trial) **
+379.5375 	DATA 	samplingCount: 18
+379.5375 	DATA 	Think Onset
+379.5532 	EXP 	unnamed Rect: lineColor = 'white (named)'
+379.5532 	EXP 	unnamed Rect: lineColor = 'white (named)'
+379.6374 	DATA 	Keypress: 1
+382.5698 	DATA 	Decide Onset
+382.9911 	DATA 	Keypress: 1
+382.9912 	DATA 	Decision Button Press: ['1']
+382.9912 	DATA 	Decision Response: 2
+382.9947 	EXP 	unnamed Rect: lineColor = 'red (named)'
+383.5056 	DATA 	ITI Onset
+383.5088 	EXP 	unnamed Rect: lineColor = 'white (named)'
+383.5088 	EXP 	unnamed Rect: lineColor = 'white (named)'
+383.5088 	EXP 	unnamed TextStim: text = '-15'
+383.5088 	EXP 	unnamed TextStim: text = '+12'
+386.7697 	DATA 	Trial End Time - totalITI: 3.26071745493
+386.7699 	EXP 	New trial (rep=0, index=16): {'P1_1': '0.9', 'P1_2': '1', 'SafeOption': '2', 'P2_2': '0', 'O2_2': '0', 'O2_1': '-37', 'ProbNumber': 'MD3', 'O1_2': '-5', 'O1_1': '10', 'EV2': '-5', 'EV1': '5.3', 'ProbType': 'MD', 'P2_1': '0.1'}
+386.7700 	DATA 	Trial Onset - ProblemType: MD, ProblemNumber: MD3, leftRight: 1, samplingDur: 15, assignedITI: 1.2135
+386.7700 	DATA 	Sampling Onset
+387.4027 	DATA 	Keypress: 1
+387.4191 	EXP 	unnamed TextStim: text = '-5'
+387.9193 	DATA 	Sampled Response: 2, Outcome Shown: +10
+388.2193 	DATA 	Keypress: 2
+388.2357 	EXP 	unnamed TextStim: text = '-37'
+388.7472 	DATA 	Sampled Response: 1, Outcome Shown: -5
+389.0357 	DATA 	Keypress: 1
+389.0522 	EXP 	unnamed TextStim: text = '-5'
+389.5595 	DATA 	Sampled Response: 2, Outcome Shown: +10
+389.7359 	DATA 	Keypress: 2
+389.7522 	EXP 	unnamed TextStim: text = '+10'
+390.2625 	DATA 	Sampled Response: 1, Outcome Shown: -5
+390.4691 	DATA 	Keypress: 1
+390.4855 	EXP 	unnamed TextStim: text = '-5'
+390.9967 	DATA 	Sampled Response: 2, Outcome Shown: +10
+391.1524 	DATA 	Keypress: 2
+391.1686 	EXP 	unnamed TextStim: text = '+10'
+391.6684 	DATA 	Sampled Response: 1, Outcome Shown: -5
+391.8353 	DATA 	Keypress: 1
+391.8519 	EXP 	unnamed TextStim: text = '-5'
+392.3557 	DATA 	Sampled Response: 2, Outcome Shown: +10
+392.4022 	DATA 	Keypress: 2
+392.4184 	EXP 	unnamed TextStim: text = '+10'
+392.9181 	DATA 	Sampled Response: 1, Outcome Shown: -5
+392.9685 	DATA 	Keypress: 1
+392.9850 	EXP 	unnamed TextStim: text = '-5'
+393.4961 	DATA 	Sampled Response: 2, Outcome Shown: +10
+393.6187 	DATA 	Keypress: 2
+393.6351 	EXP 	unnamed TextStim: text = '+10'
+394.1366 	DATA 	Sampled Response: 1, Outcome Shown: -5
+394.1685 	DATA 	Keypress: 1
+394.1849 	EXP 	unnamed TextStim: text = '-5'
+394.6833 	DATA 	Sampled Response: 2, Outcome Shown: +10
+394.7519 	DATA 	Keypress: 2
+394.7683 	EXP 	unnamed TextStim: text = '-37'
+395.2770 	DATA 	Sampled Response: 1, Outcome Shown: -5
+395.2811 	DATA 	Keypress: 1
+395.2994 	EXP 	unnamed TextStim: text = '-5'
+395.8081 	DATA 	Sampled Response: 2, Outcome Shown: +10
+395.8354 	DATA 	Keypress: 2
+395.8515 	EXP 	unnamed TextStim: text = '+10'
+396.3548 	DATA 	Sampled Response: 1, Outcome Shown: -5
+396.3551 	DATA 	Keypress: 1
+396.8849 	DATA 	Keypress: 2
+396.9013 	EXP 	unnamed TextStim: text = '+10'
+397.4014 	DATA 	Sampled Response: 1, Outcome Shown: -5
+397.5180 	DATA 	Keypress: 1
+397.5345 	EXP 	unnamed TextStim: text = '-5'
+398.0419 	DATA 	Sampled Response: 2, Outcome Shown: +10
+398.1014 	DATA 	Keypress: 2
+398.1179 	EXP 	unnamed TextStim: text = '+10'
+398.6199 	DATA 	Sampled Response: 1, Outcome Shown: -5
+398.6202 	DATA 	Keypress: 1
+400.4013 	DATA 	Keypress: 2
+400.4176 	EXP 	unnamed TextStim: text = '+10'
+400.9162 	DATA 	Sampled Response: 1, Outcome Shown: -5
+400.9165 	DATA 	Keypress: 1
+401.2843 	DATA 	** broke sampling loop (<.5s left in trial) **
+401.2851 	DATA 	samplingCount: 18
+401.2851 	DATA 	Think Onset
+401.3009 	EXP 	unnamed Rect: lineColor = 'white (named)'
+401.3009 	EXP 	unnamed Rect: lineColor = 'white (named)'
+401.5016 	DATA 	Keypress: 1
+404.3173 	DATA 	Decide Onset
+404.9431 	DATA 	Keypress: 2
+404.9432 	DATA 	Decision Button Press: ['2']
+404.9432 	DATA 	Decision Response: 1
+404.9467 	EXP 	unnamed Rect: lineColor = 'red (named)'
+405.4537 	DATA 	ITI Onset
+405.4570 	EXP 	unnamed Rect: lineColor = 'white (named)'
+405.4570 	EXP 	unnamed Rect: lineColor = 'white (named)'
+405.4570 	EXP 	unnamed TextStim: text = '-5'
+405.4570 	EXP 	unnamed TextStim: text = '+10'
+408.2340 	DATA 	Trial End Time - totalITI: 2.77304826873
+408.2342 	EXP 	New trial (rep=0, index=17): {'P1_1': '0.9', 'P1_2': '0.7', 'SafeOption': '1', 'P2_2': '0.3', 'O2_2': '25', 'O2_1': '15', 'ProbNumber': 'RR10', 'O1_2': '-3', 'O1_1': '5', 'EV2': '5.4', 'EV1': '6', 'ProbType': 'RR', 'P2_1': '0.1'}
+408.2343 	DATA 	Trial Onset - ProblemType: RR, ProblemNumber: RR10, leftRight: 0, samplingDur: 17, assignedITI: 1.3679
+408.2343 	DATA 	Sampling Onset
+409.4670 	DATA 	Keypress: 1
+409.4832 	EXP 	unnamed TextStim: text = '+5'
+409.9928 	DATA 	Sampled Response: 1, Outcome Shown: +5
+409.9931 	DATA 	Keypress: 2
+410.3501 	DATA 	Keypress: 2
+410.3665 	EXP 	unnamed TextStim: text = '-3'
+410.8679 	DATA 	Sampled Response: 2, Outcome Shown: -3
+410.8682 	DATA 	Keypress: 1
+411.3837 	DATA 	Keypress: 1
+411.3997 	EXP 	unnamed TextStim: text = '+15'
+411.8989 	DATA 	Sampled Response: 1, Outcome Shown: +15
+411.8992 	DATA 	Keypress: 2
+412.4667 	DATA 	Keypress: 2
+412.4829 	EXP 	unnamed TextStim: text = '+25'
+412.9924 	DATA 	Sampled Response: 2, Outcome Shown: +25
+412.9927 	DATA 	Keypress: 1
+413.9331 	DATA 	Keypress: 1
+413.9494 	EXP 	unnamed TextStim: text = '+5'
+414.4608 	DATA 	Sampled Response: 1, Outcome Shown: +5
+414.4611 	DATA 	Keypress: 2
+414.9496 	DATA 	Keypress: 2
+414.9660 	EXP 	unnamed TextStim: text = '-3'
+415.4762 	DATA 	Sampled Response: 2, Outcome Shown: -3
+415.6163 	DATA 	Keypress: 1
+415.6325 	EXP 	unnamed TextStim: text = '+15'
+416.1323 	DATA 	Sampled Response: 1, Outcome Shown: +15
+416.2828 	DATA 	Keypress: 2
+416.2992 	EXP 	unnamed TextStim: text = '-3'
+416.8040 	DATA 	Sampled Response: 2, Outcome Shown: -3
+416.8660 	DATA 	Keypress: 1
+416.8824 	EXP 	unnamed TextStim: text = '+5'
+417.3820 	DATA 	Sampled Response: 1, Outcome Shown: +5
+417.4326 	DATA 	Keypress: 2
+417.4490 	EXP 	unnamed TextStim: text = '+25'
+417.9600 	DATA 	Sampled Response: 2, Outcome Shown: +25
+418.0158 	DATA 	Keypress: 1
+418.0321 	EXP 	unnamed TextStim: text = '+5'
+418.5380 	DATA 	Sampled Response: 1, Outcome Shown: +5
+418.5823 	DATA 	Keypress: 2
+418.5988 	EXP 	unnamed TextStim: text = '-3'
+419.1004 	DATA 	Sampled Response: 2, Outcome Shown: -3
+419.1824 	DATA 	Keypress: 1
+419.1987 	EXP 	unnamed TextStim: text = '+5'
+419.7096 	DATA 	Sampled Response: 1, Outcome Shown: +5
+419.7099 	DATA 	Keypress: 2
+420.3832 	DATA 	Keypress: 2
+420.4153 	EXP 	unnamed TextStim: text = '-3'
+420.9281 	DATA 	Sampled Response: 2, Outcome Shown: -3
+420.9821 	DATA 	Keypress: 1
+420.9985 	EXP 	unnamed TextStim: text = '+5'
+421.5061 	DATA 	Sampled Response: 1, Outcome Shown: +5
+421.5487 	DATA 	Keypress: 2
+421.5651 	EXP 	unnamed TextStim: text = '-3'
+422.0682 	DATA 	Sampled Response: 2, Outcome Shown: -3
+422.0685 	DATA 	Keypress: 1
+422.9818 	DATA 	Keypress: 1
+422.9983 	EXP 	unnamed TextStim: text = '+5'
+423.5056 	DATA 	Sampled Response: 1, Outcome Shown: +5
+423.5059 	DATA 	Keypress: 2
+423.8820 	DATA 	Keypress: 2
+423.8982 	EXP 	unnamed TextStim: text = '-3'
+424.3960 	DATA 	Sampled Response: 2, Outcome Shown: -3
+424.4159 	DATA 	Keypress: 1
+424.4482 	EXP 	unnamed TextStim: text = '+5'
+424.9584 	DATA 	Sampled Response: 1, Outcome Shown: +5
+424.9586 	DATA 	** broke sampling loop (<.5s left in trial) **
+424.9593 	DATA 	samplingCount: 19
+424.9593 	DATA 	Think Onset
+424.9626 	EXP 	unnamed Rect: lineColor = 'white (named)'
+424.9626 	EXP 	unnamed Rect: lineColor = 'white (named)'
+424.9820 	DATA 	Keypress: 2
+427.9812 	DATA 	Decide Onset
+428.3511 	DATA 	Keypress: 1
+428.3512 	DATA 	Decision Button Press: ['1']
+428.3512 	DATA 	Decision Response: 1
+428.3549 	EXP 	unnamed Rect: lineColor = 'red (named)'
+428.8709 	DATA 	ITI Onset
+428.8741 	EXP 	unnamed Rect: lineColor = 'white (named)'
+428.8741 	EXP 	unnamed Rect: lineColor = 'white (named)'
+428.8741 	EXP 	unnamed TextStim: text = '+5'
+428.8741 	EXP 	unnamed TextStim: text = '-3'
+431.8480 	DATA 	Trial End Time - totalITI: 2.97347888382
+431.9446 	INFO 	saved wide-format data to logs/DE255/DE255_ebdm_run_1.csv
+431.9446 	DATA 	*****END RUN 1*****
+431.9822 	EXP 	window1: mouseVisible = True
