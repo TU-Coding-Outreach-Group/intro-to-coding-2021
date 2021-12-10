@@ -13085,6 +13085,12 @@ div#notebook {
 <li>Integrate what we know about bash into Python</li>
 <li>Learn how to clean data using Python packages</li>
 </ol>
+<h2 id="Questions-You-Should-be-Able-to-Answer">Questions You Should be Able to Answer<a class="anchor-link" href="#Questions-You-Should-be-Able-to-Answer">&#182;</a></h2><ol>
+<li>What is an IDE?</li>
+<li>What types of data can Python handle?</li>
+<li>What is a software library?</li>
+<li>What is a DataFrame?</li>
+</ol>
 
 </div>
 </div>
@@ -13345,6 +13351,42 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-1">Example 1<a class="anchor-link" href="#Example-1">&#182;</a></h2><p>Create two variables: one string and and numeric. Print both!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="p">[</span> <span class="p">]</span>
+<span class="n">numeric</span> <span class="o">=</span> <span class="p">[</span> <span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Operators-in-Python">Operators in Python<a class="anchor-link" href="#Operators-in-Python">&#182;</a></h2><p>Python provies a wide range of possibilities for what we can do with our data. Most of the time, it is pretty intuitive to figure out how to use them.</p>
 <p>To manipulate data we are using something called an oeprator. An operator is a symbol that will carry out a specific function, such as a arithmetic or logical computation. They can be used on variables and values within Python.</p>
 <p>An easy example of this is a simple mathematical computation:</p>
@@ -13395,6 +13437,28 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-2">Example 2<a class="anchor-link" href="#Example-2">&#182;</a></h2><p>Create a variable that, when printed, outputs 25!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="For-loops-within-Python">For loops within Python<a class="anchor-link" href="#For-loops-within-Python">&#182;</a></h2><p>For loops in Python work a lot like for loops within bash. The same concept applies, though there are slight differences in the syntax of it all.</p>
 <p>A quick refresher about for loops and their logic. We want to use for loops when we want our program to loop through a list of things. It can be used for a lot of different reasons; too many to even list here! You can use them in creative ways to help you automate tasks that you would otherwise do by hand.</p>
 <p>Let's look at an example in Python.</p>
@@ -13428,7 +13492,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">majors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;computer science&quot;</span><span class="p">,</span> <span class="s2">&quot;psychology&quot;</span><span class="p">,</span> <span class="s2">&quot;neuroscience&quot;</span><span class="p">]</span>
@@ -13440,11 +13504,73 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>computer science
+psychology
+neuroscience
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This should be reminicent of what you leanred during the bash portion of the workshop. The only real difference between Python and bash is that you <em>need</em> to use a colon when setting up the for loop, and you do not need to close it by using "done".</p>
+<p>This should be reminicent of what you learned during the bash portion of the workshop. The only real difference between Python and bash is that you <em>need</em> to use a colon when setting up the for loop, and you do not need to close it by using "done".</p>
+<p>You can also add what is called an "if statement". Sometimes, you want to run through all of your data, but you only want to retain some of it. The if statment tells the data to do something only if it meets a condition that you have set. FOr example, if you only wanted to print "psychology" as a major:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">majors</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">words</span> <span class="o">==</span> <span class="s1">&#39;psychology&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>psychology
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For loops used in conunction with if statments can be powerful tools in cleaning large datasets. By using something that can iterate through all of your data and extract what you need, it removes human error in data cleaning and makes it a much faster process!</p>
 
 </div>
 </div>
@@ -13452,9 +13578,175 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="While-loops-in-Python">While loops in Python<a class="anchor-link" href="#While-loops-in-Python">&#182;</a></h2>
+<h2 id="Example-3">Example 3<a class="anchor-link" href="#Example-3">&#182;</a></h2><p>Edit the code below so it prints the names of our TA's today!</p>
+
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ta</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">]</span>
+<span class="k">for</span>  <span class="ow">in</span>  <span class="p">:</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="While-loops-in-Python">While loops in Python<a class="anchor-link" href="#While-loops-in-Python">&#182;</a></h2><p>While loops are like for loops. They perform a similar function, which is to iterate through data based on parameters you set up. In my opinion, while loops are best when you don't know exactly when you need the loop to end. For example, in our for loop in the previous example, we knew how many majors were inside of our variable, so we knew that the for loop would run through all three majors.</p>
+<p>In the example below, we have 20 datapoints. We only want to print the first 10 reaction times (trials 1-10). Let's see how we would do this with a while loop:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;trial&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="s1">&#39;rt&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">8.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">7.9</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    trial   rt
+0       1  2.5
+1       2  4.0
+2       3  8.7
+3       4  1.2
+4       5  7.8
+5       6  3.0
+6       7  4.5
+7       8  6.0
+8       9  2.0
+9      10  2.3
+10     11  7.9
+11     12  1.2
+12     13  1.4
+13     14  5.0
+14     15  2.3
+15     16  4.1
+16     17  3.0
+17     18  4.7
+18     19  1.8
+19     20  2.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="s1">&#39;rt&#39;</span><span class="p">])</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.5
+4.0
+8.7
+1.2
+7.8
+3.0
+4.5
+6.0
+2.0
+2.3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For a while loop, you need a variable like n in the example above to iterate through the data, as opposed to iterating through the data using individual variables.</p>
+<p>You can also use if statments within a while loop, just like a for loop.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-4">Example 4<a class="anchor-link" href="#Example-4">&#182;</a></h2><p>Create a while loop (with an if statement if you want to get creative) that prints the last half of the reaction times in our variable df!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span>
+<span class="k">while</span>
+    
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13539,19 +13831,6 @@ The average is:
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13578,7 +13857,7 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h2><p>If we wanted to call the 3rd number in our list x (i.e. 6), what number would we put between the [] in our code? Test your answer out below!</p>
+<h2 id="Example-5">Example 5<a class="anchor-link" href="#Example-5">&#182;</a></h2><p>If we wanted to call the 3rd number in our list x (i.e. 6), what number would we put between the [] in our code? Test your answer out below!</p>
 
 </div>
 </div>
@@ -13842,7 +14121,7 @@ The average is:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Matplotlib">Matplotlib<a class="anchor-link" href="#Matplotlib">&#182;</a></h3><p>One library that is available within Pandas is called <a href="https://matplotlib.org/">matplotlib</a>. This is a data visualization package that is really nice if you would like to look at your data within Python.</p>
 <p>Because we are doing our data analysis in R for this bootcamp, we will not get into matplotlib here today. But it is a good tool to be aware of.</p>
-<h1 id="not-sure-if-this-needs-more-info-since-Billy-is-covering-visualization?">not sure if this needs more info since Billy is covering visualization?<a class="anchor-link" href="#not-sure-if-this-needs-more-info-since-Billy-is-covering-visualization?">&#182;</a></h1>
+
 </div>
 </div>
 </div>
@@ -14428,7 +14707,60 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question">Question<a class="anchor-link" href="#Question">&#182;</a></h2><p>In the space below, perform the same computation (getting the mean of our two DataFrames) for the ebdm conditions!</p>
+<h2 id="Example-6">Example 6<a class="anchor-link" href="#Example-6">&#182;</a></h2><p>In the space below, perform the same computation (getting the mean of our two DataFrames) for the ebdm conditions!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ebdm_concat</span> <span class="o">=</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">ebdm_concat</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Outputting-Data">Outputting Data<a class="anchor-link" href="#Outputting-Data">&#182;</a></h1><p>Once you have cleaned your dataset, you will want to put it into a nice new CSV/Excel file so you can analyze your data in R!</p>
+<p>Because we have two different conditions, we have two CSV files we are going to create and save. If we wanted to put these conditions in the same CSV folder, we could do that too.</p>
+<p>If your data is already in a DataFrame, this is very easy to do.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_concat</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Documents/DE247_dbdm.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You should be able to find and open this CSV file, wherever you put it! Make sure you look to see if it was saved properly. If not, make sure you have edited your filepath to reflect your own computer.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-7">Example 7<a class="anchor-link" href="#Example-7">&#182;</a></h2><p>Save a CSV file that contains the ebdm condtion's data!</p>
 
 </div>
 </div>
@@ -14449,7 +14781,8 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Anything else about these dataframes here</p>
+<h1 id="More-Libraries---Matplotlib-and-Numpy">More Libraries - Matplotlib and Numpy<a class="anchor-link" href="#More-Libraries---Matplotlib-and-Numpy">&#182;</a></h1><p>One library that is available within Pandas is called <a href="https://matplotlib.org/">matplotlib</a>. This is a data visualization package that is really nice if you would like to look at your data within Python.</p>
+<p>In addition to Pandas, there are also other libraries that can be useful for data manipulation. <em>NumPy</em> is another software library that is frequently used in both psychology and neuroscience. It can be used for statistics, machine learning, and even experimental presentation of stimuli! More information about this library can be found <a href="https://numpy.org/">here</a>. Because we are doing our data analysis in R for this bootcamp, we will not get into Matplotlib or Numpy here today. But ithey are a good tool to be aware of.</p>
 
 </div>
 </div>
@@ -14461,7 +14794,7 @@ The average is:
 <h2 id="Google-is-your-friend">Google is your friend<a class="anchor-link" href="#Google-is-your-friend">&#182;</a></h2><p>Because there are so many different software libraries contained within Python, there is no way to memorize all of that information. Truthfully, in my experience, it is easy to just Google what you are trying to find.</p>
 <p>For example, when I was writing the section on how to remove empty cells, I had never removed columns as opposed to rows; instead, I just Googled "remove empty cell by column in python". It sounds dumb, but Google is your best friend when you are writing code. The likelihood that someone has already done what you want to do is high. Rather than struggle through finding the right piece of code, check to see if someone else has already done the work for you!</p>
 <h3 id="StackOverflow">StackOverflow<a class="anchor-link" href="#StackOverflow">&#182;</a></h3><p>One common website to find your answers one will be <a href="https://stackoverflow.com/">StackOverflow</a>. This website deals with issues posed about coding. It is a forum, so anyone can post (including you!). Generally, it is often a website that comes up if you Google a quesion that cannot immediately be solved by a library that is already within Python. You can Google and see if this website comes up, or you can also search through their archives. If you cannot find the answer to your question, you can also post the issue that you are encountering and people will reply to let you know how to fix this issue!</p>
-<h3 id="LIstservs">LIstservs<a class="anchor-link" href="#LIstservs">&#182;</a></h3><p>Another great way to get help with troubleshooting in particular are listervs. Listservs are email groups that allow you to post a question to an entire community of people to get help. Python has sub-sections which deal with different fields, so if you have a more specific question, experts in your field can weigh in. You can find more information about these groups <a href="https://www.python.org/community/lists/">here</a>.</p>
+<h3 id="Listservs">Listservs<a class="anchor-link" href="#Listservs">&#182;</a></h3><p>Another great way to get help with troubleshooting in particular are listervs. Listservs are email groups that allow you to post a question to an entire community of people to get help. Python has sub-sections which deal with different fields, so if you have a more specific question, experts in your field can weigh in. You can find more information about these groups <a href="https://www.python.org/community/lists/">here</a>.</p>
 <h3 id="COG-Slack-Group">COG Slack Group<a class="anchor-link" href="#COG-Slack-Group">&#182;</a></h3><p>Should we plug this here or do we not want to invite undergrads to the slack channel</p>
 
 </div>
@@ -14470,7 +14803,7 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="More-Libraries---maybe-move-this-part-to-after-matplotlib">More Libraries - maybe move this part to after matplotlib<a class="anchor-link" href="#More-Libraries---maybe-move-this-part-to-after-matplotlib">&#182;</a></h1><p>In addition to Pandas, there are also other libraries that can be useful for data manipulation. <em>NumPy</em> is another software library that is frequently used in both psychology and neuroscience. It can be used for statistics, machine learning, and even experimental presentation of stimuli! More information about this library can be found <a href="https://numpy.org/">here</a>.</p>
+<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new subject from the data we have been using (not DE247!) and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use an IDE of your choice (my personal favorite is Spyder, but you are welcome to use Jupyter Notebooks).</p>
 
 </div>
 </div>
