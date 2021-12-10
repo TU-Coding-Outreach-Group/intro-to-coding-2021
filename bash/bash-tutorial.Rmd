@@ -90,6 +90,8 @@ cd
 #### Exercise 1
 Use the commands we have learned to find the path (location) of the home directory.
 
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex1.sh)
+
 
 ## Navigating Directories
 
@@ -111,12 +113,16 @@ Navigate to the directory that your COG bootcamp materials are in.
 
 **Note:** Now is a good time to start using the text editor. The exercises you do today may be relevant to the rest of the bootcamp, so it is a good idea to keep a record of all the commands and actions you took to play around with the data. Add a comment to the script to note that the following code is for Exercise 2.a. Then write the solution for this exercise below the comment.
 
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2a.sh))
+
 
 ### Getting from A to B
 In the previous exercise, did you find yourself repetitively using the **cd** command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **cd** command a path instead of a single directory to navigate to. 
 
 #### Exercise 2.b
 Start at your home directory and navigate to the "bash" subdirectory within the COG bootcamp directory. Don't forget to add this code to your text file. 
+
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2b.sh))
 
 
 ## Managing Directories
@@ -138,6 +144,9 @@ mkdir path/to/new/filename
 #### Exercise 2.c
 Create a subdirectory within the new "test_directory" and name it "test_subdirectory".
 
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2c.sh))
+
+
 ### Moving things
 We can use the "move" command to move directories and other files. Here is the syntax for that:
 ```{eval=FALSE}
@@ -147,6 +156,9 @@ mv path/to/file path/to/new/location
 #### Exercise 2.d
 Move the "test_subdirectory" directory back one level, so that it is in the "bash" directory.
 
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2d.sh))
+
+
 ### Renaming things
 The move command can also be used to rename things. Normally, we would use the move command to move something to somewhere else by providing a path to the new location. To rename something, we won't provide a new path, but just the new name, like so:
 ```{eval=FALSE}
@@ -155,6 +167,8 @@ mv old_filename new_filename
 
 #### Exercise 2.e
 Rename "test_subdirectory" as "subject_data"
+
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2e.sh))
 
 
 ### Copying things
@@ -174,6 +188,9 @@ cp -r path/to/original path/to/new/location
 
 **Hint:** There are multiple ways to solve this exercise. First, you should note the correct paths. It might seem complicated, but just keep in mind that only two inputs are needed for this command. Second, you can either copy all of the individual subject data using an "*" wildcard which tells bash "pull all these things". Or you can copy over the higher level directory and then rename it.
 
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2f.sh))
+
+
 #### Think!
 When do you end a path with the "/" symbol and when do you not? What would happen if you used the "mv" command to move something into the current directory where there is already a file of that name? How would this change if you use or do not use slashes? Discuss with other students and your TA.
 
@@ -186,6 +203,8 @@ rm path/to/file
 
 #### Exercise 2.g
 Remove the old test_directory folder.
+
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2g.sh))
 
 
 # If-statements
@@ -237,6 +256,8 @@ Use an if-statement in combination with a for loop to check whether subjects DE2
 
 ** Hint:** To complete this exercise, you will have to use the most important skill you will learn today. Google! Try to articulate the problem in a sentence and then google it. See if there are solutions already on line that you can just copy and modify.
 
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex3.sh))
+
 
 # Writing Scripts
 Scripts are just bits of code that do things in one executable document. In this tutorial we prepped some data that we will play around with for the rest of the bootcamp. But I forgot that there is a whole second batch of participants whose data we need to prep. 
@@ -261,6 +282,8 @@ bash bash_exercises.sh
 
 #### Exercise 4: Advanced!
 Modify the for loop if-statement to check whether the csv data exists for all subjects. We only checked for the first 10 subjects before. Make sure all of your paths are correct. If you do not want to run certain commands (like the mkdir commands in the beginning), comment them out (add a "#" at the beginning of the command).
+
+[Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex4.sh))
 
 
 # Preparing for the rest of the bootcamp
