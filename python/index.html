@@ -13078,7 +13078,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Coding-Bootcamp:-Python">Coding Bootcamp: Python<a class="anchor-link" href="#Coding-Bootcamp:-Python">&#182;</a></h1><p>Katie Jobson</p>
-<p>November 1st, 2021</p>
+<p>December 15th, 2021</p>
 <p>Welcome to Day 2 of Coding Bootcamp!</p>
 <p>Yesterday, you learned the basics of bash and how to navigate your data. Today we will be using Python to clean that data and make it easier to use for analysis.</p>
 <h2 id="Learning-Objectives-for-Python">Learning Objectives for Python<a class="anchor-link" href="#Learning-Objectives-for-Python">&#182;</a></h2><ol>
@@ -13088,8 +13088,8 @@ div#notebook {
 <h2 id="Questions-You-Should-be-Able-to-Answer">Questions You Should be Able to Answer<a class="anchor-link" href="#Questions-You-Should-be-Able-to-Answer">&#182;</a></h2><ol>
 <li>What is an IDE?</li>
 <li>What types of data can Python handle?</li>
-<li>What is a software library?</li>
 <li>What is a DataFrame?</li>
+<li>What is a software library?</li>
 </ol>
 
 </div>
@@ -13459,7 +13459,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="For-loops-within-Python">For loops within Python<a class="anchor-link" href="#For-loops-within-Python">&#182;</a></h2><p>For loops in Python work a lot like for loops within bash. The same concept applies, though there are slight differences in the syntax of it all.</p>
+<h2 id="For-Loops-in-Python">For Loops in Python<a class="anchor-link" href="#For-Loops-in-Python">&#182;</a></h2><p>For loops in Python work a lot like for loops within bash. The same concept applies, though there are slight differences in the syntax of it all.</p>
 <p>A quick refresher about for loops and their logic. We want to use for loops when we want our program to loop through a list of things. It can be used for a lot of different reasons; too many to even list here! You can use them in creative ways to help you automate tasks that you would otherwise do by hand.</p>
 <p>Let's look at an example in Python.</p>
 
@@ -13601,7 +13601,7 @@ neuroscience
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="While-loops-in-Python">While loops in Python<a class="anchor-link" href="#While-loops-in-Python">&#182;</a></h2><p>While loops are like for loops. They perform a similar function, which is to iterate through data based on parameters you set up. In my opinion, while loops are best when you don't know exactly when you need the loop to end. For example, in our for loop in the previous example, we knew how many majors were inside of our variable, so we knew that the for loop would run through all three majors.</p>
+<h2 id="While-Loops-in-Python">While Loops in Python<a class="anchor-link" href="#While-Loops-in-Python">&#182;</a></h2><p>While loops are like for loops. They perform a similar function, which is to iterate through data based on parameters you set up. In my opinion, while loops are best when you don't know exactly when you need the loop to end. For example, in our for loop in the previous example, we knew how many majors were inside of our variable, so we knew that the for loop would run through all three majors.</p>
 <p>In the example below, we have 20 datapoints. We only want to print the first 10 reaction times (trials 1-10). Let's see how we would do this with a while loop:</p>
 
 </div>
@@ -13878,6 +13878,13 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Data-Manipulation-in-Python">Data Manipulation in Python<a class="anchor-link" href="#Data-Manipulation-in-Python">&#182;</a></h1><p>Now we are going to put all of our knowledge about Python together to clean a behavioral dataset that we have. In my opinion, the best way to show you all how to use Python to clean your dataset, is to use a real dataset!</p>
 <p>We are going to be using some data that Liz has graciously allowed us to use.</p>
 <p>The first thing we will need to do is read our data into a format that Python can work with.</p>
@@ -13967,13 +13974,36 @@ The average is:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-46-9071ea6f14ac&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>print<span class="ansi-yellow-intense-fg ansi-bold">(</span>df_run1<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;df_run1&#39; is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14141,34 +14171,68 @@ The average is:
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249/DE249_dbdm_run_1.csv&#39;</span><span class="p">)</span>
-<span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249/DE249_dbdm_run_2.csv&#39;</span><span class="p">)</span>
-<span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249/DE249_ebdm_run_1.csv&#39;</span><span class="p">)</span>
-<span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249/DE249_ebdm_run_2.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249_dbdm_run_1.csv&#39;</span><span class="p">)</span>
+<span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249_dbdm_run_2.csv&#39;</span><span class="p">)</span>
+<span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249_ebdm_run_1.csv&#39;</span><span class="p">)</span>
+<span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/DE249/DE249_ebdm_run_2.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>In order to do this for multiple subjects, you can write this into a for loop. It would start something like this:
+</div>Sometimes when you are using a for or while loop, you want to iterate through different subjects. This will often result in needing to replace part of a string with a subject name. This is just one example for how this can be used!
+
+In bash, you saw that you can do this by putting your subjects into a variable, and then calling it like this, with a dollar sign and curly brackets:
+
+In order to do this for multiple subjects, you can write this into a for loop. It would start something like this:
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">subjects</span> <span class="o">=</span> <span class="s2">&quot;DE249, DE258, DE214&quot;</span>
+<span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In Python, it is done a little differently. The first difference is in the way you set up your 'subject' variable. In this case, you would use a single quote rather than a double quote. You also do not need to use a dollar sign in front of your curly brackets. It would start something like this:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">subjects</span> <span class="o">=</span> <span class="s1">&#39;DE249&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">subjects</span> <span class="o">=</span> <span class="s1">&#39;DE249, DE258, DE214&#39;</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">subjects</span><span class="p">:</span>
-    <span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_dbdm_run_1.csv&#39;</span><span class="p">)</span>
-    <span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_dbdm_run_2.csv&#39;</span><span class="p">)</span> 
-    <span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_ebdm_run_1.csv&#39;</span><span class="p">)</span> 
-    <span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_ebdm_run_2.csv&#39;</span><span class="p">)</span>
+    <span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_dbdm_run_1.csv&#39;</span><span class="p">)</span>
+    <span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_dbdm_run_2.csv&#39;</span><span class="p">)</span> 
+    <span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_ebdm_run_1.csv&#39;</span><span class="p">)</span> 
+    <span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_ebdm_run_2.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are other ways of accomplishing this that are often more complicated. More information about this can be found <a href="https://appdividend.com/2020/11/23/python-string-substitution-example/#:~:text=To%20substitute%20string%20in%20Python,a%20substring%20with%20another%20substring.">here</a></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14741,7 +14805,7 @@ The average is:
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_concat</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Documents/DE247_dbdm.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_concat</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Documents/DE249_dbdm.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14760,7 +14824,7 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-7">Example 7<a class="anchor-link" href="#Example-7">&#182;</a></h2><p>Save a CSV file that contains the ebdm condtion's data!</p>
+<h2 id="Example-7">Example 7<a class="anchor-link" href="#Example-7">&#182;</a></h2><p>Save a CSV file that contains subject DE249's ebdm data!</p>
 
 </div>
 </div>
@@ -14782,7 +14846,7 @@ The average is:
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="More-Libraries---Matplotlib-and-Numpy">More Libraries - Matplotlib and Numpy<a class="anchor-link" href="#More-Libraries---Matplotlib-and-Numpy">&#182;</a></h1><p>One library that is available within Pandas is called <a href="https://matplotlib.org/">matplotlib</a>. This is a data visualization package that is really nice if you would like to look at your data within Python.</p>
-<p>In addition to Pandas, there are also other libraries that can be useful for data manipulation. <em>NumPy</em> is another software library that is frequently used in both psychology and neuroscience. It can be used for statistics, machine learning, and even experimental presentation of stimuli! More information about this library can be found <a href="https://numpy.org/">here</a>. Because we are doing our data analysis in R for this bootcamp, we will not get into Matplotlib or Numpy here today. But ithey are a good tool to be aware of.</p>
+<p>In addition to Pandas, there are also other libraries that can be useful for data manipulation. NumPy is another software library that is frequently used in both psychology and neuroscience. It can be used for statistics, machine learning, and even experimental presentation of stimuli! More information about this library can be found <a href="https://numpy.org/">here</a>. Because we are doing our data analysis in R for this bootcamp, we will not get into Matplotlib or Numpy here today. But ithey are a good tool to be aware of.</p>
 
 </div>
 </div>
@@ -14803,7 +14867,7 @@ The average is:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new subject from the data we have been using (not DE247!) and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use an IDE of your choice (my personal favorite is Spyder, but you are welcome to use Jupyter Notebooks).</p>
+<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new subject from the data we have been using (not DE249!) and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use an IDE of your choice (my personal favorite is Spyder, but you are welcome to use Jupyter Notebooks).</p>
 
 </div>
 </div>
