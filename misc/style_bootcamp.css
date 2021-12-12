@@ -61,7 +61,7 @@ body{
   /* Code Chunks */
   pre {
     max-height: 350px;
-    background-color: #E4ECE7;
+    background-color: #f8c0c0;
     overflow-y: auto;
   }
   
@@ -108,6 +108,7 @@ body{
   background: white;
   padding: .5em;
   overflow:hidden;
+  overflow-y:inherit
   /*  box-shadow: 4px 4px 5px #888; */
   }
   
