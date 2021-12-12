@@ -38,7 +38,7 @@ Furthermore, I'm going to outline the stages that we can expect to see throughou
 
 This is an ***R Markdown*** script. Much like a typical ***R script***, it contains code documenting your process, such that any other individual could reproduce your work. However, unlike typical *R scripts*, *R Markdown* allows us to narrate the process (much as I'm doing now). The different types of text (narration and code) usually appear in different colors so you can tell the difference; though, what color it appears as for you might differ based on your settings. 
 
-A typical *R script* will interpret any text that you include as a command to be carried out, unless otherwise marked by a hashtag (#). The output will appear in your *R Studio Console Window*. By output, we just mean the product, sum, or status of whatever calculation or item you are asking R to compute or show for you.  
+A typical *R script* will interpret any text that you include as a command to be carried out, unless otherwise marked by a hashtag (#). The output will appear in your *R Studio Console Window*. By output, we just mean the product, sum, or status of whatever calculation or item you are asking R to compute or show for you. This is the style of coding that you were using on the bash and python days with visual code studio and spyder. 
 
 *R Markdown* can be a little more complicated, but you also have a lot of control over how commands, text, and output are displayed. Ultimately, because of this additional control, I find *R Markdown* scripts more intuitive and easy to follow (though not everyone feels the same). The output of any commands you enter into an *R Markdown* script typically appears just below the script that created it. We can read it in the *Console* if we prefer, but it's nice having all the information we want in one window (this one, if you're reading this as a script). We can also minimize output and text that we don't want to look at in the moment by clicking on the arrow next to the line count on the left side of the window [ ![Figure 1: Minimization Arrow](images/Figure1.png) ].
 
@@ -80,7 +80,7 @@ In this study, participants were asked to make timed decisions between two sets 
 
 ## What's a "Package"?
 
-We've encountered packages, or something akin to packages, in the previous workshops. You can think of them as add-ons. If we start playing with R right out of the box, with no add-ons, it has a lot of useful tools. We call this ***Base R***. You can do almost anything you can think of with *Base R*, but it's not always the most efficient way to do things. Because is open source, meaning it's free to use and collectively developed, users have programmed collection of shortcuts in the form of these packages. So, in that sense, each package just contains one or more commands not available in *Base R* (add-ons!).
+We've encountered packages, or something akin to packages, in the previous workshops. You can think of them as add-ons. If we start playing with R right out of the box, with no add-ons, it has a lot of useful tools. We call this ***Base R***. You can do almost anything you can think of with *Base R*, but it's not always the most efficient way to do things. Because R is open source, meaning it's free to use and collectively developed, users have programmed collection of shortcuts in the form of these packages. So, in that sense, each package just contains one or more commands not available in *Base R* (add-ons!).
 
 Every new package is centralized in R's repository, so even though thousands of people are working on these things independently, you don't need to leave R to find them. Before they can be used, they must be installed, and you can do that pretty simply:
 ```{r Installing a package, eval=FALSE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
@@ -138,8 +138,8 @@ Install and load the following packages:
   library(tidyverse)
 ```
 
-0.4.      How do I specify my Working Directory in R?
----------------------------------------------------
+## How do I specify my Working Directory in R?
+
 Like any other language or program, R needs to be told where the data that we'd like to work with is located on our computer. We can create a new variable to make this process simple. I'm using a Windows computer, so nearly everything is contained within my C:/ Drive. If I wasn't sure of my path, R makes it relatively easy to find it. If I start by entering this:
 
 ```{r Setting Working Directory Example, eval=FALSE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
