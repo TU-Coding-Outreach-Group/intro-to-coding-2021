@@ -1,11 +1,24 @@
 ---
 title: "Analyzing Data in R"
 author: "Mitchell, W.J."
-date: "10/25/2021"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
-  html_document: default
-  pdf_document: default
+  html_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    toc_float: 
+      collapsed: false
+    df_print: paged
+    css: !expr here::here("./misc/style_bootcamp.css")
+knit: (function(inputFile, encoding) { 
+      out_dir <- './';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'index.html')) })
 ---
+
+# Introduction
 
 Everything sticks better when you're coding towards a goal. We remember the things we do better when they work towards a logical, progressive narrative, rather than a jumbled set of skills loosely thrown together. As such, we're all going to be working together towards answering a few specific questions with this dataset: 
 
@@ -19,15 +32,15 @@ TODAY'S QUESTIONS:
 
 Furthermore, I'm going to outline the stages that we can expect to see throughout that process. Some of these might be a little less meaningful if you don't have a solid statistical background, but you should nonetheless be able to follow along in practice, if not in theory. This **is not** an exercise in statistical knowledge; it **is** an exercise in coding, but the content just happens to be statistical. 
 
-![**A fair warning**](Figure00.jpeg)
+![**A fair warning**](Images/Figure00.jpeg)
 
-0.1.      An *R Markdown* Primer 
----------------------------------------------------
+## An *R Markdown* Primer 
+
 This is an ***R Markdown*** script. Much like a typical ***R script***, it contains code documenting your process, such that any other individual could reproduce your work. However, unlike typical *R scripts*, *R Markdown* allows us to narrate the process (much as I'm doing now). The different types of text (narration and code) usually appear in different colors so you can tell the difference; though, what color it appears as for you might differ based on your settings. 
 
 A typical *R script* will interpret any text that you include as a command to be carried out, unless otherwise marked by a hashtag (#). The output will appear in your *R Studio Console Window*. By output, we just mean the product, sum, or status of whatever calculation or item you are asking R to compute or show for you.  
 
-*R Markdown* can be a little more complicated, but you also have a lot of control over how commands, text, and output are displayed. Ultimately, because of this additional control, I find *R Markdown* scripts more intuitive and easy to follow (though not everyone feels the same). The output of any commands you enter into an *R Markdown* script typically appears just below the script that created it. We can read it in the *Console* if we prefer, but it's nice having all the information we want in one window (this one, if you're reading this as a script). We can also minimize output and text that we don't want to look at in the moment by clicking on the arrow next to the line count on the left side of the window [ ![Figure 1: Minimization Arrow](Figure1.png) ].
+*R Markdown* can be a little more complicated, but you also have a lot of control over how commands, text, and output are displayed. Ultimately, because of this additional control, I find *R Markdown* scripts more intuitive and easy to follow (though not everyone feels the same). The output of any commands you enter into an *R Markdown* script typically appears just below the script that created it. We can read it in the *Console* if we prefer, but it's nice having all the information we want in one window (this one, if you're reading this as a script). We can also minimize output and text that we don't want to look at in the moment by clicking on the arrow next to the line count on the left side of the window [ ![Figure 1: Minimization Arrow](images/Figure1.png) ].
 
 In order to tell R when you want it to treat something as a command in *R Markdown*, you use these backtick (```) symbols (usually upper left corner of the keyboard) followed by "{r }". Below that, we enter the command(s) we want to run, and then we close it all out with those backticks again.
 Next to "{r }", we can add descriptions of what is happening within that block. Let's look at this example below :
@@ -40,9 +53,9 @@ Value
 # to calculate that line in *R Markdown*, I can press COMMAND + ENTER, or to run all of the commands within this block, I can press the green right facing arrow in the upper right corner of the block.
 ```
 
-If you pressed the "*Run*" command [ ![Figure 2: Run Command](Figure2.png) ], hopefully you saw a little box pop up just below your block that said "[1] 6". If you want to export the output, whatever it may be, to a new window, simply click the first icon of the the three in the upper right corner of the output box [ ![Figure 3: Export Command](Figure3.png) ].  To minimize, click the second [ ![Figure 4: Minimize Command](Figure4.png) ], and to delete, press the third [ ![Figure 5: Delete Command](Figure5.png) ]. Note that deleting the output does not affect the related code.
+If you pressed the "*Run*" command [ ![Figure 2: Run Command](images/Figure2.png) ], hopefully you saw a little box pop up just below your block that said "[1] 6". If you want to export the output, whatever it may be, to a new window, simply click the first icon of the the three in the upper right corner of the output box [ ![Figure 3: Export Command](images/Figure3.png) ].  To minimize, click the second [ ![Figure 4: Minimize Command](images/Figure4.png) ], and to delete, press the third [ ![Figure 5: Delete Command](images/Figure5.png) ]. Note that deleting the output does not affect the related code.
 
-Also of note, the down-facing arrow (second icon in the upper right corner of the code block) will tell R "Run all of the blocks of command that I have before this block" [ ![Figure 6: Run All Chunks Command](Figure6.png) ]. It can be helpful if you make a mistake and don't want to rerun all of the previous blocks one by one to get back to where you were. It also makes your code very easy for other people to run. They can quite literally do it with the click of a button! If we click the cog icon in the same tray, we can access the output options and manipulate where output appears and what it looks like, but that's beyond the scope of this review [ ![Figure 7: Settings Command](Figure7.png) ].  Let's go ahead and try it below; if you click on the "Run all" function for the Example 3 block, Example 1 and Example 2 should rerun and run, respectively:
+Also of note, the down-facing arrow (second icon in the upper right corner of the code block) will tell R "Run all of the blocks of command that I have before this block" [ ![Figure 6: Run All Chunks Command](images/Figure6.png) ]. It can be helpful if you make a mistake and don't want to rerun all of the previous blocks one by one to get back to where you were. It also makes your code very easy for other people to run. They can quite literally do it with the click of a button! If we click the cog icon in the same tray, we can access the output options and manipulate where output appears and what it looks like, but that's beyond the scope of this review [ ![Figure 7: Settings Command](images/Figure7.png) ].  Let's go ahead and try it below; if you click on the "Run all" function for the Example 3 block, Example 1 and Example 2 should rerun and run, respectively:
 ```{r Example 2}
 (Value * 3) + 2
 ```
@@ -52,7 +65,7 @@ Also of note, the down-facing arrow (second icon in the upper right corner of th
 ```
 *R Markdown* scripts will allow us, once we are done, to compile all of our work, or "knit" it, and share it as either an interactive .pdf or .html document which others can follow. They are very helpful if you want to run a stat coding blog, or, say, teach a workshop on how to code in R. I'm not going to go much deeper into the setup of *R Markdown*, but I have included helpful references in the course materials for those interested.
 
-Of note for those familiar with R, but new to *R Markdown*: A few functions work differently in *R Markdown*, relative to an *R script*. For example, in a typical *R script*, we could set our working directory using the *setwd()* function and it would remain the working directory until otherwise specified. *R Markdown* does not play nice with the *setwd* command for whatever reason, so I've found the simplest option is to just recall the file pathway whenever you want to load or save a file. The others aren't super relevant for this presentation, but something to keep in mind if anyone gets converted to the cult of *R Markdown*. Additional details about *R Markdown* and it's functionality can be found **[in this .pdf](Resource1.pdf)**, but aren't necessary for this bootcamp tutorial.
+Of note for those familiar with R, but new to *R Markdown*: A few functions work differently in *R Markdown*, relative to an *R script*. For example, in a typical *R script*, we could set our working directory using the *setwd()* function and it would remain the working directory until otherwise specified. *R Markdown* does not play nice with the *setwd* command for whatever reason, so I've found the simplest option is to just recall the file pathway whenever you want to load or save a file. The others aren't super relevant for this presentation, but something to keep in mind if anyone gets converted to the cult of *R Markdown*. Additional details about *R Markdown* and it's functionality can be found **[in this .pdf](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource1.pdf)**, but aren't necessary for this bootcamp tutorial.
 
 Now that we've got that out of the way, let's get started! 
 
@@ -60,14 +73,13 @@ Now that we've got that out of the way, let's get started!
 rm(Value)
 ```
 
-0.2.      A Quick Reminder of the Study Design
----------------------------------------------------
+## A Quick Reminder of the Study Design
 In this study, participants were asked to make timed decisions between two sets of probabilistic outcomes. For example, participants may have been asked to choose which of the two would be preferable: a situation where they have a 10% chance of winning $10 dollars (and, necessarily, a 90% chance of winning nothing), or a 40% chance of winning $2 dollars (and a 60% chance of winning nothing). These problems differed in how much participants could win or lose and the probability of those outcomes. Additionally, participants completed this task twice: once following the summary just described and another time where they were not explicitly told the probabilities of winning or losing, but instead were tasked with sampling from the different outcomes to make their decision.
 
-![**An approximation of the description-based decision-making task**](Figure8.png)
+![**An approximation of the description-based decision-making task**](images/Figure8.png)
 
-0.3.      What's a "Package"?
----------------------------------------------------
+## What's a "Package"?
+
 We've encountered packages, or something akin to packages, in the previous workshops. You can think of them as add-ons. If we start playing with R right out of the box, with no add-ons, it has a lot of useful tools. We call this ***Base R***. You can do almost anything you can think of with *Base R*, but it's not always the most efficient way to do things. Because is open source, meaning it's free to use and collectively developed, users have programmed collection of shortcuts in the form of these packages. So, in that sense, each package just contains one or more commands not available in *Base R* (add-ons!).
 
 Every new package is centralized in R's repository, so even though thousands of people are working on these things independently, you don't need to leave R to find them. Before they can be used, they must be installed, and you can do that pretty simply:
@@ -76,7 +88,7 @@ Every new package is centralized in R's repository, so even though thousands of 
 ```
 Once a package is installed, it does not need to be installed again. Rerunning the code above will result in updating the given package. If you're using *R Studio*, you can also see a list of your packages and their associated descriptions in the 'Packages' Tab of your *Viewer Window*. 
 
-![**Packages tab of viewer window where one can visualize previously installed packages**](Figure9.png)
+![**Packages tab of viewer window where one can visualize previously installed packages**](images/Figure9.png)
 
 However, just because a package is installed, it doesn't mean it's initialized. Sometimes different packages use the same commands. Sometimes packages take up a lot of disk space. For these reasons, R asks you to tell it what packages you want to use every time you start a new code. We're going to do that by specifying:
 ```{r Package Management, eval=FALSE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
@@ -84,7 +96,7 @@ However, just because a package is installed, it doesn't mean it's initialized. 
 ```
 Notice that we drop the quotation marks now. We just specify the (case-sensitive) package name and it let's R know we are planning on using that this session. If we ever want to explore the functions contained within a package in conjunction with examples, we can either go to **[the R documentation website](https://www.rdocumentation.org/)** or type '??PackageName' into the *Console*, which will then populate the *Help Tab* of the *Viewer Window* with information on the package. 
 
-###     EXERCISE    ###
+### Exercise 1
 Install and load the following packages:  
 
   effects  
@@ -106,6 +118,8 @@ Install and load the following packages:
   
   
 ```
+
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex1.r)
 
 ```{r Solution 1, include=FALSE}
   library(effects)  
@@ -134,22 +148,22 @@ Path <- "C:/"
 
 I can press tab when my cursor is to the left of the forward slash to see a list of directories contained within my C:/ Drive. Here's an example of what you should see:
 
-![**An example of R's Tab-Controlled Dropdown Menus**](Figure0.png)
+![**An example of R's Tab-Controlled Dropdown Menus**](images/Figure0.png)
 
 From there, I can keep hitting tab until I get to the directory, or folder, that contains the files I want to work with. 
 
 ```{r Setting Working Directory, eval=TRUE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-Path <- "C:/Users/Administrator/Desktop/Grad School/Bootcamp/"
+Path <- "C:/Users/Administrator/Desktop/COG/intro-to-coding-2021/R/"
 ``` 
 
 Again, because *R Markdown* doesn't handle setting working directories like normal R, we'll use the command that actually specifies the working directory when we load in the data.
 
-0.5.      What is a "dataframe"?
----------------------------------------------------
+## What is a "dataframe"?
+
 Before we load in the data, I want to highlight a little terminology. The data that R works with is always contained within what we call a ***'dataframe'***. You've likely heard this term in the past workshops. It's quite literally what it sounds like: a framework in which to situate your data. It contains many cells that are situated into columns (which have names) and rows (which may or may now have names). Think of an excel sheet, except instead of an effectively infinite void of blank columns and rows which you could scroll or write into at your convenience, in R and similar languages, we need to clearly denote the boundaries (how many columns and rows) the data is contained within. We do this whenever we create a dataframe from scratch, or we read in pre-existing data. Because this workshop builds on the previous ones, we don't need to do the former; we can just 'read in' pre-existing data.  
 
-0.6.      How do I load data into R?
----------------------------------------------------
+## How do I load data into R?
+
 There are many ways to load data into R and they all depend upon what format the data is in. R can handle data from .csv, .xlsx, .txt, .html, .json, SPSS, Stata, SAS, among others. R also has it's own data format (.RDA, .Rdata). With the exception of .RDA, **.csv** is often the cleanest means of reading in data. We won't cover the other formats, but they are fairly exhaustively covered **[in this tutorial](https://www.datacamp.com/community/tutorials/r-data-import-tutorial?utm_source=adwords_ppc&utm_medium=cpc&utm_campaignid=1658343521&utm_adgroupid=63833880415&utm_device=c&utm_keyword=read%20data%20r&utm_matchtype=p&utm_network=g&utm_adpostion=&utm_creative=469789579368&utm_targetid=aud-1282405912307:kwd-310852066315&utm_loc_interest_ms=&utm_loc_physical_ms=9007325&gclid=CjwKCAiAhreNBhAYEiwAFGGKPMtu1kPxHthxAqUmD-b7URmA5pqBUlq6CBL7TcBncVf-VQfO_gDgnxoCq0sQAvD_BwE)**. 
 
 ```{r Loading dataframe, eval=TRUE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
@@ -174,7 +188,7 @@ Next, we are specifying the command. The command always sits outside of the pare
 
 Option 1 is more convenient and probably a better choice for a command you are already familiar with. Option 2 is more exhaustive and great for a command you are still trying to understand.
 
-![**A visualization of what you will see if you press Tab to view valid arguments for a given command. Notice that hovering over an argument results in a pop out window which briefly describes the argument.**](Figure10.png)
+![**A visualization of what you will see if you press Tab to view valid arguments for a given command. Notice that hovering over an argument results in a pop out window which briefly describes the argument.**](images/Figure10.png)
 
 The first command is to tell R the name of the file in the format of a string. The second is telling R that it is true that the top row of the .csv document contains column names. The third is telling R that the symbol separating different cells is a comma (This is usually a given with .csv, which stand for *"Comma-Separated Values"*).  Next, we are telling R that any cells that contain empty values or N/A values should be treated as N/A. Lastly, we are telling R anytime a column contains only characters, structure it as a factor (we'll tackle exactly what a factor is in a moment, but for now, just know that it saves us time later.) Notice that these arguments are separated by commas. Also notice that we can put each of these arguments on their own lines, or leave them on the same line and R treats them the same. 
 
@@ -182,7 +196,7 @@ All of that being said, let's go ahead and read in data.
 
 If done correctly, we should see our *Environment* populate with a dataframe labeled *df*. Go ahead and click on *df* to view it. You should see it pop up in your *Source Window* (The same window you are likely writing script in). 
 
-![**A visualization of the Environment Window. Note that the number of observations and variables may be different from the dataframe you are currently reading in.**](Figure11.png)
+![**A visualization of the Environment Window. Note that the number of observations and variables may be different from the dataframe you are currently reading in.**](images/Figure11.png)
 
 Alternatively, if you only want to check the top of it, you can run:
 
@@ -190,7 +204,7 @@ Alternatively, if you only want to check the top of it, you can run:
   head(df)
 ```
 
-###     EXERCISE    ###
+### Exercise 2
 
 *read.csv()* contains a command that will read the names of our column headers and check them for syntactically valid variable names and that there are no duplicates. Using one of the two methods highlighted above, find what that argument is and rewrite the data-reading command with that argument included.
 
@@ -210,8 +224,8 @@ Alternatively, if you only want to check the top of it, you can run:
                  stringsAsFactors = TRUE)
 ```
 
-0.6.1.    Subsetting Data 
----------------------------------------------------
+### Subsetting Data 
+
 We now have data contained within an R dataframe in a way that R can understand. However, we aren't interested in all of the data in that dataframe. We will only use a small number of the total variables within our analyses. Let's go over those variables of interest and define them. Don't worry too much about memorizing these or understanding how they fit together *just yet*; just know that they are here in case you need to come back and reference them:
 
   1.) **PID** - *Factor*; Participant ID  
@@ -278,7 +292,7 @@ You get an error message because R doesn't know what to do with these two items.
 
 It links the two items together.
 
-###     EXERCISE    ###
+### Exercise 3
 Let's subset the *df* dataframe with two conditional statements and selecting only the columns we had highlighted above. The conditional statements should ask R to only carry forward rows where the value of the variable *ran* equals 1 AND rows where the value of *safeChoice* is not N/A. The *ran* variable notes whether a trial actually ran or was skipped, wherein 0 means it was skipped and 1 means it ran. To link two conditional statements together, we put an ampersands (&) between them. To tell whether a cell has a value of N/A, we modify the *is.na()* command by adding a bang or exclamation point (!) in front of it. (i.e., *!is.na()*) We only want to analyze trials that actually ran and have an outcome value. Save the new dataframe as an object named **df** (**NOTE**:We often don't want to overwrite our old dataframe names, but in this case, it's fine).
 
 ```{r Exercise 03, code="'\n\n\n\n'", results=F}
@@ -295,8 +309,8 @@ Let's subset the *df* dataframe with two conditional statements and selecting on
                           "switchCount", "safeChoice", "rt"))
 ```
 
-0.7.      Data Structure: What the hell is that?
----------------------------------------------------
+## Data Structure: What the hell is that?
+
 I've used terms ***factor*** and ***numeric*** to describe variables a few times now, but I haven't really explained what those mean, or why they are important, and they matter much more in R than other coding languages, at least in my experience. These terms refer to the ***structure*** that the data exists in. Data that is *structured* numerically (including numbers and *integers*, or "*int*") can be subjected to mathematical operations (e.g., addition subtraction, etc.), but non-numeric data cannot. You can imagine a series of numbers as an example. On the other hand, factors are categorical variables that take on a limited number of different values. Likert scale responses (i.e., Not at all, Somewhat, Greatly), which can be hierarchically organized, but lack clear objective values are examples. Certain functions only work properly with certain data structures. "*sum("Bingo", "Bongo")*" wouldn't work for obvious reasons, but other incongruencies are much more subtle. Sometimes R incorrectly assumes what structure a variable is; if we assign numeric values to "Yes/No" outcome variables, R will assume they are numeric. As such, **it is very important that we accurately structure our data**. I have highlighted the two primary data classes that we'll be working with, but there are many more, which you can **[read more about here](https://swcarpentry.github.io/r-novice-inflammation/13-supp-data-structures/)**, should you be interested.
 
 There's a very easy way to assess the structure of our data all at once using the *str()* command: 
@@ -319,7 +333,7 @@ df$safeChoice <- as.factor(df$safeChoice)
 
 Here, we are telling R to treat the safeChoice variable within the df dataframe as a factor, using the *as.factor()* command, and then overwriting the variable, saving it as itself.
 
-###     EXERCISE    ###
+### Exercise 4
 Although I noted at the beginning of **Section 0.6.1** that each variable is either numeric or a factor, in reality, your R likely did not read in your variables as such. In this exercise: 
   1.) note the structure of your dataframe columns,   
   2.) compare the structure of each variable to what is listed in our reference list,   
@@ -341,8 +355,7 @@ Although I noted at the beginning of **Section 0.6.1** that each variable is eit
   str(df)
 ```
 
-0.8.      Writing data
----------------------------------------------------
+## Writing data
 
 Although thus far, we're almost exclusively talked about data in the context of dataframes, we can store values as free-floating variables that exist outside of dataframes as well. For example, let's create a variable called **x** and give it a value of *50*.
 
@@ -359,7 +372,7 @@ Now that we've created that variable, there are at least four ways to check the 
   
 Eagle-eyed coders might notice that we already have at least one other variable under the *Values* heading, that being our Path variable. Much like those contained within a dataframe, free-floating variables can take both numeric or alphabetic values, and our Path is a case of the latter. We should clearly see our value in the *Environment Window*, but let's go ahead and type 'x' into the *Console Window* to check that our variable was correctly specified. If correct, you should see this:
 
-![**A view of what you should see in the console.**](Figure12.png)
+![**A view of what you should see in the console.**](images/Figure12.png)
 
 Much like how we overwrote to change the structure, we can overwrite a variable easily and use the second option to check its value. 
 
@@ -409,7 +422,7 @@ On top of being able to overwrite currently existing columns in R, we can levera
 
 R will automatically create a new column with that new name and append it to the end of your dataframe. The value for each row in that new column will be equal to the value of Variable 1 minus Variable 2 within that same row. 
 
-###     EXERCISE    ###
+### Exercise 5
 Let's calculate values for a new column within df called EV_Diff. It should be equal to the value of the first *Expected Value* minus the second *Expected Value*. Do the same for Sample_Diff, equal to the value of the *Safe Sample Count* minus the *Risky Sample Count*. Note that the order you place these variables in may be important. 
 
 ```{r Exercise 05, code="'\n\n\n\n'", results=F}
@@ -430,7 +443,7 @@ Let's calculate values for a new column within df called EV_Diff. It should be e
   df$Sample_Diff
 ```
 
-###     EXERCISE    ###
+### Exercise 6
 EV_Diff could be a helpful variable later on, but there's a slight problem. We might not really necessarily care whether EV1 was the larger amount of EV2 was the larger amount, we just want to know the pure magnitude of the difference. You could maybe imagine a scenario where EV1 = 10 and EV2 = 5, as well as EV1 = 5 and EV2 = 10. In the former, EV_Diff = 5 and in the latter EV_Diff = -5. These values will be treated differently by R, but we want R to treat them the same. As such, we want to create a new variable that captures the absolute value of EV_Diff, which we will call *EV_DiffAbs*. The absolute value command is *abs()*. 
 
 ```{r Exercise 06, code="'\n\n\n\n'", results=F}
@@ -445,19 +458,19 @@ EV_Diff could be a helpful variable later on, but there's a slight problem. We m
   table(df$EV_DiffAbs, df$EV_Diff)
 ```
 
+
 ### SLIGHT BREAK TIME ###
-=========================
 
 That was a big lead up to the main event, but basically familiarity with R syntax and conventions is really important before we start conducting analyses in R. Hopefully you feel like you have a half-decent grasp on what the environment contains, how to use the console to enter commands, and where to look when you need help. We're now going to get into analyses. We're going to start relatively simple with analytic approaches that utilize qualitative, categorical variables as predictors and get progressively more advanced to analyses that use continuous, numeric, quantitative predictors. At this juncture, let me reward my captive audience with a cute seasonally-appropriate photo of my dog.
 
-![**Sadie in a Christmas Sweater, circa 2020.**](Figure13.jpg)
+![**Sadie in a Christmas Sweater, circa 2020.**](images/Figure13.jpg)
 
-1.0.      Analyzing Data w/ Qualitative Independent Variables
-----------------------------------------------------
+# Analyzing Data w/ Qualitative Independent Variables
+
 Hopefully, when you heard terms like "*Categorical*" and "*Qualitative*", you immediately thought about **factors**. These analyses are going to be using factor variables to test hypotheses and explore questions within out dataset. We'll be looking at how to code **[Chi Squares](https://www.jmp.com/en_us/statistics-knowledge-portal/chi-square-test.html)**, **[T-Tests](https://www.statisticshowto.com/probability-and-statistics/t-test/)**, and **[ANOVAs](https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/anova/)** in this section, as well as taking a sizable detour to explain data visualization using *ggplot2*. You don't need to know much about those tests; I'll try to explain enough for you to keep up, but if you want to read more statistical theory, click each of their names to follow the hyperlinks. 
 
-1.1.      Chi-Square Tests
-----------------------------------------------------
+## Chi-Square Tests
+
 A Chi-Square Test can be used when both the predictor and outcome, or independent and dependent variables, respectively, are categorical. They involve checking if the frequencies in our outcome or dependent categories match what we would expect to see if there were no differences between our predictor or independent categories. Within the context of our data, we could ask a question like whether people choice the safe option more frequently within the experience-based decision-making task relative to the description-based decision-making task.
 
 **QUESTION**: 
@@ -473,7 +486,7 @@ Independent:    Condition (Factor)
 **ANALYSIS**:
 Chi-Square
 
-To start, what we be good to know is simply what the frequency of each category for the variables is. We are going to deviate a little bit from what we'd seen in the past and use syntax and functions contained within the ***dplyr*** package. *dplyr* is a bit of a swiss army knife in that it actually contains many other packages that are very well established in R and are very useful. I personally have trouble keeping the syntax straight, so I only use it when I have to, but I can't deny that it's exceptionally useful (and I'm the only person I know that doesn't like it). I share that only to acknowledge that I'm not the best resource on it, but here's another **[really helpful .pdf](Resource2.pdf)** that highlights the primary functions of *dplyr* syntax.
+To start, what we be good to know is simply what the frequency of each category for the variables is. We are going to deviate a little bit from what we'd seen in the past and use syntax and functions contained within the ***dplyr*** package. *dplyr* is a bit of a swiss army knife in that it actually contains many other packages that are very well established in R and are very useful. I personally have trouble keeping the syntax straight, so I only use it when I have to, but I can't deny that it's exceptionally useful (and I'm the only person I know that doesn't like it). I share that only to acknowledge that I'm not the best resource on it, but here's another **[really helpful .pdf](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource2.pdf)** that highlights the primary functions of *dplyr* syntax.
 
 ```{r Chi Square Proportion Summary, eval=TRUE,,include=TRUE}
 (prop <- with(df, table(Condition, safeChoice)) %>%
@@ -516,7 +529,7 @@ This is by no means, necessary, but I always like to write my journal-ready summ
 A Pearson's Chi Squared test with Yates' continuity correction determined that safe choices [freq = 112, prop = .824] were not reported more frequently than risky choices [freq = 24, prop = .176] for either experiential- or descriptive-based decision-making[x-squared = 0, df = 1, p < 1.000].
 ```
 
-###     EXERCISE    ###
+### Exercise 7
 Let's run a second Chi Square Test, this time examining whether Problem Type has any influence on the frequency of Safe Choices. While it's perhaps not very a theoretically well-grounded question, we can nonetheless code it much like we had for the last question we asked. Make sure to produce a proportion table and a chi-square test. Don't worry about the summary statement.
 
 ```{r Exercise 07, code="'\n\n\n\n'", results=F}
@@ -561,14 +574,13 @@ While a Chi Square Test is great, verbalizing the relationship can only go so fa
 
 Furthermore, once you write a good ggplot script once, you'll find that you'll rarely have to rewrite it in the future. Most of the commands within can be applied regardless of what type of plot you want to create; you just make small little tweaks to change the output.
 
-DETOUR.   The Anatomy of a ggplot2 Command
-----------------------------------------------------
+## DETOUR.   The Anatomy of a ggplot2 Command
 
-***ggplot2*** is widely considered the premier data visualization tool for R. As such, the arguments used by the ggplot command are very important to understand. The volume of customization options is frankly overwhelming, but they allow us to produce the beautiful figures that we often see associated with R and are substantially less overwhelming when standardized in a template format. I certainly don't memorize all of the settings I've found to look best and reproduce them every time I need to plot new data. Instead, I create a template that I can easily copy and paste or recall, and then focus on changing only the details relevant to the data at hand. I'm going to share my standard ggplot template and highlight what all of the arguments do. By the end, you should feel knowledgeable enough to start tweaking the aesthetic qualities of your own plots to find what you feel looks best, and maybe even explore the bevy of additional arguments which I certainly won't have time to cover within **[the ggplot documentation](Resource3.pdf)**. 
+***ggplot2*** is widely considered the premier data visualization tool for R. As such, the arguments used by the ggplot command are very important to understand. The volume of customization options is frankly overwhelming, but they allow us to produce the beautiful figures that we often see associated with R and are substantially less overwhelming when standardized in a template format. I certainly don't memorize all of the settings I've found to look best and reproduce them every time I need to plot new data. Instead, I create a template that I can easily copy and paste or recall, and then focus on changing only the details relevant to the data at hand. I'm going to share my standard ggplot template and highlight what all of the arguments do. By the end, you should feel knowledgeable enough to start tweaking the aesthetic qualities of your own plots to find what you feel looks best, and maybe even explore the bevy of additional arguments which I certainly won't have time to cover within **[the ggplot documentation](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource3.pdf)**. 
 
-![**Relevant xkcd**](Figure20.png)
+![**Relevant xkcd**](images/Figure20.png)
 
-=== Plot Creation ===
+### Plot Creation
 
 To start, we're just going to do a basic plot with both an x and y axis. To make it simple, I'm going to use variables that have numeric values, so the x axis will contain the absolute difference in expected values and the y axis will contain the range of possible reaction times, but the actual data doesn't matter much here. Instead, we're going to focus on just about everything but the data.
 
@@ -578,7 +590,7 @@ ggplot(data = df, aes(x = EV_DiffAbs, y = rt))
 
 This is just about the most basic plot we could run in ggplot. We start by defining the dataframe from which we are pulling our variables (df), and then we tell R which two variables will define the aesthetics of this plot (aes(x = EV_DiffAbs, y = rt)). As you can see, that's enough for R to create a basic 2d plane on which we could visualize data. R automatically places the variable we defined as X on the x axis and labels it, and then populates the Y axis as well. Both axes are given reasonable ranges, based on the range of the data.
 
-=== Adding Geoms ===
+### Adding Geoms
 
 However, if we want to see the actual data, we need to define what type of plot (i.e., line, bar, scatter, etc.) we want to see. In order to add more layers to a ggplot, we need to use an addition sign:
 
@@ -587,9 +599,9 @@ ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
        geom_smooth(method="lm", alpha = .25, size = 1.5)
 ```
 
-Here, we kept the first line the same, and we're adding a command for ggplot to produce a geometric shape (hence, "geom_") of the type "smooth" (or a smoothed regression line). There are dozens of possible geoms one could use in ggplot. For reference, you can either check the **[supplementary infographic I supplied](Resource3.pdf)** or enter "?ggplot" in the console to review the documentation. Following the command, you'll see arguments that define the method of smoothing, how dark or light the standard error cloud is around the regression line, and how thick the regression line should be, respectively. These are aesthetic choices and will obviously change quite a bit depending upon the plot, so we won't dive much deeper into these. For now, I want to move on to commands that I almost always use no matter what type of plot I'm producing. 
+Here, we kept the first line the same, and we're adding a command for ggplot to produce a geometric shape (hence, "geom_") of the type "smooth" (or a smoothed regression line). There are dozens of possible geoms one could use in ggplot. For reference, you can either check the **[supplementary infographic I supplied](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource3.pdf)** or enter "?ggplot" in the console to review the documentation. Following the command, you'll see arguments that define the method of smoothing, how dark or light the standard error cloud is around the regression line, and how thick the regression line should be, respectively. These are aesthetic choices and will obviously change quite a bit depending upon the plot, so we won't dive much deeper into these. For now, I want to move on to commands that I almost always use no matter what type of plot I'm producing. 
 
-=== Labeling Plots ===
+### Labeling Plots
 
 The above plot might be perfectly fine for you and your team, who have been looking at the data for months, to understand the relationship you're studying, but adding more descriptive labels would go a long way to make these plots more accessible to others. There are a million different commands that will alter the labels of the axes, but I'm partial to this approach, which allows us to modify the title and add subtitles and captions as well:
 
@@ -605,7 +617,7 @@ ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
 
 Notice, once again, that we string together multiple layers through the use of addition signs, but within the context of a single function, commas are still used to separate arguments. The labs function allows us to designate what we want to appear in the title and axes. I also like to take advantage of the subtitle and caption arguments to give a very brief, easy to understand interpretation of what I want my readers to take a way from the plot, and to note important information in interpreting the plot. As you can see, character text must be bookended with quotation marks. I use "backslash + n" within the caption to let R know I want everything to the right to appear on a new line. 
 
-=== Specifying Plot Axes Range ===
+### Specifying Plot Axes Range
 
 This looks better, certainly, but let's say participants only had 2 seconds to respond to the decisions. This axis would be a little disingenuous, because it would suggest the range was actually much smaller and artificially make my relationship look larger. My Y axis in that case should really range from 0 to 2, for the amount of time participants had to respond. The coord_cartesian function is by far the best way to manipulate the displayed range of your axes without actually modifying the data (Some other functions will exclude datapoints that sit outside of the range you define, meaning they won't be included in your regression line). We simply define the lower and upper limits of our x (xlim) and/or y (ylim) axis: 
 
@@ -620,7 +632,7 @@ This looks better, certainly, but let's say participants only had 2 seconds to r
          coord_cartesian(ylim=c(0, 2))
 ```
 
-=== Using Themes ===
+### Using Themes
 
 Great! Now the data is all technically correct, but I really don't like that ugly gray background. Let's change that with the host of functions that come with the ***ggtheme*** package. I believe that base *ggplot2* may accept some theme commands without needing *ggtheme*, but *ggtheme*, at the least, expands the options we have to customize our plots. We'll start with my usual favorite, theme_classic: 
 
@@ -676,7 +688,7 @@ The "theme_" commands do an overhaul on the presentation of the plot, and make m
 
 Quite a range! There are a ton of other options which you can review in the **[ggthemes documentation](https://mran.microsoft.com/snapshot/2017-02-04/web/packages/ggthemes/vignettes/ggthemes.html)**. 
 
-=== Modifying Text Elements ===
+### Modifying Text Elements
 
 For the sake of time, we're going to move onto the last thing I usually do, and that's modify the appearance of the text using theme commands, It drives me nuts that the title is off-center and that the "p"'s in the caption are misaligned, so we're going to run a series of commands to correct this.
 
@@ -702,7 +714,7 @@ As you can see, we added several new lines that all utilize the theme function. 
 
 One last note: later layers take precedence. So, if you give ggplot to arguments which affect the same plot element in a conflicting way (maybe you want tell it you want the X axis labeled "Bananas" early on, and then "Apples" at the end), ggplot will often not let you know that these arguments are in conflict, and just accept whatever argument came last (so your X axis will be named Apples). We're really just sort of scratching the surface of what we can do in R when it comes to visualizations, but hopefully this provides a good foundation for what is still to come. The next two modules will be much quicker and more focused. 
 
-###     EXERCISE    ###
+### Exercise 8
 Let's see you give it a show. Modify the code of the plot below so that: 
   1.) the title and subtitle are right justified  
   2.) the text of both axes appear blue in color  
@@ -746,8 +758,8 @@ Ideally, you should get something like this.
          theme(axis.text.y = element_text(size = 14, color = "Blue"))
 ```
 
-1.2.      T-Tests
-----------------------------------------------------
+## T-Tests
+
 A T-Test can be used when both the predictor variable consists of two categorical options and the outcome or dependent variable is numeric in value. A T-Test tells you how significant the differences between these categories or groups are. In other words, it lets you know if the differences between the means of two groups could have observed by chance. We could imagine a situation where an evil teacher told half of the class before a test the right chapter to study from and told the other half of the class the wrong chapter to study from. The two categories or groups might be Right Chapter and Wrong Chapter and the outcome variable would be Test Score. Using a T-Test, we could determine whether studying from the right materials produces higher test scores. Within the context of our data, we could ask a question like whether people make their choices faster when they are considering decisions that only deal with losses or gains, rather than decisions that include both losses and gains. 
 
 **QUESTION**: 
@@ -763,8 +775,8 @@ Independent:    ProbType (Factor)
 **ANALYSIS**:
 Two-Sample T-Test
 
-1.2.1.    T-Test Assumption Testing
-----------------------------------------------------
+### T-Test Assumption Testing
+
 We are going to start similarly to how we did last time by first taking a look at the data. The *skimr* package is near and dear to my heart. It provides a quick way to see the distribution, or the shape, of the data as well as some details about it. A lot of this is beyond the context of a coding class and more important for stats, but I wanted to demonstrate how easy this package makes things.
 
 ```{r Skimr Summary}
@@ -779,9 +791,9 @@ psych::describe(df$rt)
 
 We can conduct a whole host of other visualizations, too. We're already running short on time, so I'm not going to dive too deeply into the theory behind these. In brief: Each statistical test assumes certain things about the data. If those assumptions aren't met, the reliability of the test is questionable; the test may still produce an answer, but it might not be of value. You can maybe your phone and your laptop. Both might charge using a USB-C connection, but the laptop requires much greater voltage than your phone (which is why it usually has the box in the chain). Using your phone's USB-C cable might charge your laptop, but it might be unreliable or might cause lasting damage.
 
-![**I don't know why I thought a visual would drive this point home more...**](Figure16.png)
+![**I don't know why I thought a visual would drive this point home more...**](images/Figure16.png)
 
-![**... but here we are.**](Figure17.png)
+![**... but here we are.**](images/Figure17.png)
 
 In the same way, if the data does not meet the specifications that a test requires, the results could be unreliable or flat out incorrect. The visualizations below allow us to examine some of these assumptions, but you can come back to them at a later date when you've developed a little more statistical acumen.
 
@@ -813,7 +825,7 @@ In the same way, if the data does not meet the specifications that a test requir
             short.panel.labs = FALSE)
 ```
 
-**NOTE**: The normality and outlier tests below here use *dplyr* syntax, which, again, you can **[check here](Resource2.pdf)** for references on how to interpret.
+**NOTE**: The normality and outlier tests below here use *dplyr* syntax, which, again, you can **[check here](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource2.pdf)** for references on how to interpret.
 
 ```{r Outliers for T-Tests, eval=FALSE, include =TRUE}
   # Outlier Testing for T-Tests
@@ -838,8 +850,7 @@ In the same way, if the data does not meet the specifications that a test requir
     levene_test(rt ~ ProbType)
 ```
 
-1.2.2.    Okay, Now T-Tests
-----------------------------------------------------
+### Okay, Now T-Tests
 
 Okay, assuming that we've met our assumptions and decided that a t-test is an appropriate means of measuring our question, let's run the actual t-test. It's a little more complicated than our chi-square test. For one, we only want to compare two levels of a factor that contains three levels in total. As such, we need to use conditional statements again to specify our variables. What we are comparing here are the mean values of reaction time for trials where the type of problem was single domain versus mixed domain. As such, we are going to specify we want to see reaction time when ProbType == SD and when ProbType == MD. We next have an argument which asks us whether this study is a within-subjects or a between-subjects design. This question is within-subjects, since each participant provided data for both single and mixed domains, so we mark that as true. Lastly, R is asking us to define our alternative hypothesis, which is a little beyond the scope of this review, so you will have to take my word that "two.sided" is the right call. Lastly, when we look at T-Tests, standard deviations are very important, but the *t.test()* function won't automatically generate those. We are using the *sd()* function to capture the standard deviation of reaction action, and we're adding the argument (*na.rm*) that tells R to ignore any row that has a value of N/A.
 
@@ -857,7 +868,7 @@ We are having a really rough day with these hypotheses. We could write these res
 report(ttest)
 ```
 
-###     EXERCISE    ###
+#### Exercise 9
 Let's run a t-test examining differences between conditions regarding reaction time. Use the report function to write up the results.
 
 ```{r Exercise 09, code="'\n\n\n\n'", results=F}
@@ -876,8 +887,8 @@ Let's run a t-test examining differences between conditions regarding reaction t
   rm(ttest, t_test)
 ```  
 
-1.3.      ANOVAs
-----------------------------------------------------
+## ANOVAs
+
 An ANOVA, or Analysis of Variance, can be used when both the predictor variable or variables consist of two or more categorical options and the outcome or dependent variable is numeric in value. Much like a T-Test, ANOVA tells you how significant the differences between these categories or groups are. The advantage over T-tests is that we can compare multiple groups or categories in one analysis. We could  revisit our last horrible example and imagine that the evil teacher tells one group right chapter to study from, one group the wrong chapter to study from, and one group to not study at all. An ANOVA test will tell us whether any of these three groups are different from one another (but not necessarily which specific groups are different from one another).  be Test Score. Within the context of our data, we could ask more complex questions than we had in the past, like whether differences exist in reaction times among the different combinations of conditions and problem types.
 
 **QUESTION**: 
@@ -894,8 +905,8 @@ Independent:    Condition (Factor)
 **ANALYSIS**:
 ANOVA
 
-1.3.1.    ANOVA Assumption Testing
-----------------------------------------------------
+### ANOVA Assumption Testing
+
 Much like the assumptions for T-Tests, we will not dive deep into the assumption tests we run for ANOVA. I wanted to include them here to demonstrate how adding an additional predictor changes these tests. We still run the same tests, we just add a new dimension by including the other variables.
 
 ```{r QQ Plots for ANOVAs, eval = FALSE,include=TRUE}
@@ -940,8 +951,8 @@ df %>%
   levene_test(rt ~ ProbType)
 ```
 
-1.3.2.    ANOVA Tests
-----------------------------------------------------
+### ANOVA Tests
+
 Pay close attention to the formatting of the syntax here. It is the standard way in which we specify statistical models in R, whether for regression, ANOVA, hierarchical modeling etc.
 
 ```{r ANOVA Model}
@@ -980,7 +991,7 @@ The *anova_stats()* function from the *sjstats* package will give us some more d
 
 This next block of code is pulled directly from a post I found on how to produce 95% confidence intervals on [Stack Overflow](https://stackoverflow.com/). It is a custom function. Much like developers create functions or commands that exist in packages, we all could create custom functions to replace cumbersome or lengthy procedures we plan to use often. This custom function will calculate the standard deviation, standard error, and confidence intervals for the terms in our ANOVA model. We don't really need to understand what's under the hood right now, and we don't need to make any modifications. We can just know that we are creating a new function called *CustomSummary* which we can use later.
 
-![**Don't be ashamed, everyone does it.**](Figure15.gif)
+![**Don't be ashamed, everyone does it.**](images/Figure15.gif)
 
 ```{r Summary Function}
 CustomSummary <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
@@ -1030,7 +1041,7 @@ Plot <- ggplot(df, aes(x = ProbType, y = rt, color = Condition, group = Conditio
   Plot 
 ```
 
-###     EXERCISE    ###
+### Exercise 10
 You might have noticed that I did not explain to you what was happening in lines 2 and 3 of the above plot. I think you can likely figure it out on your own. Because *ggplot* builds its visualizations in layers, we can easily remove a single line, observe what changes, and make a connection between the omission of that line and the change we witnessed. Comment out using a hashtag (#) lines two and three and try to determine what function each serves in the construction of the plot above. In addition, try modifying the value of position_dodge to figure out what that argument is controlling as well. 
 
 ```{r Exercise 10,include=TRUE, eval=FALSE}
@@ -1081,12 +1092,12 @@ ggplot(df, aes(x = ProbType, y = rt, color = Condition, group = Condition)) +
 rm(Summary,CustomSummary,aov)
 ```  
 
-3.0.      Analyzing Data w/ Quantitative Independent Variables
-----------------------------------------------------
+# Analyzing Data w/ Quantitative Independent Variables
+
 We are nearly done for the day, but before we close up shop, we need to cover analyses that use quantitative, numeric predictors, probably most common of which is linear regression. Regression can come in many flavors, including **[bivariate linear regression](https://www.statisticshowto.com/bivariate-analysis/)**, multivariate linear regression, and **[binary logistic regression](https://www.statisticssolutions.com/binary-logistic-regression/#:~:text=Logistic%20regression%20is%20the%20statistical,%2C%20score%20%2C%20etc%E2%80%A6)**. Once again, I won't get too much into the theory, but hyperlinks are provided for those who want it. We will demonstrate some useful tools and syntax to get you prepared to use R on your own.  
 
-3.1.      Bivariate Regression
-----------------------------------------------------
+## Bivariate Regression
+
 A bivariate linear regression can be used when both the predictor variable (X) and outcome variable(Y) consist of continuous numeric values. A linear regression tells us how predictive of Y that X is. In other words, if we measured temperature and ice cream sales, we might find, using linear regression that as temperature increases, we could predict with decent accuracy that ice cream sales would increase as well, and we could predict how many ice cream sales we expect to see for any one value of temperature. Within the context of our data, we could ask a question like whether the difference in expected value between two options predicts reaction time. 
 
 **QUESTION**: 
@@ -1144,7 +1155,7 @@ paste0(Path,"RegressionTable.html")
 
 Now, outside of R, let's navigate to our respective directories and check that the regression table saved. Once you locate it and open the .html document, it should look like this.
 
-![**Regression Table output**](Figure18.png)
+![**Regression Table output**](images/Figure18.png)
 
 Lastly, we can run the *report()* function for linear models as well! 
 
@@ -1152,7 +1163,7 @@ Lastly, we can run the *report()* function for linear models as well!
 report(m1)
 ```
 
-###     EXERCISE    ###
+### Exercise 11
 During the *ggplot* detour, I'd showed you how to build a model for a bivariate linear regression. Construct a plot for the analysis that we just ran. Make sure your plot has an accurate title, accurate subtitle describing what your analysis found, and labels for the x and y axes.  
 
 ```{r Exercise 11, code="'\n\n\n\n'", results=F}
@@ -1179,8 +1190,8 @@ During the *ggplot* detour, I'd showed you how to build a model for a bivariate 
 rm(m1)
 ```  
 
-3.2.      Multivariate Regression
-----------------------------------------------------
+## Multivariate Regression
+
 A multivariate linear regression builds upon bivariate regression by allowing for multiple predictors. If we measured temperature, ice cream sales, and the time since someone last ate, we might find that our previously specified model is now even more accurate because of the addition of the "time since last ate" variable. Within the context of our data, let's reexamine expected value as EV1 and EV2 instead of a singular difference variable. 
 
 **QUESTION**: 
@@ -1224,7 +1235,7 @@ stargazer(m2,
 
 We see very little needs to change between the bivariate and multivariate regression specifications.
 
-###     EXERCISE    ###
+### Exercise 12
 Let's see you run a new regression from scratch. I want to know whether the amount of times someone sampled from each risky and safe machine in the experiential condition influence reaction time in making a choice. Note that we're only going to be interested in data from one condition for this analysis. It might be a good idea to revisit a certain function we reviewed early on that allows us to create new dataframes that fit certain conditions we define. Following that, make sure to specify the regression, and produce a stargazer plot with accurate labels for the data.
 
 ```{r Exercise 12, code="'\n\n\n\n'", results=F}
@@ -1246,8 +1257,8 @@ Let's see you run a new regression from scratch. I want to know whether the amou
   rm(df2,m2,m3)
 ```  
 
-3.3.      Binary Logistic Regression
-----------------------------------------------------
+## Binary Logistic Regression
+
 To finish things off we're going to briefly review binary logistic regression, which we use when we want to know the probability of two potential outcomes as predicted by a continuous, numeric variable. You can maybe imagine a situation where we continue to measure the temperature, but rather than also measuring ice cream sales, we instead measure the temperature at which each individual made the decision to buy an ice cream. Ice cream purchase, would be a dichotomous variable: "Did they buy or not?" If we knew the temperature at which they bought, we could predict the probability of any one individual buying ice cream at each given temperature. In the context of our dataset, we could measure the extent to which differences in expected value predicts whether individuals chose safe or risky options.
 
 **QUESTION**: 
@@ -1311,20 +1322,20 @@ One last function I want to highlight is how to export these plots. We could rig
 
 ```{r Exporting Mean Emotion Plot}
   setwd(Path)
-  pdf("Figure19.pdf", width = 5.35, height = 3)
+  pdf("images/Figure19.pdf", width = 5.35, height = 3)
   Plot
   dev.off()
   rm(m4,m4.e,Plot)
 ```  
 
-![**Beautiful.**](Figure19.pdf)
+![**Beautiful.**](images/Figure19.pdf)
 
-4.0.      Troubleshooting w/ Google
-----------------------------------------------------
+# Troubleshooting w/ Google
+
 The last thing I want to highlight is that effective coding is not about memorization. If the internet disappeared and my scripts got erased, I'd be at a total loss to rewrite most of my R scripts, and that's okay. Coders have built robust communities that function as very valuable resources for any questions or issues that you run into. [StackOverflow](https://www.stackoverflow.com/) is a great general resource. Believe it or not, Google and Youtube are some others. Most of the problems I run into can be solved by a simple Google search, which often lead me to coding and stat blogs and vlogs I would have never encountered otherwise. It seems one of the absolute best skills you could develop is knowing how to search for solutions to your coding problems, and that comes with time and practice. 
 
-5.0       Closing
------------------------------------------------------
+# Closing
+
 **Congrats!** You made it through an entire statistics coding bootcamp while potentially not really know any statistics! That's a herculean feat. Hopefully this was more *encouraging* than *discouraging*, but should you find yourself more on the discouraged side, don't hesitate to shoot me an email (billy.mitchell@temple.edu). Happy to help, and thanks for sticking with it.
 
-![**PICTURED: You, on your way to success**](Figure21.png)
+![**PICTURED: You, on your way to success**](images/Figure21.png)
