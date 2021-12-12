@@ -6,15 +6,15 @@ This set of tutorials is intented for complete beginners to coding. If you have 
 ## Agenda
 | Date        | Workshop                             | Presenter  |
 | :-----------: |:------------------------------------:| :-----------:|
-| TBA   | [Bash Command line](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/bash)                       | Elizabeth Beard & Haroon Popal |
-| TBA    | [Python](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/python)                             | Katie Jobson |
-| TBA    | [R](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/R)      | Billy Mitchell |
-| TBA    | [Data Blitz](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/data-blitz) | TBA |                          
+| 12/14   | [Bash Command line](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/bash)                       | Elizabeth Beard & Haroon Popal |
+| 12/15    | [Python](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/python)                             | Katie Jobson |
+| 12/16    | [R](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/R)      | Billy Mitchell |
+| 12/17    | [Data Blitz](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/data-blitz) | TBA |                          
 
 
 
 ## Getting Started
-Each tutorial will list the necessary pre-requesites in their respective README.md files, but here is some software we recommend you install before the workshops:
+Each tutorial will list the necessary pre-requesites in their respective README.md files, but here is some software we recommend you install before the workshops. We will also spend some time going over installation on Day 1.:
 - A command-line shell (i.e. Bash)
 - A text editor you're comfortable with (Atom, [VSCode](https://code.visualstudio.com/), etc.)
 - [Jupyter notebook](https://jupyter.org/install), also available through [Anaconda](https://www.anaconda.com/products/individual#Downloads)
