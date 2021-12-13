@@ -1,4 +1,4 @@
-install.packages(c("effects", "ggpubr", "ggthemes", "interactions", "psych", "plyr", "rstatix", 
+install.packages(c("dplyr","effects", "ggpubr", "ggthemes", "interactions", "psych", "plyr", "rstatix", 
 "RColorBrewer", "report", "sjPlot", "sjstats", "skimr", "stargazer", "tidyverse", "pwr"))
 
 library(effects) 
