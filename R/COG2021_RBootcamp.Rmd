@@ -17,6 +17,9 @@ knit: (function(inputFile, encoding) {
                         encoding=encoding, 
                         output_file=file.path(dirname(inputFile), out_dir, 'index.html')) })
 ---
+```{r, echo=FALSE}
+knitr::opts_chunk$set(error = TRUE)
+```
 
 # Introduction
 
@@ -115,7 +118,8 @@ Install and load the following packages:
   tidyverse  
   
 ```{r Exercise 1, code="'\n\n\n\n'", results=F}
-  
+
+
   
 ```
 
@@ -137,7 +141,7 @@ I can press tab when my cursor is to the left of the forward slash to see a list
 From there, I can keep hitting tab until I get to the directory, or folder, that contains the files I want to work with. 
 
 ```{r Setting Working Directory, eval=TRUE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-Path <- "C:/Users/Administrator/Desktop/COG/intro-to-coding-2021/R/"
+Path <- "/Users/tuk12127/Desktop/COG/intro-to-coding-2021/R/"
 ``` 
 
 Again, because *R Markdown* doesn't handle setting working directories like normal R, we'll use the command that actually specifies the working directory when we load in the data.
@@ -193,7 +197,7 @@ Alternatively, if you only want to check the top of it, you can run:
 *read.csv()* contains a command that will read the names of our column headers and check them for syntactically valid variable names and that there are no duplicates. Using one of the two methods highlighted above, find what that argument is and rewrite the data-reading command with that argument included.
 
 ```{r Exercise 2, code="'\n\n\n\n'", results=F}
-  
+
   
 ```
 
@@ -270,6 +274,7 @@ Let's subset the *df* dataframe with two conditional statements and selecting on
 
 ```{r Exercise 03, code="'\n\n\n\n'", results=F}
 
+
   
   
 ```
@@ -311,7 +316,7 @@ Although I noted at the beginning of **Section 1.6.1** that each variable is eit
 
 ```{r Exercise 04, code="'\n\n\n\n'", results=F}
 
-  
+
   
 ```
 
@@ -401,6 +406,7 @@ Let's calculate values for a new column within df called EV_Diff. It should be e
 EV_Diff could be a helpful variable later on, but there's a slight problem. We might not really necessarily care whether EV1 was the larger amount of EV2 was the larger amount, we just want to know the pure magnitude of the difference. You could maybe imagine a scenario where EV1 = 10 and EV2 = 5, as well as EV1 = 5 and EV2 = 10. In the former, EV_Diff = 5 and in the latter EV_Diff = -5. These values will be treated differently by R, but we want R to treat them the same. As such, we want to create a new variable that captures the absolute value of EV_Diff, which we will call *EV_DiffAbs*. The absolute value command is *abs()*. 
 
 ```{r Exercise 06, code="'\n\n\n\n'", results=F}
+
 
    
 ```
@@ -527,7 +533,7 @@ Furthermore, once you write a good ggplot script once, you'll find that you'll r
 To start, we're just going to do a basic plot with both an x and y axis. To make it simple, I'm going to use variables that have numeric values, so the x axis will contain the absolute difference in expected values and the y axis will contain the range of possible reaction times, but the actual data doesn't matter much here. Instead, we're going to focus on just about everything but the data.
 
 ```{r Plot Creation w/ ggplot2, message=FALSE}
-ggplot(data = df, aes(x = EV_DiffAbs, y = rt))
+ggplot(data = df, aes(x = 'EV_DiffAbs', y = 'rt'))
 ```
 
 This is just about the most basic plot we could run in ggplot. We start by defining the dataframe from which we are pulling our variables (df), and then we tell R which two variables will define the aesthetics of this plot (aes(x = EV_DiffAbs, y = rt)). As you can see, that's enough for R to create a basic 2d plane on which we could visualize data. R automatically places the variable we defined as X on the x axis and labels it, and then populates the Y axis as well. Both axes are given reasonable ranges, based on the range of the data.
@@ -537,7 +543,7 @@ This is just about the most basic plot we could run in ggplot. We start by defin
 However, if we want to see the actual data, we need to define what type of plot (i.e., line, bar, scatter, etc.) we want to see. In order to add more layers to a ggplot, we need to use an addition sign:
 
 ```{r Adding Geoms w/ ggplot 2, message=FALSE}
-ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
        geom_smooth(method="lm", alpha = .25, size = 1.5)
 ```
 
@@ -548,7 +554,7 @@ Here, we kept the first line the same, and we're adding a command for ggplot to 
 The above plot might be perfectly fine for you and your team, who have been looking at the data for months, to understand the relationship you're studying, but adding more descriptive labels would go a long way to make these plots more accessible to others. There are a million different commands that will alter the labels of the axes, but I'm partial to this approach, which allows us to modify the title and add subtitles and captions as well:
 
 ```{r Adding Labels w/ ggplot 2, message=FALSE}
-ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
        geom_smooth(method="lm", alpha = .25, size = 1.5) +
        labs(title = "Expected Value Difference Predicts Decision Reaction Time",
             subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -564,7 +570,7 @@ Notice, once again, that we string together multiple layers through the use of a
 This looks better, certainly, but let's say participants only had 2 seconds to respond to the decisions. This axis would be a little disingenuous, because it would suggest the range was actually much smaller and artificially make my relationship look larger. My Y axis in that case should really range from 0 to 2, for the amount of time participants had to respond. The coord_cartesian function is by far the best way to manipulate the displayed range of your axes without actually modifying the data (Some other functions will exclude datapoints that sit outside of the range you define, meaning they won't be included in your regression line). We simply define the lower and upper limits of our x (xlim) and/or y (ylim) axis: 
 
 ```{r Setting Plot Limits w/ ggplot 2, message=FALSE}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
          geom_smooth(method="lm", alpha = .25, size = 1.5) +
          labs(title = "Expected Value Difference Predicts Decision Reaction Time",
               subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -579,7 +585,7 @@ This looks better, certainly, but let's say participants only had 2 seconds to r
 Great! Now the data is all technically correct, but I really don't like that ugly gray background. Let's change that with the host of functions that come with the ***ggtheme*** package. I believe that base *ggplot2* may accept some theme commands without needing *ggtheme*, but *ggtheme*, at the least, expands the options we have to customize our plots. We'll start with my usual favorite, theme_classic: 
 
 ```{r Adding Themes w/ ggplot2}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -593,7 +599,7 @@ Great! Now the data is all technically correct, but I really don't like that ugl
 The "theme_" commands do an overhaul on the presentation of the plot, and make many changes all at once. Let's take a look what another few look like  
 
 ```{r Theme Options Dark w/ ggplot 2}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -605,7 +611,7 @@ The "theme_" commands do an overhaul on the presentation of the plot, and make m
 ``` 
 
 ```{r Theme Options Minimal w/ ggplot 2, message=FALSE}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -617,7 +623,7 @@ The "theme_" commands do an overhaul on the presentation of the plot, and make m
 ```        
 
 ```{r Theme Options Solarized w/ ggplot 2}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -635,7 +641,7 @@ Quite a range! There are a ton of other options which you can review in the **[g
 For the sake of time, we're going to move onto the last thing I usually do, and that's modify the appearance of the text using theme commands, It drives me nuts that the title is off-center and that the "p"'s in the caption are misaligned, so we're going to run a series of commands to correct this.
 
 ```{r Modifying Text Elements w/ ggplot, message=FALSE}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
          geom_smooth(method="lm", alpha = .25, size = 1.5) +
          labs(title = "Expected Value Difference Predicts Decision Reaction Time",
               subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -663,21 +669,9 @@ Let's see you give it a show. Modify the code of the plot below so that:
   3.) the p value key now says "I'm, like, a total R whiz."
   
 ```{r Exercise 8, eval=FALSE,include=TRUE, message=FALSE}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
-         geom_smooth(method="lm", alpha = .25, size = 1.5) +
-         labs(title = "Expected Value Difference Predicts Decision Reaction Time",
-              subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
-              x = "Absolute Difference in Expected Value", 
-              y ="Reaction time (in seconds)",
-              caption = "p > 0.05: N.S. \np < 0.05: * \np < 0.01: ** \np < 0.001: ***") +
-         coord_cartesian(ylim=c(0, 2)) +
-         theme_classic() +
-         theme(plot.title = element_text(face="bold", size=13, hjust = 0.5)) +
-         theme(plot.subtitle = element_text(face = "italic", size = 10, hjust = 0.5)) +
-         theme(plot.caption = element_text(face = "italic", size = 8, hjust = 0.0)) +
-         theme(axis.title = element_text(size = 12)) +
-         theme(axis.text.x = element_text(size = 14, color = "Black")) +
-         theme(axis.text.y = element_text(size = 14, color = "Black"))
+
+
+
 ```
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex8.r)
@@ -963,25 +957,10 @@ Plot <- ggplot(df, aes(x = ProbType, y = rt, color = Condition, group = Conditio
 You might have noticed that I did not explain to you what was happening in lines 2 and 3 of the above plot. I think you can likely figure it out on your own. Because *ggplot* builds its visualizations in layers, we can easily remove a single line, observe what changes, and make a connection between the omission of that line and the change we witnessed. Comment out using a hashtag (#) lines two and three and try to determine what function each serves in the construction of the plot above. In addition, try modifying the value of position_dodge to figure out what that argument is controlling as well. 
 
 ```{r Exercise 10,include=TRUE, eval=FALSE}
-Summary <- CustomSummary(df, "rt", c("ProbType", "Condition"))
-ggplot(df, aes(x = ProbType, y = rt, color = Condition, group = Condition)) +
-    stat_summary(geom="point", fun = mean, size = 3.5, position=position_dodge(width = 0.45)) +
-    geom_errorbar(data=Summary, aes(ymin = rt-ci, ymax = rt+ci), size= 0.75, width=0.25, position=position_dodge(width = 0.45)) +
-    scale_color_brewer(palette="Dark2", name="Condition", breaks=c("Descriptive", "Experiential"), labels=c("Descriptive", "Experiential")) +
-    scale_x_discrete(name = "Problem Type", labels = c("Mixed Domain", "Risky Risk", "Single Domain")) +
-    labs(title = "Differences in Reaction Time by Problem Type and Condition",
-       subtitle = "",
-       x =NULL, 
-       y ="Reaction Time (in seconds)",
-       caption = "p > 0.05: N.S. \np < 0.05: * \np < 0.01: ** \np < 0.001: ***") +
-    coord_cartesian(ylim=c(0.00, 2.00)) +
-    theme_classic() +
-    theme(plot.title = element_text(face="bold", size=13, hjust = 0.5)) +
-    theme(plot.subtitle = element_text(size = 10, hjust = 0.5, face = "italic")) +
-    theme(plot.caption = element_text(size = 8, hjust = 0.0, face = "italic")) +
-    theme(axis.title = element_text(size = 12)) +
-    theme(axis.text.x = element_text(size = 14, color = "Black")) +
-    theme(axis.text.y = element_text(size = 14, color = "Black"))
+
+
+
+
 ```  
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex10.r)
@@ -1011,7 +990,7 @@ Bivariate Linear Regression
 You're going to notice right off the bat that the structure of the syntax here looks awfully similar to what we just did in ANOVA. We start by noting our method with the *lm()* function (Linear Modeling). We then note our outcome variable, add a tilde (~), note our predictor(s), and finally note our datasource.
 
 ```{r Experimental Bivariate Model}
-  m1 <- lm(rt ~ EV_Diff, data = df)
+m1 <- lm(rt ~ EV_Diff, data = df)
 ```
 
 Just like ANOVA, we need to use a *summary()* function to read the data.
