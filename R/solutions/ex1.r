@@ -1,6 +1,7 @@
 install.packages(c("dplyr","effects", "ggpubr", "ggthemes", "interactions", "psych", "plyr", "rstatix", 
 "RColorBrewer", "report", "sjPlot", "sjstats", "skimr", "stargazer", "tidyverse", "pwr"))
 
+libary(dplyr)
 library(effects) 
 library(ggpubr)  
 library(ggthemes)  
