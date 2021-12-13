@@ -1,6 +1,6 @@
 ---
 title: "Bash Command Line Tutorial"
-author: "Elizabeth Beard & Haroon Popal"
+author: "Haroon Popal"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
@@ -21,7 +21,7 @@ knit: (function(inputFile, encoding) {
 
 ## Learning Objectives
 - Practice coding syntax
-- Learn basic coding operations (if-statements, for loops, etc.)
+- Learn basic coding operations (if-statements, for loops, etc.) and concepts (paths, directories, etc.)
 - Learn how to troubleshoot
 
 
@@ -42,29 +42,29 @@ I liked to use the [gitforwindows](https://gitforwindows.org/) bash implementati
 
 
 ## Using a text editor
-There are different ways to write code. One way is to use a notebook style integrated development environment (IDE), such as this tutorial which was written in RStudio, or Jupyter which was used to create the python tutorial. A more similar way is to use a text editor. This can just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
+As we'll learn throughout the week, there are a variety of different ways to write code. One way is to use an integrated development environment (IDE), such as this tutorial which was written in RStudio or Jupyter which was used to create the python tutorial. Both of which we'll demonstrate how to use later in the week. Another way to edit and write is to use a text editor. This can even just be a notepad document. However, some more fancy software exists which makes it very helpful to write code by stylizing code so that it is easier to read, like the example below.
 
 ![](images/vcs.PNG)
 
-I would recommend [Visual Code Studio](https://code.visualstudio.com/). For this tutorial, it would be a good idea to type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code, you have a copy of it for future use. Probably the most useful part of coding is reusability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a "#" at the beginning of a line. Everything on the line after that will not be executable as code. Try using comments to describe commands you use throughout the tutorial.
+I would recommend [Visual Code Studio](https://code.visualstudio.com/). As you work through this tutorial, type your example code, solutions, and anything else you are entering in to the terminal to the text editor as well. That way when you run a bit a code today, you'll have a copy of it for future use. Probably the most useful part of coding is reusability, which is where the text editor comes in. You can also add comments to code to make notes on what a certain command does. This can be done by adding a `#` at the beginning of a line. Everything on the line after the "#" will not be executable as code. Try using comments to describe the commands you use throughout the tutorial.
 
-At the end of the tutorial we will also use a text editor to create a script.
+At the end of the tutorial we will also use a text editor to create a script. Scripts allow us to write out a series of commands or instructions that is then carried out by the program (today, in bash) and can be executed many times as opposed to being utilized in a single instance.
 
 
 # Basic Bash Commands
 
 ## Terminal
-The terminal is a way of interacting within your computer that does not require a graphic user interface (GUI). In the olden times, computers did not have a mouse, desktop, folders, and program icons. If you wanted to do something on a computer, you had to give the computer very specific instructions. If the terminal is the "old" way of doing things, why do people still use the terminal today? One reason, and a point we will stress throughout the bootcamp, is for automation. When you interact with a computer via traditional ways, you will have to repeat very redundant motions. Let's say you want to rename 100 files. You will have to right click on each one, hit "rename", and then type out the new name of the file, all while making small but infuriating mistakes at each of these steps. Sometimes you might also make small mistakes that can be harder to catch later, such as if you were to add an extra "a" somewhere. With the terminal, and coding in general, we can create a set of commands, test it on a couple of files, and then run them on all of the other files. Then, if we ever have to do something similar in the future, we will have that code ready, and not have to do redundant things again. 
+The terminal is a way of interacting within your computer that does not require a graphic user interface (GUI). In the olden times, computers did not have a mouse, desktop, folders, and program icons. If you wanted to do something on a computer, you had to give the computer very specific instructions (sometimes referred to as commands). If the terminal is the "old" way of doing things, why do people still use the terminal today? One reason, and a point we will stress throughout the bootcamp, is for automation. When you interact with a computer via traditional ways, you will have to repeat very redundant motions. Let's say you want to rename 100 files. You will have to right click on each one, hit "rename", and then type out the new name of the file, all while making small but infuriating mistakes at each of these steps. Repeating this process over and over you might also make small mistakes that can be harder to catch later, such as if you were to add an extra "a" somewhere. With the terminal, and with coding in general, we can create a set of commands, test it on a couple of files, and then run them on all of the other files using a script or our text file. Then, if we ever have to do something similar in the future, we will have that code ready, and not have to do redundant things again. 
 
 ![](images/terminal.PNG)
 
 
 #### Exercise 0
-Try creating your first bash text file now. Open Visual Code Studio, create a new file, name it "bash_exercises.sh". The ".sh" extension tells the computer this is a bash script. You should also specify that this is a bash script by adding "#!/bin/bash" to the first line of the document. This is a good habit to have when writing scripts so you know what language the script was written in.
+Try creating your first bash text file now. Open Visual Code Studio, create a new file, name it "bash_exercises.sh". The ".sh" extension tells the computer this is a bash script. You should also specify that this is a bash script by adding `#!/bin/bash` to the first line of the document. This is a good habit to have when writing scripts so you know what language the script was written in.
 
 
 ## Listing
-When you open a folder, you can immediate see the files that are inside. In the terminal you will have to give it a command to see what is inside (ignore this con, the pros are coming soon). The command to "list" the contents of the **current directory** is:
+When you open a folder using the GUI on your computer, you can immediate see the files that are inside. In the terminal you will have to give it a command to see what is inside (ignore this con, the pros are coming soon). The command to "list" the contents of the **current directory** is:
 
 ```{eval=FALSE}
 ls
@@ -88,7 +88,7 @@ cd
 ```
 
 #### Exercise 1
-Use the commands we have learned to find the path (location) of the home directory.
+Use the commands we have learned to find the path (location) of the home directory. A path (or filepath) is the entire series of directories and subdirectories leading to a file or folder.
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex1.sh)
 
@@ -96,7 +96,7 @@ Use the commands we have learned to find the path (location) of the home directo
 ## Navigating Directories
 
 ### Know where you are going
-To navigate through directories, we can used the "cd" command and input a subdirectory to go to there. For example, use the following command to go to the "Desktop" from the home directory:
+To navigate through directories, we can used the `cd` command and input a subdirectory to go to there. For example, use the following command to go to the "Desktop" from the home directory:
 
 ```{eval=FALSE}
 cd Desktop
@@ -106,10 +106,10 @@ Now when we hit "ls" we can see everything on our desktop:
 ~[](images/desktop.PNG)
 
 ### Going to where you need to go
-Now that you know the **ls**, **cd**, and **pwd** commands, you can navigate through your computer just like you would with the finder (on a mac) or the file explorer (on a PC).
+Now that you know the **`ls`, `cd`, and `pwd`** commands, you can navigate through your computer just like you would with the finder (on a mac) or the file explorer (on a PC).
 
 #### Exercise 2.a
-Navigate to the directory that your COG bootcamp materials are in.
+Navigate to the directory that your COG bootcamp materials are in using the terminal.
 
 **Note:** Now is a good time to start using the text editor. The exercises you do today may be relevant to the rest of the bootcamp, so it is a good idea to keep a record of all the commands and actions you took to play around with the data. Add a comment to the script to note that the following code is for Exercise 2.a. Then write the solution for this exercise below the comment.
 
@@ -117,7 +117,7 @@ Navigate to the directory that your COG bootcamp materials are in.
 
 
 ### Getting from A to B
-In the previous exercise, did you find yourself repetitively using the **cd** command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **cd** command a path instead of a single directory to navigate to. 
+In the previous exercise, did you find yourself repetitively using the **`cd`** command to go through various directories. One rule of thumb for coding is that if something is repetitive, there is probably a more efficient way to do it. In this case, we can give the **`cd`** command a path instead of a single directory to navigate to. 
 
 #### Exercise 2.b
 Start at your home directory and navigate to the "bash" subdirectory within the COG bootcamp directory. Don't forget to add this code to your text file. 
@@ -180,26 +180,30 @@ cp path/to/original path/to/new/location
 #### Exercise 2.f
 Copy over the subject data, in the "log", from the "misc" workshop directory into the "subject_data" subdirectory in the "bash" directory.
 
-**Note:** In order to copy directories, you must use the "-r" flag like so:
+**Note:** In order to copy a directory and its entire contents, you must use the `-r` flag like so:
 
 ```{eval=FALSE}
 cp -r path/to/original path/to/new/location
 ```
 
-**Hint:** There are multiple ways to solve this exercise. First, you should note the correct paths. It might seem complicated, but just keep in mind that only two inputs are needed for this command. Second, you can either copy all of the individual subject data using an "*" wildcard which tells bash "pull all these things". Or you can copy over the higher level directory and then rename it.
+Flags are different and additional options for a command. The `-r` flag here stands for "recursive", so we are having the computer copy the directory and its entire contents as opposed to a single empty folder or a single file.
+
+**Hint:** There are multiple ways to solve this exercise. First, you should note the correct paths. It might seem complicated, but just keep in mind that only two inputs are needed for this command. Second, you can either copy all of the individual subject data using an `*` wildcard which tells bash "pull all these things". Or you can copy over the higher level directory and then rename it.
 
 [Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex2f.sh))
 
 
 #### Think!
-When do you end a path with the "/" symbol and when do you not? What would happen if you used the "mv" command to move something into the current directory where there is already a file of that name? How would this change if you use or do not use slashes? Discuss with other students and your TA.
+When do you end a path with the `/` symbol and when do you not? What would happen if you used the `mv` command to move something into the current directory where there is already a file of that name? How would this change if you use or do not use slashes? Discuss with other students and your TA.
 
 
 ### Removing things
-Removing files can be done by providing the path the file you wish to remove. Again, if you wish to remove a directory, you used use the "-r" flag. 
+Removing files can be done by providing the path the file you wish to remove. Again, if you wish to remove a directory, you used use the `-r` flag. 
 ```{eval=FALSE}
 rm path/to/file
 ```
+
+**Note:** Be **very** careful when you remove a file or directory using the terminal. If you've deleted files from your computer before, they generally end up in a separate "Trash" folder for a certain amount of time. THIS IS NOT THE CASE WHEN YOU REMOVE FILES USING THE TERMINAL. Files removed via the terminal are gone. Forever. 
 
 #### Exercise 2.g
 Remove the old test_directory folder.
@@ -235,8 +239,7 @@ else
 fi
 ```
 
-The "-e" is a flag, which tells the command to do something specific. In this case "-e" says "does this exist".
-
+The `-e` is a flag, which tells the command to do something specific. In this case `-e` asks "does this exist".
 
 # For Loops
 For loops allow us to repeat a set of commands. This is very useful when you want to do the same thing for a bunch of subjects. The syntax is:
@@ -248,13 +251,13 @@ for {thing} in {list_of_things}; do
 done
 ```
 
-"thing" here becomes a variable. In order to reference a variable, you need to use the correct syntax, which is to have a "$" in the beginning. It is also a good idea to have the whole variable name in curly brackets {}. If you did not use this syntax and just used "thing" instead (without the quotes), bash would think this is a folder called "thing in the current directory.
+`thing` here becomes a variable. In order to reference a variable, you need to use the correct syntax, which is to have a `$` in the beginning. It is also a good idea to have the whole variable name in curly brackets `{}`. If you did not use this syntax and just used `thing` instead, bash would think this is a folder called "thing" in the current directory.
 
 
 #### Exercise 3
 Use an if-statement in combination with a for loop to check whether subjects DE201-DE210 have the appropriate behavioral data.
 
-** Hint:** To complete this exercise, you will have to use the most important skill you will learn today. Google! Try to articulate the problem in a sentence and then google it. See if there are solutions already on line that you can just copy and modify.
+** Hint:** To complete this exercise, you will have to use the most important skill you will learn today. Google! Try to articulate the problem in a sentence and then google it. See if there are solutions already on line that you can just copy and modify. Outside of Google discuss and share helpful links with your group and your TA. What are some different ways to solve this exercise?
 
 [Click for solution]([Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex3.sh))
 
@@ -268,7 +271,7 @@ To run a script, we can save the file and then use bash to run all the commands 
 
 1. Save the script as a ".sh" file. You can name it whatever you want, but try not to put any spaces or special characters into the title.
 2. Navigate to where the script is in the terminal.
-3. Check the permissions of the file, this can be done by using the "ll" or "ls -l" command:
+3. Check the permissions of the file, this can be done by using the `ll` or `ls -l` command:
 ![](images/ll_pre.PNG)
 4. Change the permission to make the file executable by using the code below.
 ```{eval=FALSE}
@@ -281,7 +284,7 @@ bash bash_exercises.sh
 
 
 #### Exercise 4: Advanced!
-Modify the for loop if-statement to check whether the csv data exists for all subjects. We only checked for the first 10 subjects before. Make sure all of your paths are correct. If you do not want to run certain commands (like the mkdir commands in the beginning), comment them out (add a "#" at the beginning of the command).
+Modify the for loop if-statement to check whether the csv data exists for all subjects. We only checked for the first 10 subjects before. Make sure all of your paths are correct. If you do not want to run certain commands (like the mkdir commands in the beginning), comment them out (add a `#` at the beginning of the command).
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/bash/solutions/ex4.sh)
 
@@ -293,12 +296,10 @@ Modify the for loop if-statement to check whether the csv data exists for all su
 ### Python - Anaconda
 [Installation instructions](https://docs.anaconda.com/anaconda/install/index.html)
 
-
 ### R - RStudio
 [Install R](https://cran.rstudio.com/)
 
 [Install RStudio](https://www.rstudio.com/products/rstudio/download/#download)
-
 
 # Conclusion
 ![](images/meme.jpg)
@@ -306,7 +307,6 @@ Modify the for loop if-statement to check whether the csv data exists for all su
 # Extra
 
 ## Installing other software and packages
-
 ### Python
 [Anaconda Installation](https://www.anaconda.com/products/individual#Downloads)
 
