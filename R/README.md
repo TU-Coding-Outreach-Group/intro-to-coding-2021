@@ -23,6 +23,7 @@ This workshop will review basic coding skills relevant to conducting statistical
          Linux: https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.1-372-amd64.deb  
 3. Download relevant packages. Following the installation of R and R studio, copy, paste, and run the following code into the R Studio console:
 
+          install.package("dplyr")
           install.package("effects")  
           install.package("ggpubr")  
           install.package("ggthemes")  
