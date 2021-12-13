@@ -2,7 +2,7 @@
 # Python Tutorial
 12/15/2021
 
-__**Instructors:**__ Katie Jobson
+__**Instructor:**__ Katie Jobson
 
 
 ## Description
