@@ -4,12 +4,12 @@
 This set of tutorials is intented for complete beginners to coding. If you have never written a line of code in your life, these tutorials will help you get compfortable coding in three programming languages: bash, python, and R. These three language are often used by psychology researchers, and these tutorials are catered to that field. However, the concepts covered are applicable in any field that does coding. Much of the material covered in the tutorials is borrowed from some already great, and more in-depth tutorials. A list of these is available [here](https://github.com/TU-Coding-Outreach-Group/Tutorials/blob/master/index.md).
 
 ## Agenda
-| Date        | Workshop                             | Presenter  |
+| Date        | Workshop                             | Instructor |
 | :-----------: |:------------------------------------:| :-----------:|
 | 12/14   | [Bash Command line](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/bash)                       | Elizabeth Beard & Haroon Popal |
 | 12/15    | [Python](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/python)                             | Katie Jobson |
 | 12/16    | [R](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/R)      | Billy Mitchell |
-| 12/17    | [Data Blitz](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/data-blitz) | TBA |                          
+| 12/17    | [Data Blitz](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021//tree/main/data-blitz) |   |                          
 
 
 
@@ -25,4 +25,4 @@ For PC users, you can set up the bash command line and git by installing [this p
 
 
 ## Acknowledgements
-Special thanks to our workshop volunteers who did a lot of the behind-the-scenes work.
+**Teaching Assistants:** Michelle Chiu Büşra Tanriverdi
