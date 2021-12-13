@@ -121,22 +121,6 @@ Install and load the following packages:
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex1.r)
 
-```{r Solution 1, include=FALSE}
-  library(effects)  
-  library(ggpubr)  
-  library(ggthemes)  
-  library(interactions)  
-  library(psych)  
-  library(plyr)  
-  library(rstatix)
-  library(RColorBrewer) 
-  library(report)
-  library(sjPlot)
-  library(sjstats)
-  library(skimr) 
-  library(stargazer)
-  library(tidyverse)
-```
 
 ## How do I specify my Working Directory in R?
 
@@ -213,16 +197,9 @@ Alternatively, if you only want to check the top of it, you can run:
   
 ```
 
-```{r Solution 2, include=FALSE, eval=FALSE}
-  #Notice we are setting our working directory
-  setwd(Path)
-  df <- read.csv(file = "df.csv", 
-                 header = T, 
-                 sep=",",
-                 na.strings=c("","N/A","NA"),
-                 check.names = TRUE,
-                 stringsAsFactors = TRUE)
-```
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex2.r)
+
+
 
 ### Subsetting Data 
 
@@ -234,10 +211,7 @@ We now have data contained within an R dataframe in a way that R can understand.
   
   3.) **Run** - *Factor*; Which run the trial was completed within.  
   
-  4.) **ProbType** - *Factor*; defines what type of choice participants had to make: Risky Risks (RR) presented two possible outcomes   
-                 with neither one fully guaranteed to occur. Single Domain (SD) decisions presented two possible outcomes   
-                 that were either both losses or both gains; one guaranteed to occur. Mixed Domain (MD) decisions presented one   
-                 possible outcome that was a loss and one that was a gain; one guaranteed to occur.  
+  4.) **ProbType** - *Factor*; defines what type of choice participants had to make: Risky Risks (RR) presented two possible outcomes with neither one fully guaranteed to occur. Single Domain (SD) decisions presented two possible outcomes that were either both losses or both gains; one guaranteed to occur. Mixed Domain (MD) decisions presented one possible outcome that was a loss and one that was a gain; one guaranteed to occur.  
   
   5.) **order** - *Numeric*; The order in which problems were presented  
   
@@ -249,8 +223,7 @@ We now have data contained within an R dataframe in a way that R can understand.
   
   9.) **samplingCount_safe** - *Numeric*; Total number of safe option samples acquired  
   
-  10.) **switchCount** - *Numeric*; The number of times a subject ‘switched’ sampling machines during the SAMPLING phase.   
-                     A switch count of 0 would mean they only sampled from one machine.  
+  10.) **switchCount** - *Numeric*; The number of times a subject ‘switched’ sampling machines during the SAMPLING phase. A switch count of 0 would mean they only sampled from one machine.  
   
   11.) **safeChoice** - *Factor*; Whether the subject chose the ‘safe’ option. 0 = safe, 1 = risky  
   
@@ -301,13 +274,8 @@ Let's subset the *df* dataframe with two conditional statements and selecting on
   
 ```
 
-```{r Solution 03, eval = TRUE, include=FALSE}
-  df <- subset(df, 
-               df$ran == 1 & !is.na(df$safeChoice),
-               select = c("PID", "Condition", "Run", "ProbType", "order", 
-                          "EV1", "EV2", "samplingCount_risky", "samplingCount_safe",
-                          "switchCount", "safeChoice", "rt"))
-```
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex3.r)
+
 
 ## Data Structure: What the hell is that?
 
@@ -334,7 +302,8 @@ df$safeChoice <- as.factor(df$safeChoice)
 Here, we are telling R to treat the safeChoice variable within the df dataframe as a factor, using the *as.factor()* command, and then overwriting the variable, saving it as itself.
 
 ### Exercise 4
-Although I noted at the beginning of **Section 0.6.1** that each variable is either numeric or a factor, in reality, your R likely did not read in your variables as such. In this exercise: 
+Although I noted at the beginning of **Section 1.6.1** that each variable is either numeric or a factor, in reality, your R likely did not read in your variables as such. In this exercise: 
+
   1.) note the structure of your dataframe columns,   
   2.) compare the structure of each variable to what is listed in our reference list,   
   3.) coerce any that do not match to the appropriate structure.   
@@ -346,14 +315,8 @@ Although I noted at the beginning of **Section 0.6.1** that each variable is eit
   
 ```
 
-```{r Solution 04, eval=TRUE, include=FALSE}
-  #Checking Structure
-  str(df)
-  #Coercing
-  df$safeChoice <- as.factor(df$safeChoice)
-  #Checking Structure Again
-  str(df)
-```
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex4.r)
+
 
 ## Writing data
 
@@ -431,17 +394,8 @@ Let's calculate values for a new column within df called EV_Diff. It should be e
   
 ```
 
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex5.r)
 
-```{r Solution 05, include=FALSE, eval=TRUE}
-  #Calculating values for new column
-  df$EV_Diff <- df$EV1 - df$EV2
-  #Checking values for new column
-  df$EV_Diff
-  #Rinse, Wash...
-  df$Sample_Diff <- df$samplingCount_safe - df$samplingCount_risk
-  #...Repeat
-  df$Sample_Diff
-```
 
 ### Exercise 6
 EV_Diff could be a helpful variable later on, but there's a slight problem. We might not really necessarily care whether EV1 was the larger amount of EV2 was the larger amount, we just want to know the pure magnitude of the difference. You could maybe imagine a scenario where EV1 = 10 and EV2 = 5, as well as EV1 = 5 and EV2 = 10. In the former, EV_Diff = 5 and in the latter EV_Diff = -5. These values will be treated differently by R, but we want R to treat them the same. As such, we want to create a new variable that captures the absolute value of EV_Diff, which we will call *EV_DiffAbs*. The absolute value command is *abs()*. 
@@ -451,12 +405,7 @@ EV_Diff could be a helpful variable later on, but there's a slight problem. We m
    
 ```
 
-```{r Solution 06, eval=TRUE, include=FALSE}
-  #Applying an absolute value function to create a new variable
-  df$EV_DiffAbs <- abs(df$EV_Diff)
-  #Checking the new column values as compared to the old column values
-  table(df$EV_DiffAbs, df$EV_Diff)
-```
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex6.r)
 
 
 ### SLIGHT BREAK TIME ###
@@ -486,7 +435,7 @@ Independent:    Condition (Factor)
 **ANALYSIS**:
 Chi-Square
 
-To start, what we be good to know is simply what the frequency of each category for the variables is. We are going to deviate a little bit from what we'd seen in the past and use syntax and functions contained within the ***dplyr*** package. *dplyr* is a bit of a swiss army knife in that it actually contains many other packages that are very well established in R and are very useful. I personally have trouble keeping the syntax straight, so I only use it when I have to, but I can't deny that it's exceptionally useful (and I'm the only person I know that doesn't like it). I share that only to acknowledge that I'm not the best resource on it, but here's another **[really helpful .pdf](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource2.pdf)** that highlights the primary functions of *dplyr* syntax.
+To start, what would be good to know is simply what the frequency of each category for the variables is. We are going to deviate a little bit from what we'd seen in the past and use syntax and functions contained within the ***dplyr*** package. *dplyr* is a bit of a swiss army knife in that it actually contains many other packages that are very well established in R and are very useful. I personally have trouble keeping the syntax straight, so I only use it when I have to, but I can't deny that it's exceptionally useful (and I'm the only person I know that doesn't like it). I share that only to acknowledge that I'm not the best resource on it, but here's another **[really helpful .pdf](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource2.pdf)** that highlights the primary functions of *dplyr* syntax.
 
 ```{r Chi Square Proportion Summary, eval=TRUE,,include=TRUE}
 (prop <- with(df, table(Condition, safeChoice)) %>%
@@ -503,7 +452,7 @@ round(prop,2)
 
 The first argument notes the object; the second the number of digits past the decimal place that are significant. We don't overwrite this object, though. We want our values as accurate as possible for the next step. Interestingly enough, there are seemingly no differences by condition.
 
-Following *prop*'s creation, we then are going to feed those values into a new object to get the final totals. Note again here that we are putting parentheses around our statement. This is so that when R is done creating the object, it will just automatically it them for us, rather than us having to ask it in a separate statement.
+Following *prop*'s creation, we then are going to feed those values into a new object to get the final totals. Note again here that we are putting parentheses around our statement. This is so that when R is done creating the object, it will just automatically it print them for us, rather than us having to ask it in a separate statement.
 
 ```{r Chi Square Total Summary, eval=TRUE,,include=TRUE}
 (total <- prop * length(rownames(df)))
@@ -538,14 +487,7 @@ Let's run a second Chi Square Test, this time examining whether Problem Type has
   
 ```
 
-```{r Solution 07, include=FALSE, eval=TRUE}
-(prop_ <- with(df, table(ProbType, safeChoice)) %>%
-          prop.table())
-(total_ <- prop_ * length(rownames(df)))  
-(chi_ <- chisq.test(x = df$ProbType, 
-                     y = df$safeChoice))
-rm(chi,prop,total,prop_, total_, chi_)
-```
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex7.r)
 
 
 While a Chi Square Test is great, verbalizing the relationship can only go so far to communicate how these variables are related. Where R really excels, relative to other languages, is visualizing relationships in plots. ***ggplot2*** allows us to build visually-pleasing graphics one layer at a time". This chunk below should probably look big and confusing, and that's fine for now. We're going to run it so we can see what the end product looks like. Then we're going to talk through these lines and I'll show you that it really looks much more intimidating than it is.
@@ -738,25 +680,8 @@ Let's see you give it a show. Modify the code of the plot below so that:
          theme(axis.text.y = element_text(size = 14, color = "Black"))
 ```
 
-Ideally, you should get something like this.
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex8.r)
 
-```{r Exercise 8 example, eval=TRUE, echo=FALSE}
-  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
-         geom_smooth(method="lm", alpha = .25, size = 1.5) +
-         labs(title = "Expected Value Difference Predicts Decision Reaction Time",
-              subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
-              x = "Absolute Difference in Expected Value", 
-              y ="Reaction time (in seconds)",
-              caption = "I'm, like, a total R whiz") +
-         coord_cartesian(ylim=c(0, 2)) +
-         theme_classic() +
-         theme(plot.title = element_text(face="bold", size=13, hjust = 1.0)) +
-         theme(plot.subtitle = element_text(face = "italic", size = 10, hjust = 1.0)) +
-         theme(plot.caption = element_text(face = "italic", size = 8, hjust = 0.0)) +
-         theme(axis.title = element_text(size = 12)) +
-         theme(axis.text.x = element_text(size = 14, color = "Blue")) +
-         theme(axis.text.y = element_text(size = 14, color = "Blue"))
-```
 
 ## T-Tests
 
@@ -877,15 +802,8 @@ Let's run a t-test examining differences between conditions regarding reaction t
   
 ```  
 
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex9.r)
 
-```{r Solution 09, eval=TRUE, include=FALSE}
-  (t_test<- t.test(x = df$rt[df$Condition == "Descriptive"],
-                  y = df$rt[df$Condition == "Experiential"],
-                  paired = TRUE,
-                  alternative = "two.sided"))
-  report(t_test)
-  rm(ttest, t_test)
-```  
 
 ## ANOVAs
 
@@ -1066,31 +984,8 @@ ggplot(df, aes(x = ProbType, y = rt, color = Condition, group = Condition)) +
     theme(axis.text.y = element_text(size = 14, color = "Black"))
 ```  
 
-```{r Solution 10, include=FALSE, eval=FALSE}
-Summary <- CustomSummary(df, "rt", c("ProbType", "Condition"))
-ggplot(df, aes(x = ProbType, y = rt, color = Condition, group = Condition)) +
-    # The line below places the point geoms on the plot which represent the mean value for each condition.
-    # Position_dodge determines how far apart different groups within the same category are positioned on the plot. At 0 they are on top of each other and they get progressively further apart as the value increases
-    stat_summary(geom="point", fun = mean, size = 3.5, position=position_dodge(width = 0.45)) +
-    # geom_errorbar creates errorbars around the 95% confidence intervals defined by Summary.
-    geom_errorbar(data=Summary, aes(ymin = rt-ci, ymax = rt+ci), size= 0.75, width=0.25, position=position_dodge(width = 0.45)) +
-    scale_color_brewer(palette="Dark2", name="Condition", breaks=c("Descriptive", "Experiential"), labels=c("Descriptive", "Experiential")) +
-    scale_x_discrete(name = "Problem Type", labels = c("Mixed Domain", "Risky Risk", "Single Domain")) +
-    labs(title = "Differences in Reaction Time by Problem Type and Condition",
-       subtitle = "",
-       x =NULL, 
-       y ="Reaction Time (in seconds)",
-       caption = "p > 0.05: N.S. \np < 0.05: * \np < 0.01: ** \np < 0.001: ***") +
-    coord_cartesian(ylim=c(0.00, 2.00)) +
-    theme_classic() +
-    theme(plot.title = element_text(face="bold", size=13, hjust = 0.5)) +
-    theme(plot.subtitle = element_text(size = 10, hjust = 0.5, face = "italic")) +
-    theme(plot.caption = element_text(size = 8, hjust = 0.0, face = "italic")) +
-    theme(axis.title = element_text(size = 12)) +
-    theme(axis.text.x = element_text(size = 14, color = "Black")) +
-    theme(axis.text.y = element_text(size = 14, color = "Black"))
-rm(Summary,CustomSummary,aov)
-```  
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex10.r)
+
 
 # Analyzing Data w/ Quantitative Independent Variables
 
@@ -1171,24 +1066,8 @@ During the *ggplot* detour, I'd showed you how to build a model for a bivariate 
    
 ``` 
 
-```{r Solution 11, include=FALSE, eval=TRUE}
-  ggplot(df, aes(x = EV_Diff, y = rt)) +
-         geom_smooth(method="lm", alpha = .25, size = 1.5) +
-         labs(title = "Expected Value Difference Predicts Decision Reaction Time",
-              subtitle = "As expected value differences increase, reaction time decreases.",
-              x = "Difference in Expected Value", 
-              y ="Reaction time (in seconds)",
-              caption = "p > 0.05: N.S. \np < 0.05: * \np < 0.01: ** \np < 0.001: ***") +
-         coord_cartesian(ylim=c(0, 2)) +
-         theme_classic() +
-         theme(plot.title = element_text(face="bold", size=13, hjust = 0.5)) +
-         theme(plot.subtitle = element_text(face = "italic", size = 10, hjust = 0.5)) +
-         theme(plot.caption = element_text(face = "italic", size = 8, hjust = 0.0)) +
-         theme(axis.title = element_text(size = 12)) +
-         theme(axis.text.x = element_text(size = 14, color = "Black")) +
-         theme(axis.text.y = element_text(size = 14, color = "Black"))
-rm(m1)
-```  
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex11.r)
+
 
 ## Multivariate Regression
 
@@ -1243,19 +1122,8 @@ Let's see you run a new regression from scratch. I want to know whether the amou
    
 ``` 
 
-```{r Solution 12, include=FALSE, eval=TRUE}
-  df2 <- subset(df, !is.na(df$samplingCount_risky))
-  m3 <- lm(rt~samplingCount_risky + samplingCount_safe, df2)
-  stargazer(m3,
-            type = "text", 
-            title= "Sample Count Predicting Reaction time",
-            column.labels = c("Model 3"),
-            dep.var.labels = "Reaction Time (in secs.)", 
-            star.cutoffs = c(0.05, 0.01,0.001),
-            covariate.labels = c("Risky Sample Count", "Safe Sample Count", "Intercept"),
-            notes = "")  
-  rm(df2,m2,m3)
-```  
+[Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex12.r)
+
 
 ## Binary Logistic Regression
 
