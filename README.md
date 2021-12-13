@@ -17,7 +17,7 @@ This set of tutorials is intented for complete beginners to coding. If you have 
 Each tutorial will list the necessary pre-requesites in their respective README.md files, but here is some software we recommend you install before the workshops. We will also spend some time going over installation on Day 1.:
 - A command-line shell (i.e. Bash)
 - A text editor you're comfortable with (Atom, [VSCode](https://code.visualstudio.com/), etc.)
-- [Jupyter notebook](https://jupyter.org/install), also available through [Anaconda](https://www.anaconda.com/products/individual#Downloads)
+- Spyder, available through [Anaconda](https://www.anaconda.com/products/individual#Downloads)
 - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 - Git and create a [GitHub](https://github.com/) account (Optional)
 
@@ -25,4 +25,4 @@ For PC users, you can set up the bash command line and git by installing [this p
 
 
 ## Acknowledgements
-**Teaching Assistants:** Michelle Chiu Büşra Tanriverdi
+**Teaching Assistants:** Michelle Chiu, Büşra Tanriverdi
