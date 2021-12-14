@@ -13080,7 +13080,7 @@ div#notebook {
 <h1 id="Coding-Bootcamp:-Python">Coding Bootcamp: Python<a class="anchor-link" href="#Coding-Bootcamp:-Python">&#182;</a></h1><p>Katie Jobson</p>
 <p>December 15th, 2021</p>
 <p>Welcome to Day 2 of Coding Bootcamp!</p>
-<p>Yesterday, you learned the basics of bash and how to navigate your data. Today we will be using Python to clean that data and make it easier to use for analysis.</p>
+<p>Yesterday, you learned the basics of bash and how to navigate your data in the terminal. Today we will be using Python to clean that data and make it easier to use for analysis.</p>
 <h2 id="Learning-Objectives-for-Python">Learning Objectives for Python<a class="anchor-link" href="#Learning-Objectives-for-Python">&#182;</a></h2><ol>
 <li>Integrate what we know about bash into Python</li>
 <li>Learn how to clean data using Python packages</li>
@@ -13177,7 +13177,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Sometimes, not having these commands make it more difficult to work with data. So, we have alternatives to just using the command line.</p>
+<p>Sometimes, not having these commands make it more difficult to work with data. Othertimes, we want to remember which commands we ran or we want to run scripts on new data. So, we have alternatives to just using the command line.</p>
 
 </div>
 </div>
@@ -13215,6 +13215,15 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exercise-0">Exercise 0<a class="anchor-link" href="#Exercise-0">&#182;</a></h2><p>Just like yesterday, let's get in the habit of copying commands we write as we go through the workshop. This time we'll be using the Spyder IDE. Open Anaconda, and then Spyder. Then, create a new file, name it "python_exercises.py". The ".py" extension tells our computer that it is a Python script. You should also specify that this is a python script by adding <code>#!/bin/python3</code> to the first line of the document.</p>
+<p>Unlike in Visual Studio Code, in Spyder we can also practice running lines from our script which then execute from the Python Command Line. See if you can figure out how to run a single line of code from your "python_exercises.py" file.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Intro-to-Coding-in-Python">Intro to Coding in Python<a class="anchor-link" href="#Intro-to-Coding-in-Python">&#182;</a></h1>
 </div>
 </div>
@@ -13222,7 +13231,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here we are going to talk about the place where coding and Python as a language overlap. There should be a lot of familiar terms and ideas in this section. Think about the types of things you learned in our bash session, and try to apply some of those concepts here!</p>
+<p>Here we are going to talk about the place where coding and Python as a language overlap. There should be a lot of familiar concepts and ideas in this section. Think about the types of things you learned in our bash session, and try to apply some of those concepts here!</p>
 <p>Some definitions:</p>
 <p><em>Object</em> - almost everything in Python that you will be working with can be called an "object". Python is object-oriented. You can also think of these objects as variables.</p>
 
@@ -13231,7 +13240,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
@@ -13239,6 +13248,24 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13263,7 +13290,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -13273,11 +13300,31 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[2]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>int</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this case, our object (called "x") is an integer. This is a numeric data type, and therefore can be used in operations that can be used on numeric objects.</p>
+<p>In this case, our object (called <code>x</code>) is an integer. This is a numeric data type, and therefore can be used in operations that can be used on numeric objects.</p>
 <p>But numeric data is not the only type of data that can be used!</p>
 
 </div>
@@ -13285,7 +13332,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;This is a string&quot;</span>
@@ -13302,13 +13349,15 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>This is a string
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>str</pre>
 </div>
+
 </div>
 
 </div>
@@ -13325,7 +13374,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">20</span><span class="p">]</span>
@@ -13342,7 +13391,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13376,7 +13425,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-1">Example 1<a class="anchor-link" href="#Example-1">&#182;</a></h2><p>Create two variables: one string and and numeric. Print both!</p>
+<h2 id="Exercise-1">Exercise 1<a class="anchor-link" href="#Exercise-1">&#182;</a></h2><p>Create two variables: one string and and numeric. Print both! Update the code below and save it to your script.</p>
 
 </div>
 </div>
@@ -13412,6 +13461,14 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex1.py">Click for solution</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Operators-in-Python">Operators in Python<a class="anchor-link" href="#Operators-in-Python">&#182;</a></h2><p>Python provies a wide range of possibilities for what we can do with our data. Most of the time, it is pretty intuitive to figure out how to use them.</p>
 <p>To manipulate data we are using something called an oeprator. An operator is a symbol that will carry out a specific function, such as a arithmetic or logical computation. They can be used on variables and values within Python.</p>
 <p>An easy example of this is a simple mathematical computation:</p>
@@ -13421,7 +13478,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">x</span>
@@ -13432,10 +13489,28 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">*</span> <span class="mi">4</span>
@@ -13446,12 +13521,30 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>24
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Where the plus and multiplication signs are our arithmetic opertors! Our equal sign in this case is what we call an <em>assignment operator</em> - it assigns the value of the equation to the right of the equal sign, into the variable on the left.</p>
-<p>Within an IDE, these operators will show up as a different color than other commands, so they should be easy to spot.</p>
+<p>Within an IDE, these operators will show up as a different color than other types of commands, so they should be easy to spot.</p>
 <p>When thinking of how this can be applied to data cleaning, it can be helpful if you want to center your data, create a new variable out of existing ones, find the mean of a variable, etc.</p>
 <p>There are also other types of operators which allow you to complete different functions. For a full list of operators and what they do, <a href="https://www.w3schools.com/python/python_operators.asp">this website</a> has a comprehensive list of the ones you may encounter within Python.</p>
 
@@ -13461,7 +13554,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-2">Example 2<a class="anchor-link" href="#Example-2">&#182;</a></h2><p>Create a variable that, when printed, outputs 25!</p>
+<h2 id="Exercise-2">Exercise 2<a class="anchor-link" href="#Exercise-2">&#182;</a></h2><p>Create a variable using mathmatical operators that, when printed, outputs 25! We've included some sample code below.</p>
 
 </div>
 </div>
@@ -13483,6 +13576,14 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex2.py">Click for solution</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="For-Loops-in-Python">For Loops in Python<a class="anchor-link" href="#For-Loops-in-Python">&#182;</a></h2><p>For loops in Python work a lot like for loops within bash. The same concept applies, though there are slight differences in the syntax of it all.</p>
 <p>A quick refresher about for loops and their logic. We want to use for loops when we want our program to loop through a list of things. It can be used for a lot of different reasons; too many to even list here! You can use them in creative ways to help you automate tasks that you would otherwise do by hand.</p>
 <p>Let's look at an example in Python.</p>
@@ -13492,7 +13593,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">majors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;computer science&quot;</span><span class="p">,</span> <span class="s2">&quot;psychology&quot;</span><span class="p">,</span> <span class="s2">&quot;neuroscience&quot;</span><span class="p">]</span>
@@ -13504,19 +13605,39 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>computer science
+psychology
+neuroscience
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In this case, there are three text variables contained within our list variable, "majors". Our for loop says that for every variable contained within the list, it should print each one.</p>
-<p>You do not necessarily need to use 'x' to denote your variables in this case. You can use almost anything if it helps you make sense of your code later on:</p>
+<p>You do not necessarily need to use <code>x</code> to denote your variables in this case. You can use almost anything if it helps you make sense of your code later on:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">majors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;computer science&quot;</span><span class="p">,</span> <span class="s2">&quot;psychology&quot;</span><span class="p">,</span> <span class="s2">&quot;neuroscience&quot;</span><span class="p">]</span>
@@ -13528,19 +13649,39 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>computer science
+psychology
+neuroscience
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This should be reminicent of what you learned during the bash portion of the workshop. The only real difference between Python and bash is that you <em>need</em> to use a colon when setting up the for loop, and you do not need to close it by using "done".</p>
-<p>You can also add what is called an "if statement". Sometimes, you want to run through all of your data, but you only want to retain some of it. The if statment tells the data to do something only if it meets a condition that you have set. FOr example, if you only wanted to print "psychology" as a major:</p>
+<p>This should be reminicent of what you learned during the bash portion of the workshop. One difference between Python and bash is that you <em>need</em> to use a colon when setting up the for loop, and you do not need to close it by using "done". Another critical difference is that unlike in bash, in Python, <strong>indentation matters</strong>. See how we've indented after starting our for loop? In Python, indentation is a way of telling a Python interpreter that the group of statements belongs to a particular block of code.</p>
+<p>You can also add what is called an "if statement". Sometimes, you want to run through all of your data, but you only want to retain some of it. The if statment tells the data to do something only if it meets a condition that you have set. For example, if you only wanted to print "psychology" as a major:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">majors</span><span class="p">:</span>
@@ -13552,11 +13693,29 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>psychology
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For loops used in conunction with if statments can be powerful tools in cleaning large datasets. By using something that can iterate through all of your data and extract what you need, it removes human error in data cleaning and makes it a much faster process!</p>
+<p>For loops used in conunction with if statments can be powerful tools in cleaning large datasets. By using something that can iterate through all of your data and extract what you need, it removes human error in data cleaning and makes it a much faster process! Note how we've indented the if statement within the for loop.</p>
 
 </div>
 </div>
@@ -13564,7 +13723,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-3">Example 3<a class="anchor-link" href="#Example-3">&#182;</a></h2><p>Edit the code below so it prints the names of our TA's today!</p>
+<h2 id="Exercise-3">Exercise 3<a class="anchor-link" href="#Exercise-3">&#182;</a></h2><p>Edit the code below so it prints the names of our TA's today!</p>
 
 </div>
 </div>
@@ -13587,18 +13746,28 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex3.py">Click for solution</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="While-Loops-in-Python">While Loops in Python<a class="anchor-link" href="#While-Loops-in-Python">&#182;</a></h2><p>While loops are like for loops. They perform a similar function, which is to iterate through data based on parameters you set up. In my opinion, while loops are best when you don't know exactly when you need the loop to end. For example, in our for loop in the previous example, we knew how many majors were inside of our variable, so we knew that the for loop would run through all three majors.</p>
-<p>In the example below, we have 20 datapoints. We only want to print the first 10 reaction times (trials 1-10). Let's see how we would do this with a while loop:</p>
+<p>In the example below, we have 20 datapoints. We only want to print the first 10 reaction times (trials 1-10). Let's see how we would do this with a while loop. We'll go over what the <code>import pandas as pd</code> line means a little later:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;trial&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="s1">&#39;rt&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">8.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">7.9</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;trial&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="s1">&#39;rt&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">8.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">7.9</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 
@@ -13609,7 +13778,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -13619,10 +13788,48 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    trial   rt
+0       1  2.5
+1       2  4.0
+2       3  8.7
+3       4  1.2
+4       5  7.8
+5       6  3.0
+6       7  4.5
+7       8  6.0
+8       9  2.0
+9      10  2.3
+10     11  7.9
+11     12  1.2
+12     13  1.4
+13     14  5.0
+14     15  2.3
+15     16  4.1
+16     17  3.0
+17     18  4.7
+18     19  1.8
+19     20  2.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13632,6 +13839,33 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.5
+4.0
+8.7
+1.2
+7.8
+3.0
+4.5
+6.0
+2.0
+2.3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13648,7 +13882,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-4">Example 4<a class="anchor-link" href="#Example-4">&#182;</a></h2><p>Create a while loop (with an if statement if you want to get creative) that prints the last half of the reaction times in our variable df!</p>
+<h2 id="Exercise-4">Exercise 4<a class="anchor-link" href="#Exercise-4">&#182;</a></h2><p>Create a while loop (with an if statement if you want to get creative) that prints the last half of the reaction times in our variable df!</p>
 
 </div>
 </div>
@@ -13658,7 +13892,12 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;trial&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="s1">&#39;rt&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">8.7</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">7.8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">7.9</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mi">2</span><span class="p">]}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span>
 <span class="k">while</span>
     
     <span class="nb">print</span><span class="p">()</span>
@@ -13672,6 +13911,14 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex4.py">Click for solution</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Functions-in-Python">Functions in Python<a class="anchor-link" href="#Functions-in-Python">&#182;</a></h2><p>Sometimes when you are coding, you have something that you may want done many times. Rather than code this multiple times in multipe different places, you can create a function which will call a line of code. You can make a function as simple or complex as you would like, and the ability to pass different data into these functions can help shorten your code.</p>
 
 </div>
@@ -13679,7 +13926,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
@@ -13697,6 +13944,25 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I pass butter
+Raise your hand if you need help!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13709,7 +13975,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">iq_score</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">82</span><span class="p">]</span>
@@ -13730,12 +13996,41 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The average is:
+92.1
+The average is:
+5.3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Think!">Think!<a class="anchor-link" href="#Think!">&#182;</a></h3><p>Do some of these commands (like <code>len()</code>) look unfamiliar? How would you look up what they mean and what the command does?</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Indexing-in-Python">Indexing in Python<a class="anchor-link" href="#Indexing-in-Python">&#182;</a></h2><p>Something we need to understand before we start cleaning our data is indexing. Indexing is the way a program stores information, and it is important to understand how it works so you can call your data properly. Many coding languages use indexing.</p>
-<p>Indexing is used to look at individual data points or individual rows and columns. Python is a zero-indexed program, so things like lists start at 0, rather than 1. This means that when Python reads your data in, it will read your first data point in as 0. So, if you were to have 12 data points in your 'Reaction Time' coulmn, then the first data point would be referenced as position 0, and your last data point would be referenced as 11. The easiest way to show this will be when we start working with the data.</p>
+<p>Indexing is used to look at individual data points or individual rows and columns based on their location in a sequence. Python is a zero-indexed program, so things like lists start at 0, rather than 1. This means that when Python reads your data in, it will read your first data point in as 0. So, if you were to have 12 data points in your 'Reaction Time' coulmn, then the first data point would be referenced as position 0, and your last data point would be referenced as 11. The easiest way to show this will be when we start working with the data.</p>
 <p>Indexing is a way to refer to individual items within a DataFrame or list. Python is a language that uses objects that are “object-indexed”. This means that the first variable is coded at position 0 (as opposed to position 1, as you would think of in normal logic). This is a common thing to see in coding languages.</p>
 
 </div>
@@ -13743,7 +14038,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
@@ -13757,14 +14052,14 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-5">Example 5<a class="anchor-link" href="#Example-5">&#182;</a></h2><p>If we wanted to call the 3rd number in our list x (i.e. 6), what number would we put between the [] in our code? Test your answer out below!</p>
+<h2 id="Exercise-5">Exercise 5<a class="anchor-link" href="#Exercise-5">&#182;</a></h2><p>If we wanted to call the 3rd number in our list x (i.e. 6), what number would we put between the [] in our code? Test your answer out in spyder!</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[])</span>
@@ -13774,32 +14069,11 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-7-10305eb751c0&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    print(x[])</span>
-<span class="ansi-white-intense-fg ansi-bold">            ^</span>
-<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex5.py">Click for solution</a></p>
 
 </div>
 </div>
@@ -13819,7 +14093,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
@@ -13840,7 +14114,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13872,10 +14146,10 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/DE249/DE249_dbdm_run_1.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/DE249/DE249_dbdm_run_1.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13896,13 +14170,91 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    TrialNumber  P1_1  P1_2  SafeOption  P2_2  O2_2  O2_1 ProbNumber  O1_2  \
+0             1   0.2   1.0           2   0.0     0     0       SD12     6   
+1             2   0.9   1.0           2   0.0     0   -10        MD8     3   
+2             3   0.7   1.0           2   0.0     0     0        SD5    -8   
+3             4   0.8   1.0           2   0.0     0     0        SD9    13   
+4             5   0.9   1.0           2   0.0     0   -30        MD2    -1   
+5             6   0.6   1.0           2   0.0     0     0        SD8     7   
+6             7   0.4   1.0           2   0.0     0     0       SD11     8   
+7             8   0.8   0.1           1   0.9    35    40        RR7   -20   
+8             9   0.2   1.0           2   0.0     0     0        SD3    -7   
+9            10   0.1   1.0           2   0.0     0    -5        MD5    -4   
+10           11   0.4   0.4           1   0.6    17    12        RR2    -5   
+11           12   0.1   1.0           2   0.0     0     0       SD10     3   
+12           13   0.5   0.3           1   0.7    35    30        RR5   -10   
+13           14   0.4   1.0           2   0.0     0   -20        MD4    -4   
+14           15   0.8   0.3           1   0.7    40    33       RR12   -25   
+15           16   0.9   0.7           1   0.3    25    15       RR10    -3   
+16           17   0.3   1.0           2   0.0     0    -4       MD11     5   
+17           18   0.5   0.4           1   0.6    50    30        RR8   -15   
+
+    O1_1  ...  resp  safeChoice  resp_onset        rt  decideDur_total  \
+0     29  ...   1.0         1.0   10.800030  1.693414         11.06960   
+1      5  ...   2.0         0.0   22.935926  0.963875         10.33260   
+2    -10  ...   NaN         NaN         NaN       NaN          2.00000   
+3     16  ...   2.0         0.0   49.999904  0.414568          9.80702   
+4      2  ...   2.0         0.0   62.383918  0.500056          9.88956   
+5     12  ...   2.0         0.0   77.151894  0.502993          9.89269   
+6     22  ...   2.0         0.0   89.503842  0.489714          9.86711   
+7     24  ...   1.0         0.0  103.815798  0.453091          9.85220   
+8    -34  ...   2.0         0.0  116.215831  0.605139          9.97777   
+9     25  ...   1.0         1.0  128.391838  0.482187          9.87303   
+10     5  ...   1.0         0.0  141.879819  0.455168          9.82491   
+11    32  ...   2.0         0.0  158.711790  1.422027         10.79090   
+12    10  ...   1.0         0.0  170.071751  0.433536          9.80116   
+13    15  ...   2.0         0.0  183.071729  1.134842         10.50940   
+14    18  ...   1.0         0.0  197.007680  0.522487          9.88869   
+15     5  ...   1.0         0.0  209.207662  0.473986          9.85780   
+16    27  ...   2.0         0.0  222.791821  0.426570          9.80187   
+17    14  ...   1.0         0.0  235.375794  0.778501         10.12850   
+
+    assignedITI  decide_pad  totalITI  ITI_onset  TrialEndTime  
+0        1.7448    0.006586   1.75139    11.1169       12.8734  
+1        3.9403    0.736125   4.67643    23.2526       27.9380  
+2        1.3975         NaN   1.39750    39.0662       40.4702  
+3        1.1584    1.285432   2.44383    50.3155       52.7687  
+4        3.6229    1.199944   4.82284    62.6999       67.5337  
+5        1.2493    1.197007   2.44631    77.4658       79.9151  
+6        3.1912    1.210286   4.40149    89.8181       94.2303  
+7        1.1231    1.246909   2.37001   104.1350      106.5120  
+8        1.1622    1.094861   2.25706   116.5310      118.7940  
+9        2.3911    1.217813   3.60891   128.7080      132.3260  
+10       4.7413    1.244832   5.98613   142.1960      148.1910  
+11       1.2245    0.277973   1.50247   159.0280      160.5400  
+12       1.1188    1.266464   2.38526   170.3910      172.7880  
+13       3.4263    0.565158   3.99146   183.3880      187.3860  
+14       1.1057    1.177513   2.28321   197.3280      199.6180  
+15       2.5049    1.226014   3.73091   209.5250      213.2660  
+16       1.1239    1.273430   2.39733   223.1080      225.5150  
+17       1.1342    0.921499   2.05570   235.6950      237.7640  
+
+[18 rows x 32 columns]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13918,7 +14270,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Question:">Question:<a class="anchor-link" href="#Question:">&#182;</a></h1><p>What do the numbers 0-17 on the left-hand side of the data represent? (Hint: we just talked about how Python labels our data!)</p>
+<h3 id="Think!">Think!<a class="anchor-link" href="#Think!">&#182;</a></h3><p>What do the numbers 0-17 on the left-hand side of the data represent? (Hint: we just talked about how Python labels our data!)</p>
 
 </div>
 </div>
@@ -13933,16 +14285,113 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="p">[</span><span class="s1">&#39;rt&#39;</span><span class="p">])</span>
 <span class="n">rt</span> <span class="o">=</span> <span class="n">df_run1</span><span class="p">[</span><span class="s1">&#39;rt&#39;</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0     1.693414
+1     0.963875
+2          NaN
+3     0.414568
+4     0.500056
+5     0.502993
+6     0.489714
+7     0.453091
+8     0.605139
+9     0.482187
+10    0.455168
+11    1.422027
+12    0.433536
+13    1.134842
+14    0.522487
+15    0.473986
+16    0.426570
+17    0.778501
+Name: rt, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>TrialNumber                2
+P1_1                     0.9
+P1_2                       1
+SafeOption                 2
+P2_2                       0
+O2_2                       0
+O2_1                     -10
+ProbNumber               MD8
+O1_2                       3
+O1_1                       5
+EV2                        3
+EV1                      3.5
+ProbType                  MD
+P2_1                     0.1
+ran                        1
+order                      1
+trialStartTime       12.9034
+viewingEndTime       18.9388
+viewingDur_total      6.0354
+thinkOnset           18.9391
+decideOnset          21.9721
+leftRight                  0
+resp                       2
+safeChoice                 0
+resp_onset           22.9359
+rt                  0.963875
+decideDur_total      10.3326
+assignedITI           3.9403
+decide_pad          0.736125
+totalITI             4.67643
+ITI_onset            23.2526
+TrialEndTime          27.938
+Name: 1, dtype: object
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13958,7 +14407,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -13968,24 +14417,98 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>TrialNumber                  1
+P1_1                       0.2
+P1_2                         1
+SafeOption                   2
+P2_2                         0
+O2_2                         0
+O2_1                         0
+ProbNumber                SD12
+O1_2                         6
+O1_1                        29
+EV2                          6
+EV1                        5.8
+ProbType                    SD
+P2_1                       0.8
+ran                          1
+order                        0
+trialStartTime       0.0304285
+viewingEndTime         6.07381
+viewingDur_total       6.04338
+thinkOnset             6.07412
+decideOnset            9.10662
+leftRight                    0
+resp                         1
+safeChoice                   1
+resp_onset                10.8
+rt                     1.69341
+decideDur_total        11.0696
+assignedITI             1.7448
+decide_pad          0.00658565
+totalITI               1.75139
+ITI_onset              11.1169
+TrialEndTime           12.8734
+Name: 0, dtype: object
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This item is the very first row of our DataFrame. This does not include our column names.</p>
+<p>This item is the very first row of our DataFrame, not including our column names. To review the column names, we'd use the command below.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_run1</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Index([&#39;TrialNumber&#39;, &#39;P1_1&#39;, &#39;P1_2&#39;, &#39;SafeOption&#39;, &#39;P2_2&#39;, &#39;O2_2&#39;, &#39;O2_1&#39;,
+       &#39;ProbNumber&#39;, &#39;O1_2&#39;, &#39;O1_1&#39;, &#39;EV2&#39;, &#39;EV1&#39;, &#39;ProbType&#39;, &#39;P2_1&#39;, &#39;ran&#39;,
+       &#39;order&#39;, &#39;trialStartTime&#39;, &#39;viewingEndTime&#39;, &#39;viewingDur_total&#39;,
+       &#39;thinkOnset&#39;, &#39;decideOnset&#39;, &#39;leftRight&#39;, &#39;resp&#39;, &#39;safeChoice&#39;,
+       &#39;resp_onset&#39;, &#39;rt&#39;, &#39;decideDur_total&#39;, &#39;assignedITI&#39;, &#39;decide_pad&#39;,
+       &#39;totalITI&#39;, &#39;ITI_onset&#39;, &#39;TrialEndTime&#39;],
+      dtype=&#39;object&#39;)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14002,7 +14525,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_run1_clean</span> <span class="o">=</span> <span class="n">df_run1</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -14010,6 +14533,81 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    TrialNumber  P1_1  P1_2  SafeOption  P2_2  O2_2  O2_1 ProbNumber  O1_2  \
+0             1   0.2   1.0           2   0.0     0     0       SD12     6   
+1             2   0.9   1.0           2   0.0     0   -10        MD8     3   
+3             4   0.8   1.0           2   0.0     0     0        SD9    13   
+4             5   0.9   1.0           2   0.0     0   -30        MD2    -1   
+5             6   0.6   1.0           2   0.0     0     0        SD8     7   
+6             7   0.4   1.0           2   0.0     0     0       SD11     8   
+7             8   0.8   0.1           1   0.9    35    40        RR7   -20   
+8             9   0.2   1.0           2   0.0     0     0        SD3    -7   
+9            10   0.1   1.0           2   0.0     0    -5        MD5    -4   
+10           11   0.4   0.4           1   0.6    17    12        RR2    -5   
+11           12   0.1   1.0           2   0.0     0     0       SD10     3   
+12           13   0.5   0.3           1   0.7    35    30        RR5   -10   
+13           14   0.4   1.0           2   0.0     0   -20        MD4    -4   
+14           15   0.8   0.3           1   0.7    40    33       RR12   -25   
+15           16   0.9   0.7           1   0.3    25    15       RR10    -3   
+16           17   0.3   1.0           2   0.0     0    -4       MD11     5   
+17           18   0.5   0.4           1   0.6    50    30        RR8   -15   
+
+    O1_1  ...  resp  safeChoice  resp_onset        rt  decideDur_total  \
+0     29  ...   1.0         1.0   10.800030  1.693414         11.06960   
+1      5  ...   2.0         0.0   22.935926  0.963875         10.33260   
+3     16  ...   2.0         0.0   49.999904  0.414568          9.80702   
+4      2  ...   2.0         0.0   62.383918  0.500056          9.88956   
+5     12  ...   2.0         0.0   77.151894  0.502993          9.89269   
+6     22  ...   2.0         0.0   89.503842  0.489714          9.86711   
+7     24  ...   1.0         0.0  103.815798  0.453091          9.85220   
+8    -34  ...   2.0         0.0  116.215831  0.605139          9.97777   
+9     25  ...   1.0         1.0  128.391838  0.482187          9.87303   
+10     5  ...   1.0         0.0  141.879819  0.455168          9.82491   
+11    32  ...   2.0         0.0  158.711790  1.422027         10.79090   
+12    10  ...   1.0         0.0  170.071751  0.433536          9.80116   
+13    15  ...   2.0         0.0  183.071729  1.134842         10.50940   
+14    18  ...   1.0         0.0  197.007680  0.522487          9.88869   
+15     5  ...   1.0         0.0  209.207662  0.473986          9.85780   
+16    27  ...   2.0         0.0  222.791821  0.426570          9.80187   
+17    14  ...   1.0         0.0  235.375794  0.778501         10.12850   
+
+    assignedITI  decide_pad  totalITI  ITI_onset  TrialEndTime  
+0        1.7448    0.006586   1.75139    11.1169       12.8734  
+1        3.9403    0.736125   4.67643    23.2526       27.9380  
+3        1.1584    1.285432   2.44383    50.3155       52.7687  
+4        3.6229    1.199944   4.82284    62.6999       67.5337  
+5        1.2493    1.197007   2.44631    77.4658       79.9151  
+6        3.1912    1.210286   4.40149    89.8181       94.2303  
+7        1.1231    1.246909   2.37001   104.1350      106.5120  
+8        1.1622    1.094861   2.25706   116.5310      118.7940  
+9        2.3911    1.217813   3.60891   128.7080      132.3260  
+10       4.7413    1.244832   5.98613   142.1960      148.1910  
+11       1.2245    0.277973   1.50247   159.0280      160.5400  
+12       1.1188    1.266464   2.38526   170.3910      172.7880  
+13       3.4263    0.565158   3.99146   183.3880      187.3860  
+14       1.1057    1.177513   2.28321   197.3280      199.6180  
+15       2.5049    1.226014   3.73091   209.5250      213.2660  
+16       1.1239    1.273430   2.39733   223.1080      225.5150  
+17       1.1342    0.921499   2.05570   235.6950      237.7640  
+
+[17 rows x 32 columns]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14024,7 +14622,7 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_run1_row_clean</span> <span class="o">=</span> <span class="n">df_run1</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14035,21 +14633,90 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    TrialNumber  P1_1  P1_2  SafeOption  P2_2  O2_2  O2_1 ProbNumber  O1_2  \
+0             1   0.2   1.0           2   0.0     0     0       SD12     6   
+1             2   0.9   1.0           2   0.0     0   -10        MD8     3   
+2             3   0.7   1.0           2   0.0     0     0        SD5    -8   
+3             4   0.8   1.0           2   0.0     0     0        SD9    13   
+4             5   0.9   1.0           2   0.0     0   -30        MD2    -1   
+5             6   0.6   1.0           2   0.0     0     0        SD8     7   
+6             7   0.4   1.0           2   0.0     0     0       SD11     8   
+7             8   0.8   0.1           1   0.9    35    40        RR7   -20   
+8             9   0.2   1.0           2   0.0     0     0        SD3    -7   
+9            10   0.1   1.0           2   0.0     0    -5        MD5    -4   
+10           11   0.4   0.4           1   0.6    17    12        RR2    -5   
+11           12   0.1   1.0           2   0.0     0     0       SD10     3   
+12           13   0.5   0.3           1   0.7    35    30        RR5   -10   
+13           14   0.4   1.0           2   0.0     0   -20        MD4    -4   
+14           15   0.8   0.3           1   0.7    40    33       RR12   -25   
+15           16   0.9   0.7           1   0.3    25    15       RR10    -3   
+16           17   0.3   1.0           2   0.0     0    -4       MD11     5   
+17           18   0.5   0.4           1   0.6    50    30        RR8   -15   
+
+    O1_1  ...  viewingEndTime  viewingDur_total thinkOnset  decideOnset  \
+0     29  ...         6.07381           6.04338    6.07412      9.10662   
+1      5  ...        18.93880           6.03540   18.93910     21.97210   
+2    -10  ...        34.02060           6.05012   34.02080     37.05350   
+3     16  ...        46.55240           6.05956   46.55270     49.58530   
+4      2  ...        58.85100           6.05661   58.85120     61.88390   
+5     12  ...        73.61570           6.05645   73.61590     76.64890   
+6     22  ...        85.98120           6.04444   85.98140     89.01410   
+7     24  ...       100.32900           6.06582  100.33000    103.36300   
+8    -34  ...       112.57800           6.03984  112.57800    115.61100   
+9     25  ...       124.87700           6.05774  124.87700    127.91000   
+10     5  ...       138.39200           6.03671  138.39200    141.42500   
+11    32  ...       154.25700           6.03599  154.25700    157.29000   
+12    10  ...       166.60500           6.03485  166.60600    169.63800   
+13    15  ...       178.90400           6.04151  178.90400    181.93700   
+14    18  ...       193.45200           6.03334  193.45300    196.48500   
+15     5  ...       205.70000           6.05057  205.70100    208.73400   
+16    27  ...       219.33200           6.04238  219.33300    222.36500   
+17    14  ...       231.56400           6.01668  231.56400    234.59700   
+
+    leftRight  decideDur_total  assignedITI  totalITI  ITI_onset  TrialEndTime  
+0         0.0         11.06960       1.7448   1.75139    11.1169       12.8734  
+1         0.0         10.33260       3.9403   4.67643    23.2526       27.9380  
+2         1.0          2.00000       1.3975   1.39750    39.0662       40.4702  
+3         1.0          9.80702       1.1584   2.44383    50.3155       52.7687  
+4         0.0          9.88956       3.6229   4.82284    62.6999       67.5337  
+5         0.0          9.89269       1.2493   2.44631    77.4658       79.9151  
+6         1.0          9.86711       3.1912   4.40149    89.8181       94.2303  
+7         1.0          9.85220       1.1231   2.37001   104.1350      106.5120  
+8         1.0          9.97777       1.1622   2.25706   116.5310      118.7940  
+9         1.0          9.87303       2.3911   3.60891   128.7080      132.3260  
+10        0.0          9.82491       4.7413   5.98613   142.1960      148.1910  
+11        1.0         10.79090       1.2245   1.50247   159.0280      160.5400  
+12        0.0          9.80116       1.1188   2.38526   170.3910      172.7880  
+13        1.0         10.50940       3.4263   3.99146   183.3880      187.3860  
+14        0.0          9.88869       1.1057   2.28321   197.3280      199.6180  
+15        1.0          9.85780       2.5049   3.73091   209.5250      213.2660  
+16        0.0          9.80187       1.1239   2.39733   223.1080      225.5150  
+17        0.0         10.12850       1.1342   2.05570   235.6950      237.7640  
+
+[18 rows x 27 columns]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You can see that we have removed 5 columns, because there were 5 columns within Trial 2 that had missing data.</p>
 <p>Further information about dropna() as a function can be found <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html">here</a>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Matplotlib">Matplotlib<a class="anchor-link" href="#Matplotlib">&#182;</a></h3><p>One library that is available within Pandas is called <a href="https://matplotlib.org/">matplotlib</a>. This is a data visualization package that is really nice if you would like to look at your data within Python.</p>
-<p>Because we are doing our data analysis in R for this bootcamp, we will not get into matplotlib here today. But it is a good tool to be aware of.</p>
 
 </div>
 </div>
@@ -14067,24 +14734,30 @@ For those using a PC: type "cmd" into your computer's search bar.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/DE249/DE249_dbdm_run_1.csv&#39;</span><span class="p">)</span>
-<span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/DE249/DE249_dbdm_run_2.csv&#39;</span><span class="p">)</span>
-<span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/DE249/DE249_ebdm_run_1.csv&#39;</span><span class="p">)</span>
-<span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/DE249/DE249_ebdm_run_2.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/DE249/DE249_dbdm_run_1.csv&#39;</span><span class="p">)</span>
+<span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/DE249/DE249_dbdm_run_2.csv&#39;</span><span class="p">)</span>
+<span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/DE249/DE249_ebdm_run_1.csv&#39;</span><span class="p">)</span>
+<span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/DE249/DE249_ebdm_run_2.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>Sometimes when you are using a for or while loop, you want to iterate through different subjects. This will often result in needing to replace part of a string with a subject name. This is just one example for how this can be used!
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sometimes when you are using a for or while loop, you want to iterate through different subjects. This will often result in needing to replace part of a string with a subject name. This is just one example for how this can be used!</p>
+<p>In bash, you saw that you can do this by putting your subjects into a variable, and then calling it like this, with a dollar sign and curly brackets:</p>
+<p>In order to do this for multiple subjects, you can write this into a for loop. It would start something like this:</p>
 
-In bash, you saw that you can do this by putting your subjects into a variable, and then calling it like this, with a dollar sign and curly brackets:
-
-In order to do this for multiple subjects, you can write this into a for loop. It would start something like this:
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -14109,15 +14782,16 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">subjects</span> <span class="o">=</span> <span class="s1">&#39;DE249, DE258, DE214&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">subjects</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DE249&#39;</span><span class="p">,</span> <span class="s1">&#39;DE258&#39;</span><span class="p">,</span> <span class="s1">&#39;DE214&#39;</span><span class="p">]</span>
+
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">subjects</span><span class="p">:</span>
-    <span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_dbdm_run_1.csv&#39;</span><span class="p">)</span>
-    <span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_dbdm_run_2.csv&#39;</span><span class="p">)</span> 
-    <span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_ebdm_run_1.csv&#39;</span><span class="p">)</span> 
-    <span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/KRJ/Downloads/intro-to-coding-2021/misc/logs/</span><span class="si">{subjects}</span><span class="s1">/</span><span class="si">{subjects}</span><span class="s1">_ebdm_run_2.csv&#39;</span><span class="p">)</span>
+    <span class="n">dbdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">_dbdm_run_1.csv&#39;</span><span class="p">)</span>
+    <span class="n">dbdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">_dbdm_run_2.csv&#39;</span><span class="p">)</span> 
+    <span class="n">ebdm_run1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">_ebdm_run_1.csv&#39;</span><span class="p">)</span> 
+    <span class="n">ebdm_run2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;/Users/lizbeard/Desktop/intro-to-coding-2021/misc/logs/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">_ebdm_run_2.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14128,7 +14802,7 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are other ways of accomplishing this that are often more complicated. More information about this can be found <a href="https://appdividend.com/2020/11/23/python-string-substitution-example/#:~:text=To%20substitute%20string%20in%20Python,a%20substring%20with%20another%20substring.">here</a></p>
+<p>There are other ways of accomplishing this that are often more complicated, but may be useful in the future. More information about this can be found <a href="https://appdividend.com/2020/11/23/python-string-substitution-example/#:~:text=To%20substitute%20string%20in%20Python,a%20substring%20with%20another%20substring.">here</a></p>
 
 </div>
 </div>
@@ -14136,24 +14810,20 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now clean the data by removing any rows with NA/Null:</p>
+<p>Now let's clean the data by removing any rows with NA/Null:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_run1_clean</span> <span class="o">=</span> <span class="n">dbdm_run1</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dbdm_run1_clean</span><span class="p">)</span>
 <span class="n">dbdm_run2_clean</span> <span class="o">=</span> <span class="n">dbdm_run2</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dbdm_run2_clean</span><span class="p">)</span>
 <span class="n">ebdm_run1_clean</span> <span class="o">=</span> <span class="n">ebdm_run1</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ebdm_run1_clean</span><span class="p">)</span>
 <span class="n">ebdm_run2_clean</span> <span class="o">=</span> <span class="n">ebdm_run2</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ebdm_run2_clean</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14164,14 +14834,59 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Next, we want to bring our two runs of each condition together. We want to average this data across runs to get a better picture of what our data will look like. There is a command in Pandas that will allow you to concatonate two DataFrames, like this:</p>
+<p>Now let's check to see whether we had to remove any rows from our four dataframes by comparing our original dataframe to the cleaned dataframe.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Length of dbdm_run1: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dbdm_run1</span><span class="p">),</span> <span class="s1">&#39;; Length of dbdm_run1_clean: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dbdm_run1_clean</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Length of dbdm_run2: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dbdm_run2</span><span class="p">),</span> <span class="s1">&#39;; Length of dbdm_run1_clean: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dbdm_run2_clean</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Length of ebdm_run1: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ebdm_run1</span><span class="p">),</span> <span class="s1">&#39;; Length of ebdm_run1_clean: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ebdm_run1_clean</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Length of ebdm_run2: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ebdm_run2</span><span class="p">),</span> <span class="s1">&#39;; Length of ebdm_run1_clean: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ebdm_run2_clean</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Length of dbdm_run1:  18 ; Length of dbdm_run1_clean:  14
+Length of dbdm_run2:  18 ; Length of dbdm_run1_clean:  14
+Length of ebdm_run1:  18 ; Length of ebdm_run1_clean:  17
+Length of ebdm_run2:  18 ; Length of ebdm_run1_clean:  18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, we want to bring our two runs of each condition together. We can also average this data across runs to get a better picture of what our data will look like. There is a command in Pandas that will allow you to concatonate two DataFrames, like this:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_concat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">dbdm_run1_clean</span><span class="p">,</span> <span class="n">dbdm_run2_clean</span><span class="p">))</span>
@@ -14179,6 +14894,114 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    TrialNumber  P1_1  P1_2  SafeOption  P2_2  O2_2  O2_1 ProbNumber  O1_2  \
+1             2  0.25  0.25           1  0.75    10     6        RR1    -8   
+2             3  0.20  1.00           2  0.00     0    -7        MD6    -2   
+3             4  0.80  0.60           1  0.40    18    10        RR9    -4   
+4             5  0.90  1.00           2  0.00     0    -8        MD7     4   
+5             6  0.80  0.10           1  0.90    35    40        RR7   -20   
+6             7  0.10  1.00           2  0.00     0    -1       MD10     2   
+7             8  0.30  0.50           1  0.50    30    15        RR4    -8   
+8             9  0.20  1.00           2  0.00     0     0       SD12     6   
+9            10  0.60  1.00           2  0.00     0   -12       MD12    12   
+10           11  0.90  1.00           2  0.00     0   -10        MD8     3   
+12           13  0.75  0.75           1  0.25    30    10        RR3    -5   
+14           15  0.90  1.00           2  0.00     0   -30        MD2    -1   
+16           17  0.90  1.00           2  0.00     0   -37        MD3    -5   
+17           18  0.80  0.30           1  0.70    40    33       RR12   -25   
+0             1  0.80  1.00           2  0.00     0     0        SD9    13   
+1             2  0.60  1.00           2  0.00     0   -22        MD1    -6   
+2             3  0.60  0.50           1  0.50    50    25        RR6   -15   
+3             4  0.70  1.00           2  0.00     0     0        SD5    -8   
+4             5  0.50  0.30           1  0.70    35    30        RR5   -10   
+5             6  0.90  0.70           1  0.30    25    15       RR10    -3   
+6             7  0.60  1.00           2  0.00     0     0        SD8     7   
+7             8  0.80  1.00           2  0.00     0     0        SD7     3   
+8             9  0.40  1.00           2  0.00     0   -20        MD4    -4   
+9            10  0.30  1.00           2  0.00     0    -4       MD11     5   
+10           11  0.80  1.00           2  0.00     0    -9        MD9     5   
+11           12  0.40  1.00           2  0.00     0     0       SD11     8   
+12           13  0.40  0.40           1  0.60    17    12        RR2    -5   
+17           18  0.10  1.00           2  0.00     0     0       SD10     3   
+
+    O1_1  ...  resp  safeChoice  resp_onset        rt  decideDur_total  \
+1      2  ...   1.0         0.0   23.096161  1.440226         10.82380   
+2     24  ...   2.0         0.0   35.120160  1.199116         10.58580   
+3      2  ...   1.0         0.0   48.832090  0.579718          9.96611   
+4      6  ...   1.0         1.0   61.455992  0.904477         10.27680   
+5     24  ...   1.0         0.0   73.560081  0.743383         10.12750   
+6     42  ...   2.0         0.0   88.391958  0.477063          9.86601   
+7      5  ...   1.0         0.0  102.327948  0.881127         10.26620   
+8     29  ...   2.0         0.0  114.359887  0.547995          9.93479   
+9     30  ...   2.0         0.0  126.679923  0.602767          9.99207   
+10     5  ...   1.0         1.0  140.455911  0.730411         10.11830   
+12     2  ...   2.0         1.0  167.831983  0.476216          9.84581   
+14     2  ...   1.0         1.0  195.639990  1.304552         10.67570   
+16    10  ...   1.0         1.0  220.087987  1.238392         10.62860   
+17    18  ...   1.0         0.0  231.927882  0.779634         10.16460   
+0     16  ...   2.0         0.0   10.504014  1.378288         10.77440   
+1      4  ...   1.0         1.0   22.280001  0.572207          9.95930   
+2     12  ...   1.0         0.0   35.095985  0.606514         10.00560   
+3    -10  ...   2.0         0.0   50.848110  0.877301         10.26480   
+4     10  ...   1.0         0.0   62.696011  0.593094          9.96180   
+5      5  ...   2.0         1.0   75.760086  1.291812         10.67850   
+6     12  ...   2.0         0.0   89.679924  0.963448         10.33500   
+7      4  ...   1.0         1.0  102.808060  1.159696         10.55320   
+8     15  ...   1.0         1.0  115.799919  0.453363          9.84404   
+9     27  ...   2.0         0.0  129.519867  1.958145         11.34920   
+10     8  ...   2.0         0.0  140.663925  0.736675         10.12440   
+11    22  ...   1.0         1.0  153.263870  0.388191          9.76708   
+12     5  ...   1.0         0.0  165.975861  0.452088          9.83808   
+17    32  ...   2.0         0.0  229.959773  1.042934         10.41810   
+
+    assignedITI  decide_pad  totalITI  ITI_onset  TrialEndTime  
+1        1.1188    0.259774  1.378570    23.4118       24.8058  
+2        3.1912    0.500884  3.692080    35.4398       39.1376  
+3        1.1622    1.120282  2.282480    49.1569       51.4527  
+4        1.1231    0.795523  1.918620    61.7771       63.7013  
+5        3.9403    0.956617  4.896920    73.8864       78.7996  
+6        2.3911    1.222937  3.614040    88.7088       92.3313  
+7        1.2245    0.818873  2.043370   102.6460      104.6970  
+8        1.1239    1.152005  2.275910   114.6720      116.9620  
+9        2.5049    1.097233  3.602130   126.9990      130.6100  
+10       1.7448    0.969589  2.714390   140.7760      143.4920  
+12       1.2493    1.223784  2.473080   168.1910      170.6720  
+14       1.1057    0.395448  1.501150   195.9670      197.4690  
+16       1.1584    0.461608  1.620010   220.4120      222.0330  
+17       4.7413    0.920366  5.661670   232.2590      237.9310  
+0        1.4355    0.321712  1.757210    10.8284       12.5924  
+1        1.6301    1.127793  2.757890    22.5946       25.3574  
+2        4.3408    1.093486  5.434290    35.4199       40.8557  
+3        1.0075    0.822699  1.830200    51.1616       53.0043  
+4        1.2203    1.106906  2.327210    63.0223       65.3529  
+5        3.1124    0.408188  3.520590    76.0805       79.6179  
+6        1.7830    0.736552  2.519550    89.9977       92.5330  
+7        2.5659    0.540304  3.106200   103.1190      106.2310  
+8        1.0825    1.246637  2.329140   116.1170      118.4460  
+9        1.2245   -0.258146  0.966354   129.8320      130.8120  
+10       1.8199    0.963325  2.783230   140.9850      143.7770  
+11       1.5147    1.311809  2.826510   153.5750      156.4090  
+12       2.2412    1.247912  3.489110   166.3380      169.8410  
+17       2.1542    0.657066  2.811270   230.2840      233.1000  
+
+[28 rows x 32 columns]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14193,14 +15016,86 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_concat</span> <span class="o">=</span> <span class="n">dbdm_concat</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dbdm_concat</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dbdm_concat_avg</span> <span class="o">=</span> <span class="n">dbdm_concat</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dbdm_concat_avg</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    TrialNumber   P1_1   P1_2  SafeOption   P2_2  O2_2  O2_1  O1_2  O1_1  \
+0           1.0  0.800  1.000         2.0  0.000   0.0   0.0  13.0  16.0   
+1           2.0  0.425  0.625         1.5  0.375   5.0  -8.0  -7.0   3.0   
+2           3.0  0.400  0.750         1.5  0.250  25.0   9.0  -8.5  18.0   
+3           4.0  0.750  0.800         1.5  0.200   9.0   5.0  -6.0  -4.0   
+4           5.0  0.700  0.650         1.5  0.350  17.5  11.0  -3.0   8.0   
+5           6.0  0.850  0.400         1.0  0.600  30.0  27.5 -11.5  14.5   
+6           7.0  0.350  1.000         2.0  0.000   0.0  -0.5   4.5  27.0   
+7           8.0  0.550  0.750         1.5  0.250  15.0   7.5  -2.5   4.5   
+8           9.0  0.300  1.000         2.0  0.000   0.0 -10.0   1.0  22.0   
+9          10.0  0.450  1.000         2.0  0.000   0.0  -8.0   8.5  28.5   
+10         11.0  0.850  1.000         2.0  0.000   0.0  -9.5   4.0   6.5   
+11         12.0  0.400  1.000         2.0  0.000   0.0   0.0   8.0  22.0   
+12         13.0  0.575  0.575         1.0  0.425  23.5  11.0  -5.0   3.5   
+14         15.0  0.900  1.000         2.0  0.000   0.0 -30.0  -1.0   2.0   
+16         17.0  0.900  1.000         2.0  0.000   0.0 -37.0  -5.0  10.0   
+17         18.0  0.450  0.650         1.5  0.350  20.0  16.5 -11.0  25.0   
+
+       EV2  ...  resp  safeChoice  resp_onset        rt  decideDur_total  \
+0   13.000  ...   2.0         0.0   10.504014  1.378288        10.774400   
+1   -0.250  ...   1.0         0.5   22.688081  1.006216        10.391550   
+2    7.750  ...   1.5         0.0   35.108073  0.902815        10.295700   
+3   -1.600  ...   1.5         0.0   49.840100  0.728509        10.115455   
+4   12.750  ...   1.0         0.5   62.076001  0.748786        10.119300   
+5   17.450  ...   1.5         0.5   74.660083  1.017597        10.403000   
+6    4.500  ...   2.0         0.0   89.035941  0.720255        10.100505   
+7    7.000  ...   1.0         0.5  102.568004  1.020411        10.409700   
+8    1.000  ...   1.5         0.5  115.079903  0.500679         9.889415   
+9    8.500  ...   2.0         0.0  128.099895  1.280456        10.670635   
+10   4.000  ...   1.5         0.5  140.559918  0.733543        10.121350   
+11   8.000  ...   1.0         1.0  153.263870  0.388191         9.767080   
+12   5.975  ...   1.5         0.5  166.903922  0.464152         9.841945   
+14  -1.000  ...   1.0         1.0  195.639990  1.304552        10.675700   
+16  -5.000  ...   1.0         1.0  220.087987  1.238392        10.628600   
+17  11.750  ...   1.5         0.0  230.943828  0.911284        10.291350   
+
+    assignedITI  decide_pad  totalITI  ITI_onset  TrialEndTime  
+0       1.43550    0.321712  1.757210   10.82840      12.59240  
+1       1.37445    0.693784  2.068230   23.00320      25.08160  
+2       3.76600    0.797185  4.563185   35.42985      39.99665  
+3       1.08485    0.971491  2.056340   50.15925      52.22850  
+4       1.17170    0.951214  2.122915   62.39970      64.52710  
+5       3.52635    0.682403  4.208755   74.98345      79.20875  
+6       2.08705    0.979745  3.066795   89.35325      92.43215  
+7       1.89520    0.679589  2.574785  102.88250     105.46400  
+8       1.10320    1.199321  2.302525  115.39450     117.70400  
+9       1.86470    0.419544  2.284242  128.41550     130.71100  
+10      1.78235    0.966457  2.748810  140.88050     143.63450  
+11      1.51470    1.311809  2.826510  153.57500     156.40900  
+12      1.74525    1.235848  2.981095  167.26450     170.25650  
+14      1.10570    0.395448  1.501150  195.96700     197.46900  
+16      1.15840    0.461608  1.620010  220.41200     222.03300  
+17      3.44775    0.788716  4.236470  231.27150     235.51550  
+
+[16 rows x 30 columns]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14217,7 +15112,7 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-6">Example 6<a class="anchor-link" href="#Example-6">&#182;</a></h2><p>In the space below, perform the same computation (getting the mean of our two DataFrames) for the ebdm conditions!</p>
+<h2 id="Exercise-6">Exercise 6<a class="anchor-link" href="#Exercise-6">&#182;</a></h2><p>Using the code below, perform the same computation (getting the mean of our two DataFrames) for the ebdm conditions! <em>Hint</em>: Did you load the data frames into your example script correctly?</p>
 
 </div>
 </div>
@@ -14227,14 +15122,22 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ebdm_concat</span> <span class="o">=</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">ebdm_concat</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ebdm_concat_avg</span> <span class="o">=</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">ebdm_concat_avg</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex6.py">Click for solution</a></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -14275,24 +15178,19 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex7.py">Click for solution</a></p>
 
-    </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="More-Libraries---Matplotlib-and-Numpy">More Libraries - Matplotlib and Numpy<a class="anchor-link" href="#More-Libraries---Matplotlib-and-Numpy">&#182;</a></h1><p>One library that is available within Pandas is called <a href="https://matplotlib.org/">matplotlib</a>. This is a data visualization package that is really nice if you would like to look at your data within Python.</p>
-<p>In addition to Pandas, there are also other libraries that can be useful for data manipulation. NumPy is another software library that is frequently used in both psychology and neuroscience. It can be used for statistics, machine learning, and even experimental presentation of stimuli! More information about this library can be found <a href="https://numpy.org/">here</a>. Because we are doing our data analysis in R for this bootcamp, we will not get into Matplotlib or Numpy here today. But ithey are a good tool to be aware of.</p>
+<h1 id="More-Libraries">More Libraries<a class="anchor-link" href="#More-Libraries">&#182;</a></h1><h2 id="Matplotlib">Matplotlib<a class="anchor-link" href="#Matplotlib">&#182;</a></h2><p>One library that is available within Pandas is called <a href="https://matplotlib.org/">matplotlib</a>. This is a data visualization package that is really nice if you would like to look at your data within Python. Because we are doing our data analysis in R for this bootcamp, we will not get into matplotlib here today. But it is a good tool to be aware of.</p>
+<h2 id="Numpy">Numpy<a class="anchor-link" href="#Numpy">&#182;</a></h2><p>In addition to Pandas, there are also other libraries that can be useful for data manipulation. NumPy is another software library that is frequently used in both psychology and neuroscience. It can be used for statistics, machine learning, and even experimental presentation of stimuli! More information about this library can be found <a href="https://numpy.org/">here</a>. Because we are doing our data analysis in R for this bootcamp, we will not get into Matplotlib or Numpy here today. But ithey are a good tool to be aware of.</p>
 
 </div>
 </div>
@@ -14329,7 +15227,15 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new subject from the data we have been using (not DE249!) and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use an IDE of your choice (my personal favorite is Spyder, but you are welcome to use Jupyter Notebooks). Clean 10 subjects worth of data and save them on your laptop to be used in the R workshop tomorrow!</p>
+<h1 id="Final-Challenge">Final Challenge<a class="anchor-link" href="#Final-Challenge">&#182;</a></h1><p>Take a new subject from the data we have been using (not DE249!) and combine the skills you have learned here today. Use a for loop or a while loop to clean the data all in one bit of code! To accomplish this, use the tools we've collected in your "python_examples.py" to create a new "data_cleaning.py" script. Clean 10 subjects worth of data and save them on your laptop to be used in the R workshop tomorrow!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/python/solutions/py_ex8.py">Click for solution</a></p>
 
 </div>
 </div>
@@ -14341,19 +15247,6 @@ In order to do this for multiple subjects, you can write this into a for loop. I
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
