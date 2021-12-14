@@ -14,7 +14,7 @@ This set of tutorials is intented for complete beginners to coding. If you have 
 
 
 ## Getting Started
-Each tutorial will list the necessary pre-requesites in their respective README.md files, but here is some software we recommend you install before the workshops. We will also spend some time going over installation on Day 1.:
+Each tutorial will list the necessary pre-requesites in their respective README.md files, but here is some software we recommend you install before the workshops. We will also spend some time going over installation on Day 1.
 - A command-line shell (i.e. Bash)
 - A text editor you're comfortable with (Atom, [VSCode](https://code.visualstudio.com/), etc.)
 - Spyder, available through [Anaconda](https://www.anaconda.com/products/individual#Downloads)
