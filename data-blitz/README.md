@@ -8,7 +8,7 @@
 |:------------------------------------:| :-----------:|
 | Using bash and python scripting to automate analyitic processes | Elizabeth Beard |
 | Using the PsychoPy coder to create tasks | Susan Benear |
-| Data cleaning in e-prime | Katy Kobson |
+| Data cleaning in e-prime | Katie Kobson |
 | Analysis of a multi-level dataset: Data cleaning to statistics | Jeffrey Dennison |
 | COG Workshops and Closing | Haroon Popal |
 
