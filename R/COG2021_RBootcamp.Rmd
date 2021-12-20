@@ -2,6 +2,7 @@
 title: "Analyzing Data in R"
 author: "Mitchell, W.J."
 date: "`r format(Sys.time(), '%B %d, %Y')`"
+original: "12/16/2021"
 output:
   html_document:
     number_sections: true
@@ -10,7 +11,7 @@ output:
     toc_float: 
       collapsed: false
     df_print: paged
-    css: !expr here::here("./misc/style_bootcamp.css")
+    css: !expr here::here("./style_bootcamp.css")
 knit: (function(inputFile, encoding) { 
       out_dir <- './';
       rmarkdown::render(inputFile,
@@ -102,18 +103,11 @@ Notice that we drop the quotation marks now. We just specify the (case-sensitive
 ### Exercise 1
 Install and load the following packages:  
 
-  dplyr
-  effects  
-  ggpubr  
-  ggthemes  
-  interactions  
+  effects
+  ggthemes
+  plyr
   psych  
-  plyr  
-  RColorBrewer  
   report  
-  rstatix  
-  sjPlot  
-  sjstats  
   skimr  
   stargazer  
   tidyverse  
@@ -125,7 +119,6 @@ Install and load the following packages:
 ```
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex1.r)
-
 
 ## How do I specify my Working Directory in R?
 
@@ -141,15 +134,19 @@ I can press tab when my cursor is to the left of the forward slash to see a list
 
 From there, I can keep hitting tab until I get to the directory, or folder, that contains the files I want to work with. 
 
-```{r Setting Working Directory, eval=TRUE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
+```{r Setting Working Directory, eval=FALSE,include=TRUE, message=FALSE, warning=FALSE, error=FALSE}
 Path <- "/Users/tuk12127/Desktop/COG/intro-to-coding-2021/R/"
+``` 
+
+```{r Actually Setting Working Directory, eval=TRUE,include=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+Path <- "C:/Users/Administrator/Desktop/Grad School/Class/Classes I Taught/COG 2021 Bootcamp/"
 ``` 
 
 Again, because *R Markdown* doesn't handle setting working directories like normal R, we'll use the command that actually specifies the working directory when we load in the data.
 
 ## What is a "dataframe"?
 
-Before we load in the data, I want to highlight a little terminology. The data that R works with is always contained within what we call a ***'dataframe'***. You've likely heard this term in the past workshops. It's quite literally what it sounds like: a framework in which to situate your data. It contains many cells that are situated into columns (which have names) and rows (which may or may now have names). Think of an excel sheet, except instead of an effectively infinite void of blank columns and rows which you could scroll or write into at your convenience, in R and similar languages, we need to clearly denote the boundaries (how many columns and rows) the data is contained within. We do this whenever we create a dataframe from scratch, or we read in pre-existing data. Because this workshop builds on the previous ones, we don't need to do the former; we can just 'read in' pre-existing data.  
+Before we load in the data, I want to highlight a little terminology. The data that R works with is always contained within what we call a ***'dataframe'***. You've likely heard this term in the past workshops. It's quite literally what it sounds like: a framework in which to situate your data. It contains many cells that are situated into columns (which have names) and rows (which may or may not have names). Think of an excel sheet, except instead of an effectively infinite void of blank columns and rows which you could scroll or write into at your convenience, in R and similar languages, we need to clearly denote the boundaries (how many columns and rows) the data is contained within. We do this whenever we create a dataframe from scratch, or we read in pre-existing data. Because this workshop builds on the previous ones, we don't need to do the former; we can just 'read in' pre-existing data.  
 
 ## How do I load data into R?
 
@@ -203,8 +200,6 @@ Alternatively, if you only want to check the top of it, you can run:
 ```
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex2.r)
-
-
 
 ### Subsetting Data 
 
@@ -282,7 +277,6 @@ Let's subset the *df* dataframe with two conditional statements and selecting on
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex3.r)
 
-
 ## Data Structure: What the hell is that?
 
 I've used terms ***factor*** and ***numeric*** to describe variables a few times now, but I haven't really explained what those mean, or why they are important, and they matter much more in R than other coding languages, at least in my experience. These terms refer to the ***structure*** that the data exists in. Data that is *structured* numerically (including numbers and *integers*, or "*int*") can be subjected to mathematical operations (e.g., addition subtraction, etc.), but non-numeric data cannot. You can imagine a series of numbers as an example. On the other hand, factors are categorical variables that take on a limited number of different values. Likert scale responses (i.e., Not at all, Somewhat, Greatly), which can be hierarchically organized, but lack clear objective values are examples. Certain functions only work properly with certain data structures. "*sum("Bingo", "Bongo")*" wouldn't work for obvious reasons, but other incongruencies are much more subtle. Sometimes R incorrectly assumes what structure a variable is; if we assign numeric values to "Yes/No" outcome variables, R will assume they are numeric. As such, **it is very important that we accurately structure our data**. I have highlighted the two primary data classes that we'll be working with, but there are many more, which you can **[read more about here](https://swcarpentry.github.io/r-novice-inflammation/13-supp-data-structures/)**, should you be interested.
@@ -322,7 +316,6 @@ Although I noted at the beginning of **Section 1.6.1** that each variable is eit
 ```
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex4.r)
-
 
 ## Writing data
 
@@ -402,7 +395,6 @@ Let's calculate values for a new column within df called EV_Diff. It should be e
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex5.r)
 
-
 ### Exercise 6
 EV_Diff could be a helpful variable later on, but there's a slight problem. We might not really necessarily care whether EV1 was the larger amount of EV2 was the larger amount, we just want to know the pure magnitude of the difference. You could maybe imagine a scenario where EV1 = 10 and EV2 = 5, as well as EV1 = 5 and EV2 = 10. In the former, EV_Diff = 5 and in the latter EV_Diff = -5. These values will be treated differently by R, but we want R to treat them the same. As such, we want to create a new variable that captures the absolute value of EV_Diff, which we will call *EV_DiffAbs*. The absolute value command is *abs()*. 
 
@@ -413,7 +405,6 @@ EV_Diff could be a helpful variable later on, but there's a slight problem. We m
 ```
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex6.r)
-
 
 ### SLIGHT BREAK TIME ###
 
@@ -496,7 +487,6 @@ Let's run a second Chi Square Test, this time examining whether Problem Type has
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex7.r)
 
-
 While a Chi Square Test is great, verbalizing the relationship can only go so far to communicate how these variables are related. Where R really excels, relative to other languages, is visualizing relationships in plots. ***ggplot2*** allows us to build visually-pleasing graphics one layer at a time". This chunk below should probably look big and confusing, and that's fine for now. We're going to run it so we can see what the end product looks like. Then we're going to talk through these lines and I'll show you that it really looks much more intimidating than it is.
 
 ```{r Chi Square Plots}
@@ -544,8 +534,9 @@ This is just about the most basic plot we could run in ggplot. We start by defin
 However, if we want to see the actual data, we need to define what type of plot (i.e., line, bar, scatter, etc.) we want to see. In order to add more layers to a ggplot, we need to use an addition sign:
 
 ```{r Adding Geoms w/ ggplot 2, message=FALSE}
-ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
-       geom_smooth(method="lm", alpha = .25, size = 1.5)
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
+         geom_smooth(method="lm", alpha = .25, size = 1.5)
+
 ```
 
 Here, we kept the first line the same, and we're adding a command for ggplot to produce a geometric shape (hence, "geom_") of the type "smooth" (or a smoothed regression line). There are dozens of possible geoms one could use in ggplot. For reference, you can either check the **[supplementary infographic I supplied](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/resources/Resource3.pdf)** or enter "?ggplot" in the console to review the documentation. Following the command, you'll see arguments that define the method of smoothing, how dark or light the standard error cloud is around the regression line, and how thick the regression line should be, respectively. These are aesthetic choices and will obviously change quite a bit depending upon the plot, so we won't dive much deeper into these. For now, I want to move on to commands that I almost always use no matter what type of plot I'm producing. 
@@ -555,7 +546,7 @@ Here, we kept the first line the same, and we're adding a command for ggplot to 
 The above plot might be perfectly fine for you and your team, who have been looking at the data for months, to understand the relationship you're studying, but adding more descriptive labels would go a long way to make these plots more accessible to others. There are a million different commands that will alter the labels of the axes, but I'm partial to this approach, which allows us to modify the title and add subtitles and captions as well:
 
 ```{r Adding Labels w/ ggplot 2, message=FALSE}
-ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
        geom_smooth(method="lm", alpha = .25, size = 1.5) +
        labs(title = "Expected Value Difference Predicts Decision Reaction Time",
             subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -571,7 +562,7 @@ Notice, once again, that we string together multiple layers through the use of a
 This looks better, certainly, but let's say participants only had 2 seconds to respond to the decisions. This axis would be a little disingenuous, because it would suggest the range was actually much smaller and artificially make my relationship look larger. My Y axis in that case should really range from 0 to 2, for the amount of time participants had to respond. The coord_cartesian function is by far the best way to manipulate the displayed range of your axes without actually modifying the data (Some other functions will exclude datapoints that sit outside of the range you define, meaning they won't be included in your regression line). We simply define the lower and upper limits of our x (xlim) and/or y (ylim) axis: 
 
 ```{r Setting Plot Limits w/ ggplot 2, message=FALSE}
-  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
          geom_smooth(method="lm", alpha = .25, size = 1.5) +
          labs(title = "Expected Value Difference Predicts Decision Reaction Time",
               subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -586,7 +577,7 @@ This looks better, certainly, but let's say participants only had 2 seconds to r
 Great! Now the data is all technically correct, but I really don't like that ugly gray background. Let's change that with the host of functions that come with the ***ggtheme*** package. I believe that base *ggplot2* may accept some theme commands without needing *ggtheme*, but *ggtheme*, at the least, expands the options we have to customize our plots. We'll start with my usual favorite, theme_classic: 
 
 ```{r Adding Themes w/ ggplot2}
-  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -600,7 +591,7 @@ Great! Now the data is all technically correct, but I really don't like that ugl
 The "theme_" commands do an overhaul on the presentation of the plot, and make many changes all at once. Let's take a look what another few look like  
 
 ```{r Theme Options Dark w/ ggplot 2}
-  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -612,7 +603,7 @@ The "theme_" commands do an overhaul on the presentation of the plot, and make m
 ``` 
 
 ```{r Theme Options Minimal w/ ggplot 2, message=FALSE}
-  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -624,7 +615,7 @@ The "theme_" commands do an overhaul on the presentation of the plot, and make m
 ```        
 
 ```{r Theme Options Solarized w/ ggplot 2}
-  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
            geom_smooth(method="lm", alpha = .25, size = 1.5) +
            labs(title = "Expected Value Difference Predicts Decision Reaction Time",
                 subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -642,7 +633,7 @@ Quite a range! There are a ton of other options which you can review in the **[g
 For the sake of time, we're going to move onto the last thing I usually do, and that's modify the appearance of the text using theme commands, It drives me nuts that the title is off-center and that the "p"'s in the caption are misaligned, so we're going to run a series of commands to correct this.
 
 ```{r Modifying Text Elements w/ ggplot, message=FALSE}
-  ggplot(df, aes(x = 'EV_DiffAbs', y = 'rt')) +
+  ggplot(df, aes(x = EV_DiffAbs, y = rt)) +
          geom_smooth(method="lm", alpha = .25, size = 1.5) +
          labs(title = "Expected Value Difference Predicts Decision Reaction Time",
               subtitle = "Absolutle Difference in Expected Value Has No Effect on Reaction Time.",
@@ -676,7 +667,6 @@ Let's see you give it a show. Modify the code of the plot below so that:
 ```
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex8.r)
-
 
 ## T-Tests
 
@@ -798,7 +788,6 @@ Let's run a t-test examining differences between conditions regarding reaction t
 ```  
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex9.r)
-
 
 ## ANOVAs
 
@@ -966,7 +955,6 @@ You might have noticed that I did not explain to you what was happening in lines
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex10.r)
 
-
 # Analyzing Data w/ Quantitative Independent Variables
 
 We are nearly done for the day, but before we close up shop, we need to cover analyses that use quantitative, numeric predictors, probably most common of which is linear regression. Regression can come in many flavors, including **[bivariate linear regression](https://www.statisticshowto.com/bivariate-analysis/)**, multivariate linear regression, and **[binary logistic regression](https://www.statisticssolutions.com/binary-logistic-regression/#:~:text=Logistic%20regression%20is%20the%20statistical,%2C%20score%20%2C%20etc%E2%80%A6)**. Once again, I won't get too much into the theory, but hyperlinks are provided for those who want it. We will demonstrate some useful tools and syntax to get you prepared to use R on your own.  
@@ -1048,7 +1036,6 @@ During the *ggplot* detour, I'd showed you how to build a model for a bivariate 
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex11.r)
 
-
 ## Multivariate Regression
 
 A multivariate linear regression builds upon bivariate regression by allowing for multiple predictors. If we measured temperature, ice cream sales, and the time since someone last ate, we might find that our previously specified model is now even more accurate because of the addition of the "time since last ate" variable. Within the context of our data, let's reexamine expected value as EV1 and EV2 instead of a singular difference variable. 
@@ -1103,7 +1090,6 @@ Let's see you run a new regression from scratch. I want to know whether the amou
 ``` 
 
 [Click for solution](https://github.com/TU-Coding-Outreach-Group/intro-to-coding-2021/blob/main/R/solutions/ex12.r)
-
 
 ## Binary Logistic Regression
 
