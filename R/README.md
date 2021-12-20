@@ -1,6 +1,7 @@
 # Coding Outreach Group Bootcamp
 # R Tutorial
 12/16/2021
+UPDATED: 12/20/2021
 
 __**Instructor:**__ William Mitchell
 
@@ -23,21 +24,14 @@ This workshop will review basic coding skills relevant to conducting statistical
          Linux: https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.1-372-amd64.deb  
 3. Download relevant packages. Following the installation of R and R studio, copy, paste, and run the following code into the R Studio console:
 
-          install.package("dplyr")
-          install.package("effects")  
-          install.package("ggpubr")  
-          install.package("ggthemes")  
-          install.package("interactions")  
-          install.package("psych")  
-          install.package("plyr")  
-          install.package("RColorBrewer")  
-          install.package("report")  
-          install.package("rstatix")  
-          install.package("sjPlot")  
-          install.package("sjstats")  
-          install.package("skimr")  
-          install.package("stargazer")  
-          install.package("tidyverse")  
+          install.packages("effects")    
+          install.packages("ggthemes")
+          install.packages("plyr")
+          install.packages("psych")   
+          install.packages("report")  
+          install.packages("skimr")  
+          install.packages("stargazer")  
+          install.packages("tidyverse")  
 
 ## Tutorial objectives:
 - Learn R syntax relating to dataframes
