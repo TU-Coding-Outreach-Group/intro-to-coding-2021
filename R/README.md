@@ -14,11 +14,11 @@ This workshop will review basic coding skills relevant to conducting statistical
 2. [python tutorial]()
 
 ## To-do before the tutorial
-1. Download R
+1. Download R  
          Windows: https://archive.linux.duke.edu/cran/bin/windows/base/R-4.1.2-win.exe  
          Mac: https://archive.linux.duke.edu/cran/bin/macosx/            
          Linux: https://archive.linux.duke.edu/cran/  
-2. Download RStudio (which allows us to navigate R, but is a different program from R)
+2. Download RStudio (which allows us to navigate R, but is a different program from R)  
          Windows: https://download1.rstudio.org/desktop/windows/RStudio-2021.09.1-372.exe  
          Mac: https://download1.rstudio.org/desktop/macos/RStudio-2021.09.1-372.dmg  
          Linux: https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.1-372-amd64.deb  
